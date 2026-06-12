@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Denim Jacket",
+    "image": "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?q=80&w=600&auto=format&fit=crop",
+    "category": "Men",
+    "featured": true,
+    "items_sold": 1245
+  },
+  {
+    "id": 2,
+    "name": "Cozy Cable-Knit Sweater",
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=600&auto=format&fit=crop",
+    "category": "Women",
+    "featured": true,
+    "items_sold": 2840
+  },
+  {
+    "id": 3,
+    "name": "Minimalist Leather Backpack",
+    "image": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=600&auto=format&fit=crop",
+    "category": "Accessories",
+    "featured": true,
+    "items_sold": 890
+  },
+  {
+    "id": 4,
+    "name": "Kids Organic Cotton Hoodie",
+    "image": "https://images.unsplash.com/photo-1519457431-44ccd64a579b?q=80&w=600&auto=format&fit=crop",
+    "category": "Kids",
+    "featured": true,
+    "items_sold": 1540
+  },
+  {
+    "id": 5,
+    "name": "Oversized Streetwear Tee",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=600&auto=format&fit=crop",
+    "category": "Men",
+    "featured": true,
+    "items_sold": 3420
+  },
+  {
+    "id": 6,
+    "name": "Satin Slip Midi Dress",
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
+    "category": "Women",
+    "featured": true,
+    "items_sold": 4120
+  },
+  {
+    "id": 7,
+    "name": "Retro Polarized Sunglasses",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=600&auto=format&fit=crop",
+    "category": "Accessories",
+    "featured": true,
+    "items_sold": 2150
+  },
+  {
+    "id": 8,
+    "name": "Kids Lightweight Bomber Jacket",
+    "image": "https://images.unsplash.com/photo-1607990283143-e81e7a2c93ab?q=80&w=600&auto=format&fit=crop",
+    "category": "Kids",
+    "featured": true,
+    "items_sold": 980
+  },
+  {
+    "id": 9,
+    "name": "Tailored Slim-Fit Blazer",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=600&auto=format&fit=crop",
+    "category": "Men",
+    "featured": true,
+    "items_sold": 1820
+  },
+  {
+    "id": 10,
+    "name": "Pleated A-Line Skirt",
+    "image": "https://images.unsplash.com/photo-1583496661160-fb48862c4a4e?q=80&w=600&auto=format&fit=crop",
+    "category": "Women",
+    "featured": true,
+    "items_sold": 2230
+  }
+]
