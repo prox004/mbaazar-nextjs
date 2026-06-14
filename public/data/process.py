@@ -11,8 +11,8 @@ def detect_category(product_name):
     # Updated Synonym Map
     synonyms_map = {
         "Kid": ["kid", "kids", "child", "children", "toddler", "infant", "baby", "boy", "boys", "girl", "girls"],
-        "Women": ["women", "woman", "ladies", "lady", "female", "saree", "kurtis", "lehenga"],
-        "Men": ["men", "man", "gents", "gent", "male"]
+        "Women": ["women", "woman", "ladies", "lady", "female", "saree", "kurtis", "lehenga","top","tops","skirts","dress"],
+        "Men": ["men", "man", "gents", "gent", "male","vest","vests"]
     }
     
     # 1. Check Kids first (so 'boys'/'girls' are immediately isolated from adult categories)

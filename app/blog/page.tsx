@@ -1,13 +1,11 @@
-import { getPayload } from "payload";
-import config from "../../../payload.config";
 import Link from "next/link";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import BackToTop from "../../components/BackToTop";
-import BlogFilters from "../../components/BlogFilters";
+import fs from "fs";
+import path from "path";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import BackToTop from "../components/BackToTop";
+import BlogFilters from "../components/BlogFilters";
 import { ArrowLeft, ArrowRight, Calendar, User, BookOpen } from "lucide-react";
-
-export const revalidate = 60; // Revalidate page cache every 60 seconds (ISR)
 
 type SearchParams = Promise<{
   search?: string;
@@ -32,80 +30,57 @@ export default async function BlogPage({ searchParams }: PageProps) {
   const currentPage = parseInt(resolvedParams.page || "1", 10);
   const limit = 6;
 
-  const payload = await getPayload({ config });
-
-  // 1. Fetch categories for filters
-  const categoriesData = await payload.find({
-    collection: "categories",
-    sort: "title",
-    limit: 100,
-  });
-
-  const categories = categoriesData.docs.map((doc: any) => ({
-    id: doc.id,
-    title: doc.title,
-    slug: doc.slug,
-  }));
-
-  // 2. Fetch category ID if slug is specified
-  let categoryId = "";
-  if (selectedCategory) {
-    const matchedCategory = await payload.find({
-      collection: "categories",
-      where: {
-        slug: {
-          equals: selectedCategory,
-        },
-      },
-      limit: 1,
-    });
-    if (matchedCategory.docs.length > 0) {
-      categoryId = String(matchedCategory.docs[0].id);
-    }
+  // 1. Read blog posts from local JSON file
+  let allPosts = [];
+  try {
+    const filePath = path.join(process.cwd(), "public/data/blog.json");
+    const fileData = fs.readFileSync(filePath, "utf8");
+    allPosts = JSON.parse(fileData);
+  } catch (error) {
+    console.error("Error loading local blog posts JSON database:", error);
   }
 
-  // 3. Build query filter
-  const query: any = {
-    status: {
-      equals: "published",
-    },
-  };
+  // 2. Dynamically extract categories from posts
+  const uniqueCategoriesMap = new Map();
+  allPosts.forEach((post: any) => {
+    if (post.category && post.category.slug) {
+      uniqueCategoriesMap.set(post.category.slug, post.category);
+    }
+  });
+  const categories = Array.from(uniqueCategoriesMap.values());
 
-  if (categoryId) {
-    query.category = {
-      equals: categoryId,
-    };
+  // 3. Filter published posts by category & search query
+  let filteredPosts = allPosts.filter((post: any) => post.status === "published");
+
+  if (selectedCategory) {
+    filteredPosts = filteredPosts.filter(
+      (post: any) => post.category?.slug === selectedCategory
+    );
   }
 
   if (searchTerm) {
-    query.or = [
-      {
-        title: {
-          contains: searchTerm,
-        },
-      },
-      {
-        excerpt: {
-          contains: searchTerm,
-        },
-      },
-    ];
+    const query = searchTerm.toLowerCase();
+    filteredPosts = filteredPosts.filter(
+      (post: any) =>
+        post.title.toLowerCase().includes(query) ||
+        post.excerpt.toLowerCase().includes(query)
+    );
   }
 
-  // 4. Fetch posts
-  const postsData = await payload.find({
-    collection: "posts",
-    where: query,
-    sort: "-publishedDate",
-    page: currentPage,
-    limit,
-    depth: 2,
-  });
+  // 4. Sort posts by publication date (newest first)
+  filteredPosts.sort(
+    (a: any, b: any) =>
+      new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime()
+  );
 
-  const posts = postsData.docs;
-  const totalPages = postsData.totalPages;
-  const hasPrevPage = postsData.hasPrevPage;
-  const hasNextPage = postsData.hasNextPage;
+  // 5. Paginate results
+  const totalPosts = filteredPosts.length;
+  const totalPages = Math.ceil(totalPosts / limit);
+  const startIndex = (currentPage - 1) * limit;
+  const paginatedPosts = filteredPosts.slice(startIndex, startIndex + limit);
+
+  const hasPrevPage = currentPage > 1;
+  const hasNextPage = currentPage < totalPages;
 
   // Pagination navigation builder
   const buildPageUrl = (pageNumber: number) => {
@@ -143,7 +118,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
 
         {/* Article Cards Grid */}
         <div className="max-w-6xl mx-auto px-6">
-          {posts.length === 0 ? (
+          {paginatedPosts.length === 0 ? (
             <div className="text-center py-16 space-y-4">
               <BookOpen className="w-12 h-12 text-zinc-300 mx-auto" />
               <h3 className="text-lg font-bold text-zinc-800">No articles found</h3>
@@ -153,22 +128,22 @@ export default async function BlogPage({ searchParams }: PageProps) {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.map((post: any) => {
+              {paginatedPosts.map((post: any) => {
                 const dateString = new Date(post.publishedDate).toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "short",
                   day: "numeric",
                 });
 
-                const imageUrl = post.featuredImage?.url || "/media/placeholder.jpg";
-                const altText = post.featuredImage?.alt || post.title;
+                const imageUrl = post.featuredImage || "/media/placeholder.jpg";
+                const altText = post.title;
                 const authorName = post.author?.name || "Editorial Staff";
                 const categoryTitle = post.category?.title || "Fashion";
 
                 return (
                   <article
                     key={post.id}
-                    className="group flex flex-col bg-white border border-zinc-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:border-zinc-200 transition-all duration-300 ease-out"
+                    className="group flex flex-col bg-white border border-zinc-100 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:border-zinc-200 transition-all duration-300 ease-out"
                   >
                     {/* Featured Image Wrap */}
                     <Link href={`/blog/${post.slug}`} className="relative aspect-[4/3] block overflow-hidden bg-zinc-100">

@@ -30,14 +30,14 @@ export default function Header() {
 
   const menuItems = [
     { name: "Products", isDropdown: true, categories: ["Menswear", "Ladieswear", "Kidswear", "Accessories"] },
-    { name: "Outlets", href: "#outlets" },
+    { name: "Outlets", href: "/#outlets" },
     { name: "Blogs", href: "/blog" },
   ];
 
   const rightMenuItems = [
-    { name: "About Us", href: "#about" },
-    { name: "Careers", href: "#careers" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "About Us", href: "/about" },
+    { name: "Careers", href: "/careers" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   const handleShare = (platform: string) => {

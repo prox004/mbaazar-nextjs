@@ -4,8 +4,8 @@ import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, Grid, List, X, SlidersHorizontal, ArrowUpDown, Flame, Sparkles } from "lucide-react";
-import Footer from "../../components/Footer";
-import BackToTop from "../../components/BackToTop";
+import Footer from "../components/Footer";
+import BackToTop from "../components/BackToTop";
 
 interface Product {
   id: number;

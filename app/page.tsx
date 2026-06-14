@@ -1,11 +1,11 @@
-import Hero from "../components/Hero";
-import Categories from "../components/Categories";
-import NewArrivals from "../components/NewArrivals";
-import AboutUs from "../components/AboutUs";
-import ReelsShowcase from "../components/ReelsShowcase";
-import StoreLocator from "../components/StoreLocator";
-import Footer from "../components/Footer";
-import BackToTop from "../components/BackToTop";
+import Hero from "./components/Hero";
+import Categories from "./components/Categories";
+import NewArrivals from "./components/NewArrivals";
+import AboutUs from "./components/AboutUs";
+import ReelsShowcase from "./components/ReelsShowcase";
+import StoreLocator from "./components/StoreLocator";
+import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 export default function Home() {
   return (
