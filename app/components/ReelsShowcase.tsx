@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import reelsData from "@/public/data/reels.json";
 
 interface Reel {
   id: number;
@@ -96,20 +97,18 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
 
   // Fetch Reels Data
   useEffect(() => {
-    fetch("/api/reels")
-      .then((res) => res.json())
-      .then((data) => {
-        originalCountRef.current = data.length;
-        // Double array to create enough slides for Embla's loop buffer and map unique IDs
-        const doubled = [...data, ...data].map((item: Reel, idx: number) => ({ ...item, id: idx + 1 }));
-        setReels(doubled);
-        setSelectedIndex(data.length); // start at the second copy so loop has buffer on both sides
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Error loading reels:", err);
-        setLoading(false);
-      });
+    try {
+      const data = reelsData as Reel[];
+      originalCountRef.current = data.length;
+      // Double array to create enough slides for Embla's loop buffer and map unique IDs
+      const doubled = [...data, ...data].map((item: Reel, idx: number) => ({ ...item, id: idx + 1 }));
+      setReels(doubled);
+      setSelectedIndex(data.length); // start at the second copy so loop has buffer on both sides
+      setLoading(false);
+    } catch (err) {
+      console.error("Error loading reels:", err);
+      setLoading(false);
+    }
   }, []);
 
   // Embla Select Callback
