@@ -121,7 +121,7 @@ export default function NewArrivals() {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.95 }}
                     transition={{ duration: 0.35, ease: "easeInOut" }}
-                    className="group relative flex flex-col bg-white border border-zinc-100 rounded-3xl overflow-hidden shadow-sm hover:shadow-[0_20px_50px_rgba(220,38,38,0.04)] hover:-translate-y-1.5 transition-all duration-500 ease-out h-full"
+                    className="group relative flex flex-col bg-white border border-zinc-200 rounded-lg overflow-hidden shadow-sm hover:shadow-[0_20px_50px_rgba(220,38,38,0.04)] hover:-translate-y-1.5 transition-all duration-500 ease-out h-full"
                   >
                     {/* Image Container */}
                     <div className="relative aspect-square overflow-hidden bg-zinc-50">
@@ -132,11 +132,6 @@ export default function NewArrivals() {
                         className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-103"
                         loading="lazy"
                       />
-
-                      {/* "New Arrival" Tag */}
-                      <div className="absolute top-4 left-4 bg-black/85 backdrop-blur-md text-[10px] text-white font-bold tracking-[0.15em] px-3.5 py-1.5 rounded-full uppercase">
-                        New Arrival
-                      </div>
 
                       {/* Wishlist Button */}
                       <button

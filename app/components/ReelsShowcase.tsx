@@ -28,12 +28,14 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [apiReady, setApiReady] = useState(false);
+  const originalCountRef = useRef(0);
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "center",
     skipSnaps: false,
     containScroll: false,
+    startIndex: originalCountRef.current,
   });
 
   const playerRef = useRef<any>(null);
@@ -70,8 +72,11 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
     fetch("/api/reels")
       .then((res) => res.json())
       .then((data) => {
+        originalCountRef.current = data.length;
         // Double array to create enough slides for Embla's loop buffer and map unique IDs
-        setReels([...data, ...data].map((item, idx) => ({ ...item, id: idx + 1 })));
+        const doubled = [...data, ...data].map((item: Reel, idx: number) => ({ ...item, id: idx + 1 }));
+        setReels(doubled);
+        setSelectedIndex(data.length); // start at the second copy so loop has buffer on both sides
         setLoading(false);
       })
       .catch((err) => {
@@ -96,6 +101,12 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
       emblaApi.off("reInit", onSelect);
     };
   }, [emblaApi, onSelect]);
+
+  // Center the carousel once data is loaded
+  useEffect(() => {
+    if (!emblaApi || reels.length === 0 || originalCountRef.current === 0) return;
+    emblaApi.scrollTo(originalCountRef.current, true);
+  }, [emblaApi, reels.length]);
 
   // YouTube Player Instance creation on active slide change
   useEffect(() => {
@@ -258,15 +269,15 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
   }
 
   return (
-    <section className="px-10 bg-white text-black w-full overflow-hidden">
+    <section className="px-10 mb-10 bg-white text-black w-full overflow-hidden">
       <div className="w-full px-4 sm:px-6 lg:px-12">
         {/* Header Section */}
         <div className="text-center mb-12 space-y-3">
           <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-950">
-            Showcase <span className="text-red-600">Shorts</span>
+            From Our Stores <span className="text-red-600">To Your Feed</span>
           </h2>
-          <p className="text-sm sm:text-base text-zinc-500 max-w-lg mx-auto font-medium">
-            Get styling tips, fashion lookbooks, and the latest trends directly from our channel.
+          <p className="text-sm sm:text-base text-zinc-500 max-w-lg mx-auto font-regular">
+            Get styling tips, fashion lookbooks, and the latest trends directly from our social media.
           </p>
         </div>
 

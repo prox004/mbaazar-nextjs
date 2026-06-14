@@ -1,0 +1,3042 @@
+[
+  {
+    "id": 4042,
+    "name": "Women ethnic wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/05/Women-ethic-wear.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1890
+  },
+  {
+    "id": 4041,
+    "name": "Office Wear For Women",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/05/Office-wear.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4320
+  },
+  {
+    "id": 4040,
+    "name": "Office Wear For Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/05/Office-wear-men.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1102
+  },
+  {
+    "id": 4039,
+    "name": "Kids Wear For Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/05/kids-wear-girl.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3223
+  },
+  {
+    "id": 4038,
+    "name": "kids Wear For Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/05/kids-wear-boy.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4991
+  },
+  {
+    "id": 4037,
+    "name": "Men Summer Casual Wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/05/Men-summer-casual-wear.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 460
+  },
+  {
+    "id": 4030,
+    "name": "Ladies Summer Casual Wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/05/Ladies-Summer-casual-wear.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3209
+  },
+  {
+    "id": 3888,
+    "name": "Ladies Western Wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/01/Ladies_Western_Wear.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4116
+  },
+  {
+    "id": 3887,
+    "name": "Kids Ethnic Wear For Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/01/Kids_Ethnic_Wear_2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 831
+  },
+  {
+    "id": 3886,
+    "name": "Mens Ethnic Wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/01/Mens_Ethnic_Wear.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2542
+  },
+  {
+    "id": 3876,
+    "name": "Ladies Casual Wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/01/Ladies_Casual_Wear.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2103
+  },
+  {
+    "id": 1941,
+    "name": "Slippers",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2022/06/Slippers.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3832
+  },
+  {
+    "id": 1940,
+    "name": "Umbrella",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2022/06/Umbrella.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 52
+  },
+  {
+    "id": 1939,
+    "name": "Rain Shoes",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2022/06/Rain-Shoes.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3945
+  },
+  {
+    "id": 1938,
+    "name": "Ladies Raincoat",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2022/06/Ladies-Raincoat.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2065
+  },
+  {
+    "id": 1937,
+    "name": "Kids Umbrella",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2022/06/Kids-Umbrella.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3521
+  },
+  {
+    "id": 1930,
+    "name": "Kids Raincoat",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2022/06/Kids-Raincoat.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2370
+  },
+  {
+    "id": 1561,
+    "name": "Fancy Hand Bag",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Fancy_Hand_Bag.png",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1922
+  },
+  {
+    "id": 1559,
+    "name": "Ladies Stole",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Ladies_Stole.png",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 72
+  },
+  {
+    "id": 1557,
+    "name": "Ladies Purse &#038; Hand Bags",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Ladies-Purse-Hand-Bags.png",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4807
+  },
+  {
+    "id": 1555,
+    "name": "Joy Body Lotion",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-24.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4464
+  },
+  {
+    "id": 1553,
+    "name": "Ladies Sandal",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Ladies_Sandal.png",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 359
+  },
+  {
+    "id": 1551,
+    "name": "Sports Car Toy",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-22.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2163
+  },
+  {
+    "id": 1549,
+    "name": "Small Fancy Toys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-21-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2018
+  },
+  {
+    "id": 1547,
+    "name": "Vehicle Toys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-20-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1843
+  },
+  {
+    "id": 1545,
+    "name": "Kids Toy Cars",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-19.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4208
+  },
+  {
+    "id": 1543,
+    "name": "Pencil Box",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-18-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2085
+  },
+  {
+    "id": 1541,
+    "name": "Mop Floor Cleaner",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-17.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 134
+  },
+  {
+    "id": 1539,
+    "name": "Joy Facewash",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-15.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3863
+  },
+  {
+    "id": 1537,
+    "name": "Fog Deodorants",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-14.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3704
+  },
+  {
+    "id": 1535,
+    "name": "Remote Car",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-13.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4269
+  },
+  {
+    "id": 1533,
+    "name": "Crockeries",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-12.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 242
+  },
+  {
+    "id": 1531,
+    "name": "Teddy Bear Dog",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-11.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1123
+  },
+  {
+    "id": 1529,
+    "name": "Umbrella",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-10.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1633
+  },
+  {
+    "id": 1526,
+    "name": "Containers &#038; Bottles",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-9.png",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 940
+  },
+  {
+    "id": 1524,
+    "name": "Small Vehicle Toys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-8.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1256
+  },
+  {
+    "id": 1522,
+    "name": "Ladies Sandals",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-7.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1185
+  },
+  {
+    "id": 1517,
+    "name": "Head Cap",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-5.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1779
+  },
+  {
+    "id": 1515,
+    "name": "Casual Shoes",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-4.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3850
+  },
+  {
+    "id": 1513,
+    "name": "Small Tools",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 690
+  },
+  {
+    "id": 1511,
+    "name": "Kids Comfort Wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 389
+  },
+  {
+    "id": 1509,
+    "name": "Small Helicopter Toy",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2021/07/Pic-Ref-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 671
+  },
+  {
+    "id": 1299,
+    "name": "Hi-Ball Glass Ware Set",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Hi-Ball-Glass-Ware-Set.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2430
+  },
+  {
+    "id": 1297,
+    "name": "Pearl Bone China Tea Cup",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/PEARL-Bone-China-Tea-Cup.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2363
+  },
+  {
+    "id": 1293,
+    "name": "Solimo Melamine Dinnerware Set",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Solimo-Melamine-Dinnerware-Set.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1862
+  },
+  {
+    "id": 1291,
+    "name": "Melamine Serving Sqaure Shape",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Melamine-Serving-Sqaure-Shape.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1843
+  },
+  {
+    "id": 1289,
+    "name": "Melamine Round Dinner Set",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Melamine-Round-Dinner-Set.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3777
+  },
+  {
+    "id": 1285,
+    "name": "Kids Puzzle Mats Activity Game",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Puzzle-Mats-Activity-Game.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1546
+  },
+  {
+    "id": 1281,
+    "name": "Soft Plush Pikachu Toys for Kids",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Soft-Plush-Pikachu-Toys-for-Kids.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 348
+  },
+  {
+    "id": 1279,
+    "name": "Sitting Dog Soft Toy",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sitting-Dog-Soft-Toy.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3334
+  },
+  {
+    "id": 1275,
+    "name": "Monkey Ride &#038; Push Car",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Monkey-Ride-on-and-Push-Car-with-Horn.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2340
+  },
+  {
+    "id": 1271,
+    "name": "Kick Scooter for Children",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kick-Scooter-for-Children.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2118
+  },
+  {
+    "id": 1257,
+    "name": "Disney Pencil Box",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Pencil-Box-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1181
+  },
+  {
+    "id": 1255,
+    "name": "Kids Premium Pencil Box",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Pencil-Box-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2542
+  },
+  {
+    "id": 1251,
+    "name": "Max Fresh Lunch Box",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Tiffin-Box-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1427
+  },
+  {
+    "id": 1249,
+    "name": "Soft Insulated Tiffin Box",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Tiffin-Box-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 217
+  },
+  {
+    "id": 1247,
+    "name": "Food Storage Tiffin Box",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Tiffin-Box-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3421
+  },
+  {
+    "id": 1245,
+    "name": "Premium Quality Plastic Bottle",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Bottle-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3062
+  },
+  {
+    "id": 1243,
+    "name": "Cello H2O Unbreakable Plastic Bottle",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Bottle-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1443
+  },
+  {
+    "id": 1241,
+    "name": "Unbreakable Plastic Bottle",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Bottle-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4313
+  },
+  {
+    "id": 1239,
+    "name": "Plastic Premium Containers",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Containers-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3012
+  },
+  {
+    "id": 1237,
+    "name": "Airtight Kitchen Containers",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Containers-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 293
+  },
+  {
+    "id": 1235,
+    "name": "Plastic Kitchen Container",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Containers-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 29
+  },
+  {
+    "id": 1233,
+    "name": "Cello Plastic Super Bucket",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Plastic-Goods-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4819
+  },
+  {
+    "id": 1220,
+    "name": "Quick Dry Cotton Towel",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Towel-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 885
+  },
+  {
+    "id": 1218,
+    "name": "Blue Cotton Towel",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Towel-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3317
+  },
+  {
+    "id": 1216,
+    "name": "Cotton Bath Towel",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Towel-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3645
+  },
+  {
+    "id": 1214,
+    "name": "Polycotton Latest Beautiful Bedsheet",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Bedsheets-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2792
+  },
+  {
+    "id": 1212,
+    "name": "100% Cotton Double Size Bedsheet",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Bedsheets-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4063
+  },
+  {
+    "id": 1210,
+    "name": "Home Furnishing Bedsheet",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Bedsheets-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3968
+  },
+  {
+    "id": 1208,
+    "name": "Multicolored Ankle Cotton Socks",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Socks-6.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1388
+  },
+  {
+    "id": 1206,
+    "name": "Women Regular Socks",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Socks-5.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4552
+  },
+  {
+    "id": 1204,
+    "name": "Women&#8217;s Ankle Length Socks",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Socks-4.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1229
+  },
+  {
+    "id": 1202,
+    "name": "Women&#8217;s Cotton Printed Handkerchief",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Handkerchief-3-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3466
+  },
+  {
+    "id": 1200,
+    "name": "Women&#8217;s Cotton Handkerchiefs",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Handkerchief-4.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1538
+  },
+  {
+    "id": 1198,
+    "name": "Women&#8217;s Soft Handkerchiefs",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Handkerchief-5.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2803
+  },
+  {
+    "id": 1196,
+    "name": "Kid&#8217;s Cotton Handkerchiefs",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Handkerchief-2-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2639
+  },
+  {
+    "id": 1193,
+    "name": "Supersox Disney Ankle Length Socks",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Socks-2-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2037
+  },
+  {
+    "id": 1191,
+    "name": "Baby Boy Cotton Anti-skid Socks",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Socks-1-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1343
+  },
+  {
+    "id": 1188,
+    "name": "Dragon Cotton Baby Socks",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Socks-3-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4078
+  },
+  {
+    "id": 1186,
+    "name": "Regular Fit Blue Vest",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/vests-kids-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2581
+  },
+  {
+    "id": 1184,
+    "name": "100% Cotton Vest for Kids",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/vests-kids-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1607
+  },
+  {
+    "id": 1182,
+    "name": "Printed Boys Vest",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/vests-kids-3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1069
+  },
+  {
+    "id": 1178,
+    "name": "Red Cotton Solid Colour Cap",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cap-Kids-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4272
+  },
+  {
+    "id": 1175,
+    "name": "Child Soft Material Cap",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cap-Kids.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2648
+  },
+  {
+    "id": 1170,
+    "name": "Boys&#8217; Innerwear Cotton Underwear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Underwear-6.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1288
+  },
+  {
+    "id": 1166,
+    "name": "Boys&#8217; Cotton Briefs",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Underwear-5.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3283
+  },
+  {
+    "id": 1159,
+    "name": "Capri Set for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/caprisets-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4785
+  },
+  {
+    "id": 1155,
+    "name": "Floral Printed Capri Set",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/caprisets-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1547
+  },
+  {
+    "id": 1152,
+    "name": "Printed Capri Set for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/caprisets-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3639
+  },
+  {
+    "id": 1149,
+    "name": "Trendy Winter Tops for Girl",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/winter-top3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1963
+  },
+  {
+    "id": 1147,
+    "name": "Red Winter Tops for Girl",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/winter-top2-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3347
+  },
+  {
+    "id": 1144,
+    "name": "Winter Tops for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/winter-top1-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4420
+  },
+  {
+    "id": 1141,
+    "name": "Printed Payjama for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Pajama2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4500
+  },
+  {
+    "id": 1139,
+    "name": "Floral Payjama for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Pajama3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3885
+  },
+  {
+    "id": 1137,
+    "name": "Payjama for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Pajama1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3991
+  },
+  {
+    "id": 1134,
+    "name": "Men Body Spray",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Body-Spray-1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1245
+  },
+  {
+    "id": 1117,
+    "name": "Men Deodorant Body Sprays",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Body-Spray-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1545
+  },
+  {
+    "id": 1130,
+    "name": "Pink Jacket with Fur",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/jacket3-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2823
+  },
+  {
+    "id": 1127,
+    "name": "Pink Jacket for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/jacket2-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 114
+  },
+  {
+    "id": 1124,
+    "name": "Jacket for Girl",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/jacket1-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 605
+  },
+  {
+    "id": 1122,
+    "name": "Sweater for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sewater3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1570
+  },
+  {
+    "id": 1120,
+    "name": "Pink Sweater for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sewater2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2870
+  },
+  {
+    "id": 1118,
+    "name": "Stripe Sweater for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sewater1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4118
+  },
+  {
+    "id": 1115,
+    "name": "Pullover for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Pullover3-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2154
+  },
+  {
+    "id": 1112,
+    "name": "Pullover for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Pullover2-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1187
+  },
+  {
+    "id": 1111,
+    "name": "Women Comfort Sandals",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sandals-9.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4992
+  },
+  {
+    "id": 1109,
+    "name": "Pink Pullover for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Pullover1-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 473
+  },
+  {
+    "id": 1107,
+    "name": "Women Stylish Sandals",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sandals-8.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 470
+  },
+  {
+    "id": 1105,
+    "name": "Tracksuit for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/tracksuit3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 604
+  },
+  {
+    "id": 1101,
+    "name": "Track Suits",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/tracksuit2-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3839
+  },
+  {
+    "id": 1098,
+    "name": "Stylish Sandals for Kids",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sandals-6.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1523
+  },
+  {
+    "id": 1097,
+    "name": "Tracksuit for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/tracksuit1-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3047
+  },
+  {
+    "id": 1093,
+    "name": "Kids Comfort Sandals",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sandals-5.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2644
+  },
+  {
+    "id": 1094,
+    "name": "Blue Printed Blanket for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Blanket3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2500
+  },
+  {
+    "id": 1090,
+    "name": "Red Blanket for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Blanket2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3992
+  },
+  {
+    "id": 1088,
+    "name": "Boys Comfort Sandals",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sandals-4.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4627
+  },
+  {
+    "id": 1087,
+    "name": "Blanket for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Blanket.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2602
+  },
+  {
+    "id": 1083,
+    "name": "Men Sport Sandals",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sandals-1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4295
+  },
+  {
+    "id": 1084,
+    "name": "Winter T-Shirt for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-shirts2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2574
+  },
+  {
+    "id": 1081,
+    "name": "Saffron Winter T-Shirt for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-shirts1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 540
+  },
+  {
+    "id": 1078,
+    "name": "Men Comfort Sport Sandals",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sandals-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4337
+  },
+  {
+    "id": 1073,
+    "name": "Boys Winter T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-shirts-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4398
+  },
+  {
+    "id": 1076,
+    "name": "Stance Core Sports Sandals",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sandals-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2355
+  },
+  {
+    "id": 1069,
+    "name": "Red Printed Pullover for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/pullover3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3293
+  },
+  {
+    "id": 1067,
+    "name": "Black Pullover for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/pullover2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1147
+  },
+  {
+    "id": 1064,
+    "name": "Pullover for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/pullover1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2682
+  },
+  {
+    "id": 1063,
+    "name": "Women Walking Shoes",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shoes-6.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 802
+  },
+  {
+    "id": 1060,
+    "name": "Women Walking Shoes",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shoes-5.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3452
+  },
+  {
+    "id": 1057,
+    "name": "Blue Jacket for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jacket3-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1840
+  },
+  {
+    "id": 1058,
+    "name": "Women Casual Shoes",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shoes-4.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1866
+  },
+  {
+    "id": 1055,
+    "name": "Men Casual Shoes",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shoes-3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 395
+  },
+  {
+    "id": 1053,
+    "name": "Orange and Blue Jacket for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jacket2-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 240
+  },
+  {
+    "id": 1047,
+    "name": "Jeans Jacket for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jacket.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4007
+  },
+  {
+    "id": 1049,
+    "name": "Men Running Sneakers",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shoes-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1123
+  },
+  {
+    "id": 1045,
+    "name": "Blue Sweater for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sweater3-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2544
+  },
+  {
+    "id": 1043,
+    "name": "Red and Blue Sweater",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sweater2-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1867
+  },
+  {
+    "id": 1040,
+    "name": "Red and Grey Sweater for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sweater1-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4846
+  },
+  {
+    "id": 1038,
+    "name": "Men Running Shoes",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shoes-1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 118
+  },
+  {
+    "id": 1036,
+    "name": "Solid Sky Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-15.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4394
+  },
+  {
+    "id": 1034,
+    "name": "White Printed Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-14.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 615
+  },
+  {
+    "id": 1032,
+    "name": "Self Design Yellow Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-13.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4272
+  },
+  {
+    "id": 1030,
+    "name": "Printed Yellow Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-12.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1022
+  },
+  {
+    "id": 1026,
+    "name": "Women Solid Red Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-11.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4220
+  },
+  {
+    "id": 1027,
+    "name": "Blazer for Ladies",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Blezzers2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4556
+  },
+  {
+    "id": 1024,
+    "name": "Blazers",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Blezzers1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1316
+  },
+  {
+    "id": 1021,
+    "name": "Blazer for Ladies",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Blezzers.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 427
+  },
+  {
+    "id": 1020,
+    "name": "Floral Printed Sleeveless Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-10.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3202
+  },
+  {
+    "id": 1015,
+    "name": "Red Printed Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-9.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 578
+  },
+  {
+    "id": 1012,
+    "name": "Gray Solid Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-8.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3692
+  },
+  {
+    "id": 987,
+    "name": "Self Design White Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-7.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3790
+  },
+  {
+    "id": 1007,
+    "name": "Ladies Tracksuit",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Track-Suit3.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3129
+  },
+  {
+    "id": 1005,
+    "name": "Black Ladies Tracksuit",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Track-Suit2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3484
+  },
+  {
+    "id": 1003,
+    "name": "Ladies Tracksuit",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Track-Suit1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3172
+  },
+  {
+    "id": 1001,
+    "name": "Jackets",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jackets3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4230
+  },
+  {
+    "id": 999,
+    "name": "Ladies Jacket",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jackets2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2950
+  },
+  {
+    "id": 997,
+    "name": "Ladies Jacket",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jackets1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2471
+  },
+  {
+    "id": 995,
+    "name": "Shawls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shawl-3jpg.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2610
+  },
+  {
+    "id": 993,
+    "name": "Ladies Shawl",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shawl-2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 669
+  },
+  {
+    "id": 991,
+    "name": "Ladies Shawl",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shawl-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1131
+  },
+  {
+    "id": 989,
+    "name": "Red Ladies Sweater",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sweter2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4161
+  },
+  {
+    "id": 986,
+    "name": "Ladies Sweater",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sweter1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3810
+  },
+  {
+    "id": 984,
+    "name": "Ladies Sweater",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sweter.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1948
+  },
+  {
+    "id": 982,
+    "name": "Pink Ladies Pullover",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/PoolOver-3.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3079
+  },
+  {
+    "id": 980,
+    "name": "Grey Ladies Pullover",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/PoolOver-2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3487
+  },
+  {
+    "id": 978,
+    "name": "Yellow Ladies Pullover",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/PoolOver-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1221
+  },
+  {
+    "id": 976,
+    "name": "Ladies Winter Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Winter-top2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 886
+  },
+  {
+    "id": 974,
+    "name": "Ladies Winter Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Winter-top1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2769
+  },
+  {
+    "id": 972,
+    "name": "Ladies Winter Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Winter-top.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2001
+  },
+  {
+    "id": 969,
+    "name": "Shawl for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sawl3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2805
+  },
+  {
+    "id": 967,
+    "name": "Shawl for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sawl2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4154
+  },
+  {
+    "id": 965,
+    "name": "Shawl for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sawl1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4610
+  },
+  {
+    "id": 963,
+    "name": "Grey Blanket",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Blankets-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2998
+  },
+  {
+    "id": 961,
+    "name": "Navy Blue Blanket",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Blankets-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2700
+  },
+  {
+    "id": 959,
+    "name": "Blankets",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Blankets-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3516
+  },
+  {
+    "id": 958,
+    "name": "Track Pant for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/track-Pant-3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4095
+  },
+  {
+    "id": 956,
+    "name": "Track Pant for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/track-Pant-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1650
+  },
+  {
+    "id": 950,
+    "name": "Track Pant for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/track-Pant-1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2628
+  },
+  {
+    "id": 948,
+    "name": "Track Suit for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/tracksuit2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1216
+  },
+  {
+    "id": 946,
+    "name": "Track Suit for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/tracksuit1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 590
+  },
+  {
+    "id": 944,
+    "name": "Woolen Cap for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Woolen-Caps3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2446
+  },
+  {
+    "id": 942,
+    "name": "Woolen Cap for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Woolen-Caps2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2665
+  },
+  {
+    "id": 940,
+    "name": "Woolen Cap for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Woolen-Caps1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4783
+  },
+  {
+    "id": 938,
+    "name": "Sweater for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sweater3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 194
+  },
+  {
+    "id": 936,
+    "name": "Sweater for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sweater2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 538
+  },
+  {
+    "id": 934,
+    "name": "Sweater for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sweater1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4295
+  },
+  {
+    "id": 932,
+    "name": "Black Jackets",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jacket3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4733
+  },
+  {
+    "id": 930,
+    "name": "Blue Jacket for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jacket2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1843
+  },
+  {
+    "id": 928,
+    "name": "Jackets for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jacket1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4109
+  },
+  {
+    "id": 926,
+    "name": "Pullovers",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/poolover2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 853
+  },
+  {
+    "id": 924,
+    "name": "Sweaters",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/poolover1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2662
+  },
+  {
+    "id": 922,
+    "name": "Pullover for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/poolover.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2577
+  },
+  {
+    "id": 534,
+    "name": "Men Sports Gym Sando",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sando-1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1295
+  },
+  {
+    "id": 920,
+    "name": "Yellow T-Shirt for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-T-Shirts-3-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 597
+  },
+  {
+    "id": 918,
+    "name": "Black Round Neck T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-T-Shirts-1-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4714
+  },
+  {
+    "id": 916,
+    "name": "Black Casual Shirt for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Shirts-7-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3584
+  },
+  {
+    "id": 914,
+    "name": "Black Stripes Shirts for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Shirts-6-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1048
+  },
+  {
+    "id": 907,
+    "name": "Casual Shirts for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Shirts-3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1702
+  },
+  {
+    "id": 903,
+    "name": "Denim Jeans for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Jeans-6-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1551
+  },
+  {
+    "id": 901,
+    "name": "Blue Faded Jeans for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Jeans-5-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4655
+  },
+  {
+    "id": 899,
+    "name": "Dark Faded Jeans for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Jeans-4-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3479
+  },
+  {
+    "id": 897,
+    "name": "Ash Faded Jeans for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Jeans-3-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2163
+  },
+  {
+    "id": 895,
+    "name": "Dark Faded Jeans for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Jeans-2-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 203
+  },
+  {
+    "id": 893,
+    "name": "Ash Colour Jeans Pant for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Jeans-1-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4243
+  },
+  {
+    "id": 889,
+    "name": "Ethnic Dress for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Girls-Ethnic-Wear-3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3330
+  },
+  {
+    "id": 887,
+    "name": "Pink Ethnic Wear for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Girls-Ethnic-Wear-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2601
+  },
+  {
+    "id": 885,
+    "name": "Kids Ethnic Wear for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/01/Kids_Ethnic_Wear.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1858
+  },
+  {
+    "id": 883,
+    "name": "Navy Blue Dangree for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Baba-Suit-3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 2443
+  },
+  {
+    "id": 881,
+    "name": "Casual Dangree for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Baba-Suit-1-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4527
+  },
+  {
+    "id": 879,
+    "name": "Dangries for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Baba-Suit-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1619
+  },
+  {
+    "id": 877,
+    "name": "Black and White Frock for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-6-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3582
+  },
+  {
+    "id": 875,
+    "name": "Yellow Dress for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-5-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1439
+  },
+  {
+    "id": 873,
+    "name": "White-Pink Top Skirt Set for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-4-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 382
+  },
+  {
+    "id": 871,
+    "name": "Black Frock for Girls",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-3-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4755
+  },
+  {
+    "id": 869,
+    "name": "Girls Frock",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-2-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3856
+  },
+  {
+    "id": 866,
+    "name": "Girls Floral Yellow Frock",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-1-3.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4403
+  },
+  {
+    "id": 864,
+    "name": "Yellow Round Neck Ladies T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-16.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1902
+  },
+  {
+    "id": 862,
+    "name": "Sleeveless Ladies Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-17.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2347
+  },
+  {
+    "id": 860,
+    "name": "Red Ladies Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-18.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4666
+  },
+  {
+    "id": 858,
+    "name": "White Ladies Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-19.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2603
+  },
+  {
+    "id": 856,
+    "name": "Ladies Round Neck Short T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-4-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2077
+  },
+  {
+    "id": 854,
+    "name": "White Round Neck Ladies T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-3-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1210
+  },
+  {
+    "id": 852,
+    "name": "Yellow Long Ethnic Skirts",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Skirts-2-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 230
+  },
+  {
+    "id": 850,
+    "name": "Long Ethnic Skirts",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Skirts-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2256
+  },
+  {
+    "id": 848,
+    "name": "Ladies Casual Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-1-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 743
+  },
+  {
+    "id": 846,
+    "name": "Ladies Ethnic Wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/01/Mbaazar_1267.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2112
+  },
+  {
+    "id": 844,
+    "name": "Red Ethnic Wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Salwar-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3430
+  },
+  {
+    "id": 842,
+    "name": "Ladies Ethnic Wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Salwar-1-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3216
+  },
+  {
+    "id": 840,
+    "name": "Ladies White Kurti",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Long-Dress-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 573
+  },
+  {
+    "id": 838,
+    "name": "White Ladies Kurta Plazo Set",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kurti-Plazo-Set-1-2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 313
+  },
+  {
+    "id": 835,
+    "name": "Kurti Palazzo Set",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kurti-Plazo-Set-2-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2961
+  },
+  {
+    "id": 831,
+    "name": "White and Red Kurti Legging Set",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kurti-Leggings-Set-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2930
+  },
+  {
+    "id": 829,
+    "name": "Red and Black Ladies Kurti Legging Set",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kurti-Leggings-Set-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1022
+  },
+  {
+    "id": 823,
+    "name": "Regular Fit Floral Ladies Kurti",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kurti-2-2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 537
+  },
+  {
+    "id": 821,
+    "name": "Ladies Regular Fit Kurti",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kurti-3-2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4052
+  },
+  {
+    "id": 819,
+    "name": "Ladies Denim Faded Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-4-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 1343
+  },
+  {
+    "id": 817,
+    "name": "Ladies Navy Blue Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-3-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 290
+  },
+  {
+    "id": 815,
+    "name": "Ladies Blue Faded Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-2-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 3072
+  },
+  {
+    "id": 811,
+    "name": "Floral Print Sleeveless Dress",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-9.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4439
+  },
+  {
+    "id": 808,
+    "name": "Yellow Floral Print Sleeveless Dress",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-7.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1473
+  },
+  {
+    "id": 806,
+    "name": "Sleeveless Long Dress for Women",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-6.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2799
+  },
+  {
+    "id": 804,
+    "name": "Contrast Stripe Dress for Women",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-5.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4936
+  },
+  {
+    "id": 802,
+    "name": "Red Full Sleeve Long Dress",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1582
+  },
+  {
+    "id": 800,
+    "name": "Printed Sleeveless Fit &#038; Flare Dress",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-2-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4242
+  },
+  {
+    "id": 797,
+    "name": "Floral Print Sleeveless Fit &#038; Flare Dress",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-8.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1866
+  },
+  {
+    "id": 795,
+    "name": "Floral Print Sleeveless Dress for Women",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-4.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2818
+  },
+  {
+    "id": 793,
+    "name": "Floral Print Flare Dress",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Frock-1-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3357
+  },
+  {
+    "id": 787,
+    "name": "Women Denim Skinny Fit Capri",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Capri-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 338
+  },
+  {
+    "id": 785,
+    "name": "Round Neck T-Shirt for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-21.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2801
+  },
+  {
+    "id": 783,
+    "name": "Round Neck T-Shirt With Contrast Stripes",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-17.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1703
+  },
+  {
+    "id": 780,
+    "name": "Blue Round Neck T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-15-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2945
+  },
+  {
+    "id": 776,
+    "name": "Red Round Neck T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-20.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3556
+  },
+  {
+    "id": 774,
+    "name": "Round Neck T-Shirt With Contrast Stripes",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-14.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 466
+  },
+  {
+    "id": 772,
+    "name": "Round Neck T-Shirt With Contrast Stripes",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-34.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2506
+  },
+  {
+    "id": 770,
+    "name": "Regular Fit Cotton Polo Collar T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-22.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4597
+  },
+  {
+    "id": 768,
+    "name": "Black Regular Fit Polo Collar T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-33.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 562
+  },
+  {
+    "id": 766,
+    "name": "Regular Fit Cotton Polo Collar T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-19.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3128
+  },
+  {
+    "id": 764,
+    "name": "Regular Fit Polo collar T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-16.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 665
+  },
+  {
+    "id": 762,
+    "name": "Red Regular Fit Polo Collar T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-18.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1074
+  },
+  {
+    "id": 760,
+    "name": "Regular Fit Polo collar T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-13.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1653
+  },
+  {
+    "id": 757,
+    "name": "Men Polo Neck Yellow T-shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-12.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 192
+  },
+  {
+    "id": 753,
+    "name": "Men Polo Neck Blue T-shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-11.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2744
+  },
+  {
+    "id": 751,
+    "name": "Polo Neck T-shirt for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-10.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 3943
+  },
+  {
+    "id": 748,
+    "name": "Round Neck T-Shirt for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-8.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4887
+  },
+  {
+    "id": 743,
+    "name": "Straight Fold Umbrella",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Umbrella-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 84
+  },
+  {
+    "id": 739,
+    "name": "Polyester Umbrella",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Umbrella-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3140
+  },
+  {
+    "id": 737,
+    "name": "Men&#8217;s Polyester Necktie",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Tie-3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4684
+  },
+  {
+    "id": 735,
+    "name": "Men&#8217;s Necktie",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Tie-1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2910
+  },
+  {
+    "id": 733,
+    "name": "Men&#8217;s Formal Tie",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Tie-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 591
+  },
+  {
+    "id": 731,
+    "name": "Premium Cotton Handkerchief",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Handkerchief-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 106
+  },
+  {
+    "id": 729,
+    "name": "Formal Cotton Handkerchief",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Handkerchief-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2838
+  },
+  {
+    "id": 724,
+    "name": "Blue Cotton Handkerchief",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Handkerchief-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2441
+  },
+  {
+    "id": 717,
+    "name": "Black Stylish Vest",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Vest-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4593
+  },
+  {
+    "id": 715,
+    "name": "Men&#8217;s Sleeveless Cotton Vest",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Vest-3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1592
+  },
+  {
+    "id": 713,
+    "name": "Men&#8217;s Solid Vest",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Vest-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4481
+  },
+  {
+    "id": 711,
+    "name": "Men&#8217;s Ankle Length",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Socks-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 534
+  },
+  {
+    "id": 709,
+    "name": "Men&#8217;s Cotton Formal Socks",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Socks-3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2971
+  },
+  {
+    "id": 707,
+    "name": "Men&#8217;s Cotton Solid Ankle Socks",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Socks-1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2142
+  },
+  {
+    "id": 705,
+    "name": "Men Cotton Brief Underwear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Underwear-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4564
+  },
+  {
+    "id": 702,
+    "name": "Men&#8217;s Cotton Trunks Underwear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Underwear-3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 108
+  },
+  {
+    "id": 700,
+    "name": "Mens Cotton Underwear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Underwear-1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 124
+  },
+  {
+    "id": 698,
+    "name": "Corporate Leather Bag",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/leather-briefcase-mens-women-office-shoulder-bag-document-messenger-bag-business-bag-executive-vip-briefcase-honey.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1767
+  },
+  {
+    "id": 696,
+    "name": "Premium Leather Laptop Bag",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Corporate-Bags-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3489
+  },
+  {
+    "id": 694,
+    "name": "Premium Leather Office Bag",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Corporate-Bags-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3052
+  },
+  {
+    "id": 692,
+    "name": "Men&#8217;s Faux Leather Belt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Belt-3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 365
+  },
+  {
+    "id": 690,
+    "name": "Reversible PU-Leather Formal Belt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Belt-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3675
+  },
+  {
+    "id": 686,
+    "name": "Stylish School Bag",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/School-Bag-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2780
+  },
+  {
+    "id": 684,
+    "name": "Solid Black School Bag",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/School-Bag-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2464
+  },
+  {
+    "id": 682,
+    "name": "Women Backpack",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/School-Bag-1.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2374
+  },
+  {
+    "id": 680,
+    "name": "High Quality Leather Wallet",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Wallets-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4722
+  },
+  {
+    "id": 678,
+    "name": "Men&#8217;s Synthetic Wallet",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Wallets-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4956
+  },
+  {
+    "id": 676,
+    "name": "Leather Men&#8217;s Wallet",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Wallets-1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2235
+  },
+  {
+    "id": 674,
+    "name": "Off White Trolley Bag",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Luggage-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2614
+  },
+  {
+    "id": 672,
+    "name": "Hard-Sided Trolley Bag",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Luggage-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1505
+  },
+  {
+    "id": 669,
+    "name": "Pink Trolley Bag",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Luggage-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3342
+  },
+  {
+    "id": 664,
+    "name": "Leather Hand Purse",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Leather-Hand-Purse-Red.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1856
+  },
+  {
+    "id": 660,
+    "name": "Leather Hand Purse (Red)",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/red.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3563
+  },
+  {
+    "id": 657,
+    "name": "Round Neck T-Shirt for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2679
+  },
+  {
+    "id": 655,
+    "name": "Blue Casual T-Shirt for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-9.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4283
+  },
+  {
+    "id": 653,
+    "name": "Round Neck T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-35.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3031
+  },
+  {
+    "id": 651,
+    "name": "Polo T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-7.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1815
+  },
+  {
+    "id": 649,
+    "name": "White and Black Round Neck T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-6.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2699
+  },
+  {
+    "id": 647,
+    "name": "White Round Neck T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-5.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 422
+  },
+  {
+    "id": 645,
+    "name": "Black Casual T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-4.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1152
+  },
+  {
+    "id": 636,
+    "name": "Short Red Kurta for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Short-Kurta-1.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1719
+  },
+  {
+    "id": 634,
+    "name": "White Regular Fit Formal Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-17.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3880
+  },
+  {
+    "id": 632,
+    "name": "Slim Fit Formal Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-16.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 899
+  },
+  {
+    "id": 630,
+    "name": "Mens Casual Wear",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2026/01/Mens_Casual_Wear.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4656
+  },
+  {
+    "id": 628,
+    "name": "Red Slim Fit Formal Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-14-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3119
+  },
+  {
+    "id": 626,
+    "name": "Dark Blue Casual Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-13.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1856
+  },
+  {
+    "id": 624,
+    "name": "Red Slim Fit Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-12.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4539
+  },
+  {
+    "id": 622,
+    "name": "Black Slim Fit Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-11.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4776
+  },
+  {
+    "id": 620,
+    "name": "Regular Fit Formal Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-10.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2871
+  },
+  {
+    "id": 618,
+    "name": "White Formal Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-9.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3326
+  },
+  {
+    "id": 616,
+    "name": "Slim Fit Formal Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-8.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4057
+  },
+  {
+    "id": 614,
+    "name": "Blue Regular Fit Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-7.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2025
+  },
+  {
+    "id": 612,
+    "name": "Slim Fit Formal Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-6.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4515
+  },
+  {
+    "id": 609,
+    "name": "Men Formal Check Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-5.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 3559
+  },
+  {
+    "id": 607,
+    "name": "Regular Fit Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-4.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1258
+  },
+  {
+    "id": 605,
+    "name": "White Printed Casual Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 337
+  },
+  {
+    "id": 603,
+    "name": "Men Slim Fit Check Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Shirts-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1698
+  },
+  {
+    "id": 601,
+    "name": "Black Stylish Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-20.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 76
+  },
+  {
+    "id": 599,
+    "name": "Men Slim Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-19.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1105
+  },
+  {
+    "id": 597,
+    "name": "Dark Blue Slim Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-18.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 43
+  },
+  {
+    "id": 595,
+    "name": "Blue Slim Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-17.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1458
+  },
+  {
+    "id": 593,
+    "name": "Black Tapered Faded Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-16.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 971
+  },
+  {
+    "id": 591,
+    "name": "Blue Faded Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-15.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3911
+  },
+  {
+    "id": 589,
+    "name": "Super Skinny Black Faded Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-14.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4762
+  },
+  {
+    "id": 587,
+    "name": "Men Blue Straight Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-13.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 3831
+  },
+  {
+    "id": 585,
+    "name": "Skinny Fit Jeans for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-12.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 94
+  },
+  {
+    "id": 583,
+    "name": "Solid Black Slim Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-11.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2421
+  },
+  {
+    "id": 581,
+    "name": "Blue Skinny Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-10.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2082
+  },
+  {
+    "id": 579,
+    "name": "Men Regular Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-9.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1915
+  },
+  {
+    "id": 577,
+    "name": "Skinny Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-8.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2520
+  },
+  {
+    "id": 575,
+    "name": "Men Denim Straight Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-7.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2478
+  },
+  {
+    "id": 573,
+    "name": "Men Tapered Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-6.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4386
+  },
+  {
+    "id": 569,
+    "name": "Gray Regular Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-4.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2758
+  },
+  {
+    "id": 567,
+    "name": "Skinny Fit Jeans for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2213
+  },
+  {
+    "id": 565,
+    "name": "Denim Skinny Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4583
+  },
+  {
+    "id": 563,
+    "name": "Black Skinny Fit Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-1-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 755
+  },
+  {
+    "id": 561,
+    "name": "Gray Slim Fit Formal Trouser",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cotton-Trousers-10.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4630
+  },
+  {
+    "id": 559,
+    "name": "Black Fancy Formal Trouser",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cotton-Trousers-9.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 331
+  },
+  {
+    "id": 557,
+    "name": "Blue Slim Fit Formal Trouser",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cotton-Trousers-8.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4203
+  },
+  {
+    "id": 555,
+    "name": "Black Slim Fit Formal Trouser",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cotton-Trousers-7.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1207
+  },
+  {
+    "id": 553,
+    "name": "Regular Fit Formal Trouser for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cotton-Trousers-6.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1635
+  },
+  {
+    "id": 551,
+    "name": "Regular Fit Formal Trouser",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cotton-Trousers-5.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2878
+  },
+  {
+    "id": 549,
+    "name": "Slim Fit Formal Trouser",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cotton-Trousers-4.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4424
+  },
+  {
+    "id": 547,
+    "name": "Beige Formal Trouser",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cotton-Trousers-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2641
+  },
+  {
+    "id": 545,
+    "name": "White Straight Fit Trouser",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cotton-Trousers-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3864
+  },
+  {
+    "id": 543,
+    "name": "Blue Straight Fit Trouser",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Cotton-Trousers-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2685
+  },
+  {
+    "id": 538,
+    "name": "Blue Sports  Sando",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sando-4.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 645
+  },
+  {
+    "id": 536,
+    "name": "Orange Sports Sando",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Sando-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3010
+  },
+  {
+    "id": 532,
+    "name": "Red Slim Fit Casual Shirt for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Casual-Shirts-2.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1196
+  },
+  {
+    "id": 530,
+    "name": "Slim Fit Casual Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Casual-Shirts-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2901
+  },
+  {
+    "id": 527,
+    "name": "White Stripes Sport Bermuda",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Bermuda-2.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3955
+  },
+  {
+    "id": 525,
+    "name": "Black Sports Bermuda",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Bermuda-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3192
+  },
+  {
+    "id": 450,
+    "name": "Boys Red Hooded Half Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Shirts-4-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3427
+  },
+  {
+    "id": 448,
+    "name": "Boys Hooded Half Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kids-Shirts-2.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1751
+  },
+  {
+    "id": 446,
+    "name": "Ladies Jacket",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/ladies-jacket.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 2432
+  },
+  {
+    "id": 428,
+    "name": "Boys 3 Quarter Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/3-Quarter.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3951
+  },
+  {
+    "id": 422,
+    "name": "Boys Red Kurta With Payjama",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kurta-Payjama-2-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3263
+  },
+  {
+    "id": 420,
+    "name": "Kurta Payjama For Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kurta-Payjama-1-1.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 3673
+  },
+  {
+    "id": 414,
+    "name": "Dark Sleeveless Floral Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-6.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2279
+  },
+  {
+    "id": 411,
+    "name": "Sleeveless Floral Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-5-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4039
+  },
+  {
+    "id": 409,
+    "name": "Sleeveless Solid Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-4.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3105
+  },
+  {
+    "id": 407,
+    "name": "Black Stylish Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-3.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2113
+  },
+  {
+    "id": 405,
+    "name": "Floral Tops",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-2-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4566
+  },
+  {
+    "id": 403,
+    "name": "Floral Printed Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2738
+  },
+  {
+    "id": 400,
+    "name": "Sleve-Less Stylish Top",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Top-20-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 3901
+  },
+  {
+    "id": 397,
+    "name": "Round Neck T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Girls-Wear.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2406
+  },
+  {
+    "id": 389,
+    "name": "Ethnic Women Brown Kurti",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Kurti-1-2.jpg",
+    "category": "Women",
+    "featured": false,
+    "items_sold": 4837
+  },
+  {
+    "id": 378,
+    "name": "Faded Denim Jeans",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Jeans-1-1.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 4561
+  },
+  {
+    "id": 353,
+    "name": "Pink Sweater",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sweatr.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 1521
+  },
+  {
+    "id": 349,
+    "name": "Leather Belt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/belt.jpg",
+    "category": "Accessories",
+    "featured": false,
+    "items_sold": 2194
+  },
+  {
+    "id": 345,
+    "name": "Boys T-Shirt",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts-.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 4386
+  },
+  {
+    "id": 328,
+    "name": "Men Black &#038; White Bermuda Shorts",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/barmooda.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 478
+  },
+  {
+    "id": 326,
+    "name": "Solid Men Three Fourths",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Bermuda-3.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 2810
+  },
+  {
+    "id": 324,
+    "name": "Solid Men Red Track Pant",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/Payjama.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 1253
+  },
+  {
+    "id": 316,
+    "name": "Round Neck T-Shirt for Men",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/T-Shirts.jpg",
+    "category": "Men",
+    "featured": false,
+    "items_sold": 4392
+  },
+  {
+    "id": 312,
+    "name": "Sweater for Boys",
+    "image": "https://www.mbaazar.in/wp-content/uploads/2020/10/sweater-for-boys.jpg",
+    "category": "Kids",
+    "featured": false,
+    "items_sold": 1250
+  }
+]

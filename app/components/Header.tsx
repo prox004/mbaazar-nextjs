@@ -31,7 +31,7 @@ export default function Header() {
   const menuItems = [
     { name: "Products", isDropdown: true, categories: ["Menswear", "Ladieswear", "Kidswear", "Accessories"] },
     { name: "Outlets", href: "#outlets" },
-    { name: "Blogs", href: "#blogs" },
+    { name: "Blogs", href: "/blog" },
   ];
 
   const rightMenuItems = [
@@ -98,23 +98,32 @@ export default function Header() {
             <div key={item.name} className="relative group py-2">
               {item.isDropdown ? (
                 <>
-                  <button className="flex items-center gap-1 text-sm font-medium tracking-wide transition-colors hover:text-red-600 cursor-pointer">
+                  <Link href="/shop" className="flex items-center gap-1 text-sm font-medium tracking-wide transition-colors hover:text-red-600 cursor-pointer">
                     {item.name}
                     <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                     </svg>
-                  </button>
+                  </Link>
                   {/* Dropdown Menu */}
                   <div className="absolute left-0 mt-2 w-48 bg-white border border-zinc-150 rounded-sm py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
-                    {item.categories?.map((cat) => (
-                      <Link
-                        key={cat}
-                        href={`#${cat.toLowerCase()}`}
-                        className="block px-4 py-2.5 text-xs tracking-wide text-zinc-700 hover:bg-zinc-50 hover:text-red-600 transition-colors"
-                      >
-                        {cat}
-                      </Link>
-                    ))}
+                    {item.categories?.map((cat) => {
+                      const categoryMapping: { [key: string]: string } = {
+                        Menswear: "Men",
+                        Ladieswear: "Women",
+                        Kidswear: "Kids",
+                        Accessories: "Accessories",
+                      };
+                      const paramVal = categoryMapping[cat] || cat;
+                      return (
+                        <Link
+                          key={cat}
+                          href={`/shop?category=${paramVal}`}
+                          className="block px-4 py-2.5 text-xs tracking-wide text-zinc-700 hover:bg-zinc-50 hover:text-red-600 transition-colors"
+                        >
+                          {cat}
+                        </Link>
+                      );
+                    })}
                   </div>
                 </>
               ) : (
@@ -218,18 +227,33 @@ export default function Header() {
           <div className="mt-8 space-y-6">
             {/* Products Section with Sub-categories */}
             <div className="space-y-3">
-              <p className="text-xs font-bold tracking-wide text-zinc-400">Products</p>
+              <Link
+                href="/shop"
+                onClick={() => setIsMenuOpen(false)}
+                className="block text-xs font-bold tracking-wide text-zinc-400 hover:text-red-600 transition-colors mb-2"
+              >
+                Products
+              </Link>
               <div className="pl-4 space-y-3 border-l-2 border-zinc-100">
-                {menuItems[0].categories?.map((cat) => (
-                  <Link
-                    key={cat}
-                    href={`#${cat.toLowerCase()}`}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="block text-sm font-semibold tracking-wide text-zinc-800 hover:text-red-600 transition-colors"
-                  >
-                    {cat}
-                  </Link>
-                ))}
+                {menuItems[0].categories?.map((cat) => {
+                  const categoryMapping: { [key: string]: string } = {
+                    Menswear: "Men",
+                    Ladieswear: "Women",
+                    Kidswear: "Kids",
+                    Accessories: "Accessories",
+                  };
+                  const paramVal = categoryMapping[cat] || cat;
+                  return (
+                    <Link
+                      key={cat}
+                      href={`/shop?category=${paramVal}`}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="block text-sm font-semibold tracking-wide text-zinc-800 hover:text-red-600 transition-colors"
+                    >
+                      {cat}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
 

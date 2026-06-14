@@ -40,14 +40,20 @@ const originalSlides: Slide[] = [
   },
 ];
 
-// For infinite loop: duplicate [Last Slide, Slide 1, Slide 2, Slide 3, First Slide]
+// For infinite center-peeking loop: duplicate [Last 2 slides, ...originalSlides, First 2 slides]
 const slides: Slide[] = [
+  originalSlides[originalSlides.length - 2],
   originalSlides[originalSlides.length - 1],
   ...originalSlides,
   originalSlides[0],
+  originalSlides[1],
 ];
 
-const INITIAL_INDEX = 1; // Corresponds to originalSlides[0]
+const INITIAL_INDEX = 2; // Corresponds to originalSlides[0] (Slide 1)
+
+// Configure Slide Speed & Timers here
+const TRANSITION_DURATION = 700; // Slide transition duration in milliseconds
+const AUTOPLAY_INTERVAL = 2500;  // Autoplay delay in milliseconds
 
 interface HeroProps {
   showText?: boolean;
@@ -56,6 +62,7 @@ interface HeroProps {
 export default function Hero({ showText = false }: HeroProps) {
   const [currentIndex, setCurrentIndex] = useState(INITIAL_INDEX);
   const [isTransitioning, setIsTransitioning] = useState(true);
+  const [isAnimating, setIsAnimating] = useState(false);
   const [dragOffset, setDragOffset] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
 
@@ -69,7 +76,7 @@ export default function Hero({ showText = false }: HeroProps) {
     stopAutoplay();
     autoplayTimer.current = setInterval(() => {
       handleNext();
-    }, 5000);
+    }, AUTOPLAY_INTERVAL);
   };
 
   const stopAutoplay = () => {
@@ -84,37 +91,54 @@ export default function Hero({ showText = false }: HeroProps) {
   }, [currentIndex]);
 
   const handleNext = () => {
-    if (isTransitioning) {
-      setIsTransitioning(true);
-      setCurrentIndex((prev) => prev + 1);
-    }
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setIsTransitioning(true);
+    setCurrentIndex((prev) => prev + 1);
+
+    // Safety fallback to release animation lock even if onTransitionEnd does not fire (e.g. background tab)
+    const timer = setTimeout(() => {
+      setIsAnimating(false);
+    }, TRANSITION_DURATION + 200);
   };
 
   const handlePrev = () => {
-    if (isTransitioning) {
-      setIsTransitioning(true);
-      setCurrentIndex((prev) => prev - 1);
-    }
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setIsTransitioning(true);
+    setCurrentIndex((prev) => prev - 1);
+
+    // Safety fallback to release animation lock
+    const timer = setTimeout(() => {
+      setIsAnimating(false);
+    }, TRANSITION_DURATION + 200);
   };
 
   // Instantly jump to virtual counterpart when completing transitions at bounds
-  const handleTransitionEnd = () => {
-    if (currentIndex === 0) {
+  const handleTransitionEnd = (e: React.TransitionEvent) => {
+    // Only handle transition end of the track container itself, ignore bubbling events from children
+    if (e.target !== e.currentTarget) return;
+
+    if (currentIndex === 1) {
       setIsTransitioning(false);
-      setCurrentIndex(slides.length - 2);
-    } else if (currentIndex === slides.length - 1) {
+      setCurrentIndex(4);
+    } else if (currentIndex === 5) {
       setIsTransitioning(false);
-      setCurrentIndex(1);
+      setCurrentIndex(2);
+    } else {
+      setIsAnimating(false);
     }
   };
 
   // Turn transitions back on after jumping
   useEffect(() => {
     if (!isTransitioning) {
-      // Force repaint, then re-enable transition
-      setTimeout(() => {
+      // Force repaint, then re-enable transition and release animation lock
+      const timer = setTimeout(() => {
         setIsTransitioning(true);
+        setIsAnimating(false);
       }, 50);
+      return () => clearTimeout(timer);
     }
   }, [isTransitioning]);
 
@@ -124,6 +148,7 @@ export default function Hero({ showText = false }: HeroProps) {
     isDraggingRef.current = true;
     dragStartX.current = e.touches[0].clientX;
     setIsDragging(true);
+    setIsAnimating(false); // Allow swiping to override/cancel current animation lock
   };
 
   const handleTouchMove = (e: React.TouchEvent) => {
@@ -143,6 +168,7 @@ export default function Hero({ showText = false }: HeroProps) {
     isDraggingRef.current = true;
     dragStartX.current = e.clientX;
     setIsDragging(true);
+    setIsAnimating(false); // Allow swiping to override/cancel current animation lock
   };
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -163,6 +189,10 @@ export default function Hero({ showText = false }: HeroProps) {
       handleNext();
     } else if (dragOffset > threshold) {
       handlePrev();
+    } else {
+      // Snap back smoothly
+      setIsTransitioning(true);
+      setDragOffset(0);
     }
     setDragOffset(0);
     startAutoplay();
@@ -170,14 +200,14 @@ export default function Hero({ showText = false }: HeroProps) {
 
   // Get active slide index relative to the original array (0, 1, 2)
   const getActiveIndicatorIndex = () => {
-    if (currentIndex === 0) return originalSlides.length - 1;
-    if (currentIndex === slides.length - 1) return 0;
-    return currentIndex - 1;
+    // slides list is [S2, S3, S1, S2, S3, S1, S2]
+    const relativeIndices = [1, 2, 0, 1, 2, 0, 1];
+    return relativeIndices[currentIndex] ?? 0;
   };
 
   const activeIndicatorIndex = getActiveIndicatorIndex();
 
-  // Slide Layout Constants (Exactly 15% peeking visible on left and right)
+  // Slide Layout Constants (Exactly 10% peeking visible on left and right)
   const slideWidthPercent = 80;
   const peekPercent = 10;
 
@@ -205,10 +235,10 @@ export default function Hero({ showText = false }: HeroProps) {
         onMouseLeave={handleMouseUp}
       >
         <div
-          className={`flex w-full h-full items-center ${isTransitioning && !isDragging ? "transition-transform duration-700 ease-out" : ""
-            }`}
+          className="flex w-full h-full items-center"
           style={{
             transform: `translateX(${finalTranslate}%)`,
+            transition: isTransitioning && !isDragging ? `transform ${TRANSITION_DURATION}ms ease-out` : "none",
           }}
           onTransitionEnd={handleTransitionEnd}
         >
@@ -219,12 +249,15 @@ export default function Hero({ showText = false }: HeroProps) {
             return (
               <div
                 key={`${slide.id}-${idx}`}
-                className="h-full flex-shrink-0 flex items-center justify-center px-1 transition-all duration-700"
-                style={{ width: `${slideWidthPercent}%` }}
+                className="h-full flex-shrink-0 flex items-center justify-center px-1"
+                style={{
+                  width: `${slideWidthPercent}%`,
+                  transition: isTransitioning && !isDragging ? `all ${TRANSITION_DURATION}ms ease-out` : "none",
+                }}
               >
                 {/* Individual Slide Box */}
                 <div
-                  className={`w-full h-full relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg bg-zinc-50 flex flex-col justify-end transition-all duration-700 ${isActive
+                  className={`w-full h-full relative rounded-2xl md:rounded-3xl overflow-hidden shadow-lg bg-zinc-50 flex flex-col justify-end ${isActive
                     ? "scale-100 opacity-100 translate-x-0"
                     : isLeft
                       ? "scale-90 opacity-70 md:scale-85 translate-x-4 md:translate-x-10"
@@ -232,6 +265,9 @@ export default function Hero({ showText = false }: HeroProps) {
                         ? "scale-90 opacity-70 md:scale-85 -translate-x-4 md:-translate-x-10"
                         : "scale-90 opacity-70 md:scale-85 translate-x-0"
                     }`}
+                  style={{
+                    transition: isTransitioning && !isDragging ? `all ${TRANSITION_DURATION}ms ease-out` : "none",
+                  }}
                 >
                   {/* Campaign Image */}
                   <Image
@@ -245,15 +281,19 @@ export default function Hero({ showText = false }: HeroProps) {
 
                   {/* Soft Red Overlay for Inactive Slides */}
                   <div
-                    className={`absolute inset-0 bg-red-600/80 pointer-events-none transition-opacity duration-700 ${isActive ? "opacity-0" : "opacity-100"
-                      }`}
+                    className={`absolute inset-0 bg-red-600/80 pointer-events-none ${isActive ? "opacity-0" : "opacity-100"}`}
+                    style={{
+                      transition: isTransitioning && !isDragging ? `opacity ${TRANSITION_DURATION}ms ease-out` : "none",
+                    }}
                   />
 
                   {/* Slide Content Overlay */}
                   {showText && (
                     <div
-                      className={`absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent p-6 sm:p-12 flex flex-col justify-end text-white transition-opacity duration-500 ${isActive ? "opacity-100" : "opacity-0 pointer-events-none"
-                        }`}
+                      className={`absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent p-6 sm:p-12 flex flex-col justify-end text-white ${isActive ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+                      style={{
+                        transition: isTransitioning && !isDragging ? `opacity ${Math.round(TRANSITION_DURATION * 0.7)}ms ease-out` : "none",
+                      }}
                     >
                       <div className="max-w-xl space-y-2 sm:space-y-4">
                         <h2 className="text-2xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight leading-tight">
@@ -278,6 +318,7 @@ export default function Hero({ showText = false }: HeroProps) {
             );
           })}
         </div>
+
 
         {/* Desktop Arrow Navigation (Smaller premium circular design) */}
         <button
@@ -321,7 +362,15 @@ export default function Hero({ showText = false }: HeroProps) {
             {originalSlides.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index + 1)}
+                onClick={() => {
+                  if (isAnimating) return;
+                  setIsAnimating(true);
+                  setIsTransitioning(true);
+                  setCurrentIndex(index + 2);
+                  setTimeout(() => {
+                    setIsAnimating(false);
+                  }, 900);
+                }}
                 className="w-2 h-2 bg-zinc-200 rounded-full focus:outline-none transition-colors duration-300"
                 aria-label={`Go to slide ${index + 1}`}
               />
