@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Marquee,
   MarqueeContent,
@@ -6,6 +7,7 @@ import {
 } from "@/components/kibo-ui/marquee";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Store, ShieldCheck, HeartHandshake, Award } from "lucide-react";
 
 interface aboutProps {
   className?: string;
@@ -46,169 +48,200 @@ interface aboutProps {
 const about = ({
   className,
   title = "About Us",
-  description = "We are a passionate team dedicated to creating innovative solutions that empower businesses to thrive in the digital age. With years of experience in design and development, we craft beautiful, accessible components that help teams build faster.",
-  mainImage = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-MChSQHxGZrQ-unsplash.jpg",
-    alt: "about",
-  },
-  secondaryImage = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/annie-spratt-AkftcHujUmk-unsplash.jpg",
-    alt: "about",
-  },
-  breakout = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-    alt: "logo",
-    title: "Hundreds of blocks at Shadcnblocks.com",
-    description:
-      "Providing businesses with effective tools to improve workflows, boost efficiency, and encourage growth.",
-    buttonText: "Discover more",
-    buttonUrl: "https://www.shadcnblocks.com",
-  },
-  companies = [
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-1.svg",
-      alt: "Arc",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-2.svg",
-      alt: "Descript",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-3.svg",
-      alt: "Mercury",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-4.svg",
-      alt: "Ramp",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-5.svg",
-      alt: "Retool",
-    },
-    {
-      src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/company/fictional-company-logo-6.svg",
-      alt: "Watershed",
-    },
-  ],
-  achievementsTitle = "Our Achievements in Numbers",
-  achievementsDescription = "Providing businesses with effective tools to improve workflows, boost efficiency, and encourage growth.",
-  achievements = [
-    { label: "Companies ", value: "300+" },
-    { label: "Projects Finalized", value: "800+" },
-    { label: "Happy Customers", value: "99%" },
-    { label: "Recognized Awards", value: "10+" },
-  ],
-  contentSections = [
-    {
-      title: "Our Vision",
-      content:
-        "For years, the process of building custom software has remained challenging. Today, visual builders exist, but tailored solutions still require technical expertise and a lot of time. This is a problem for businesses and individuals alike.\n\nWhat if you could create custom software without writing a single line of code? What if you could build your own tools.\n\nWith our platform, you can! Our tools let you design layouts and create functionality—all without needing to code.\n\nWe believe that everyone should be able to build their own solutions, regardless of their technical background.",
-    },
-    {
-      title: "Our Creators",
-      content:
-        "Our company has been building web tools for over a decade, focusing on efficiency and user control in every project. We know that the best solutions are the ones that you can create yourself.\n\nWe initially developed these solutions for our own team, and now everyone can benefit from them too. We are proud to offer a platform that is accessible to all, regardless of technical expertise.\n\nOur team is made up of talented individuals who are passionate about creating tools that empower users to build their own solutions with ease. We are dedicated to helping you achieve your goals.",
-    },
-  ],
+  description,
+  mainImage,
+  secondaryImage,
+  breakout,
+  companies,
+  achievementsTitle,
+  achievementsDescription,
+  achievements = [],
+  contentSections = [],
 }: aboutProps) => {
+  // Map icons for values
+  const icons = [
+    <ShieldCheck key="value-1" className="w-8 h-8 text-red-600" />,
+    <Store key="value-2" className="w-8 h-8 text-red-600" />,
+    <HeartHandshake key="value-3" className="w-8 h-8 text-red-600" />,
+    <Award key="value-4" className="w-8 h-8 text-red-600" />,
+  ];
+
   return (
-    <section className={cn("py-32", className)}>
-      <div className="container">
-        <div className="mb-14 flex flex-col gap-5 lg:w-2/3">
-          <h1 className="text-5xl font-semibold tracking-tighter lg:text-6xl">
+    <section className={cn("py-16 sm:py-24 bg-white text-zinc-900 w-full overflow-hidden", className)}>
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Hero Header Section */}
+        <div className="mb-16 flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-zinc-950 leading-tight">
             {title}
           </h1>
-          <p className="text-lg text-muted-foreground md:text-xl">
+          <p className="text-lg text-zinc-600 leading-relaxed font-normal">
             {description}
           </p>
         </div>
-        <div className="grid gap-7 lg:grid-cols-3">
-          <img
-            src={mainImage.src}
-            alt={mainImage.alt}
-            className="size-full max-h-[620px] rounded-xl object-cover lg:col-span-2"
-          />
-          <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
-            <div className="flex flex-col justify-between gap-6 rounded-xl bg-muted p-7 md:w-1/2 lg:w-auto">
-              <img
-                src={breakout.src}
-                alt={breakout.alt}
-                className="mr-auto h-12 dark:invert"
-              />
-              <div>
-                <p className="mb-2 text-lg font-semibold">{breakout.title}</p>
-                <p className="text-muted-foreground">{breakout.description}</p>
-              </div>
-              <Button variant="outline" className="mr-auto" asChild>
-                <a href={breakout.buttonUrl} target="_blank">
-                  {breakout.buttonText}
-                </a>
-              </Button>
-            </div>
+
+        {/* Images and Highlight Banner */}
+        <div className="grid gap-8 lg:grid-cols-3 mb-24">
+          <div className="lg:col-span-2 overflow-hidden rounded-2xl border border-zinc-100 shadow-sm">
             <img
-              src={secondaryImage.src}
-              alt={secondaryImage.alt}
-              className="grow basis-0 rounded-xl object-cover md:w-1/2 lg:min-h-0 lg:w-auto"
+              src={mainImage.src}
+              alt={mainImage.alt}
+              className="size-full min-h-[350px] max-h-[500px] object-cover hover:scale-102 transition-transform duration-500"
             />
           </div>
-        </div>
-        {companies && (
-          <div className="py-32">
-            <Marquee>
-              <MarqueeContent speed={40}>
-                {companies.map((company, idx) => (
-                  <MarqueeItem
-                    key={company.src + idx}
-                    className="mx-8 flex items-center"
-                  >
-                    <img
-                      src={company.src}
-                      alt={company.alt}
-                      className="h-7 w-auto md:h-8 dark:invert"
-                    />
-                  </MarqueeItem>
-                ))}
-              </MarqueeContent>
-              <MarqueeFade side="left" />
-              <MarqueeFade side="right" />
-            </Marquee>
-          </div>
-        )}
-        <div className="relative overflow-hidden rounded-xl bg-muted p-7 md:p-16">
-          <div className="flex flex-col gap-4 text-center md:text-left">
-            <h2 className="text-3xl font-medium md:text-4xl">
-              {achievementsTitle}
-            </h2>
-            <p className="max-w-xl text-muted-foreground">
-              {achievementsDescription}
-            </p>
-          </div>
-          <div className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 md:flex md:flex-wrap md:justify-between">
-            {achievements.map((item, idx) => (
-              <div
-                className="flex flex-col gap-2 text-center md:text-left"
-                key={item.label + idx}
-              >
-                <span className="font-mono text-4xl font-semibold md:text-5xl">
-                  {item.value}
-                </span>
-                <p className="text-sm md:text-base">{item.label}</p>
+          <div className="flex flex-col gap-8 md:flex-row lg:flex-col">
+            {/* Spotlight / Breakout Card */}
+            <div className="flex flex-col justify-between gap-6 rounded-2xl bg-red-50/60 border border-red-100 p-8 md:w-1/2 lg:w-auto shadow-sm">
+              <div className="flex items-center gap-4">
+                {breakout.src && (
+                  <img
+                    src={breakout.src}
+                    alt={breakout.alt}
+                    className="h-10 w-auto object-contain"
+                  />
+                )}
               </div>
-            ))}
-          </div>
-        </div>
-        {contentSections && contentSections.length > 0 && (
-          <div className="mx-auto grid max-w-5xl gap-16 py-28 md:grid-cols-2 md:gap-28">
-            {contentSections.map((section, idx) => (
-              <div key={section.title + idx}>
-                <h2 className="mb-5 text-4xl font-medium">{section.title}</h2>
-                <p className="text-lg leading-7 whitespace-pre-line text-muted-foreground">
-                  {section.content}
+              <div>
+                <p className="mb-2 text-xl font-extrabold text-zinc-900 tracking-tight">
+                  {breakout.title}
+                </p>
+                <p className="text-sm text-zinc-600 leading-relaxed">
+                  {breakout.description}
                 </p>
               </div>
-            ))}
+              {breakout.buttonText && (
+                <Button variant="default" className="mr-auto bg-red-600 hover:bg-red-700 text-white rounded-xl px-6 py-2.5 font-medium tracking-wide" asChild>
+                  <a href={breakout.buttonUrl}>
+                    {breakout.buttonText}
+                  </a>
+                </Button>
+              )}
+            </div>
+            <div className="grow basis-0 overflow-hidden rounded-2xl border border-zinc-100 shadow-sm md:w-1/2 lg:min-h-0 lg:w-auto">
+              <img
+                src={secondaryImage.src}
+                alt={secondaryImage.alt}
+                className="size-full min-h-[200px] object-cover hover:scale-102 transition-transform duration-500"
+              />
+            </div>
           </div>
-        )}
+        </div>
+
+        {/* Marquee Banner */}
+
+        {/* Achievements / Statistics Section */}
+        <div className="relative overflow-hidden rounded-2xl bg-zinc-950 text-white p-8 md:p-16 shadow-xl">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-12">
+            <div className="flex flex-col gap-4 max-w-xl">
+              <span className="text-[11px] uppercase tracking-[0.35em] font-semibold text-red-500">
+                Key Indicators
+              </span>
+              <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl text-white">
+                {achievementsTitle}
+              </h2>
+              <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
+                {achievementsDescription}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-x-12 gap-y-8 lg:w-auto">
+              {achievements.map((item, idx) => (
+                <div
+                  className="flex flex-col gap-1"
+                  key={item.label + idx}
+                >
+                  <span className="font-black text-4xl sm:text-5xl text-red-500 tracking-tight">
+                    {item.value}
+                  </span>
+                  <p className="text-xs uppercase tracking-widest text-zinc-400 font-semibold">{item.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Main Editorial Content Sections */}
+        {contentSections && contentSections.length > 0 && (() => {
+          const overview = contentSections.find(s => s.title.toLowerCase().includes("overview")) || contentSections[0];
+          const values = contentSections.find(s => s.title.toLowerCase().includes("value")) || contentSections[1];
+          const management = contentSections.find(s => s.title.toLowerCase().includes("desk") || s.title.toLowerCase().includes("management")) || contentSections[2];
+
+          return (
+            <div className="my-24 flex flex-col gap-8">
+              {/* Overview and Our Values - Two Columns */}
+              <div className="grid gap-8 lg:grid-cols-2 items-stretch">
+                {overview && (
+                  <div className="flex flex-col gap-6 p-8 sm:p-10 rounded-2xl bg-zinc-50/40 border border-red-500 shadow-xs justify-between">
+                    <div>
+                      <h2 className="text-3xl font-black text-zinc-950 tracking-tight flex items-center gap-3 mb-6">
+                        <span className="w-1.5 h-6 bg-red-600 rounded-full inline-block" />
+                        {overview.title}
+                      </h2>
+                      <p className="text-zinc-600 leading-relaxed whitespace-pre-line text-sm sm:text-base">
+                        {overview.content}
+                      </p>
+                    </div>
+                  </div>
+                )}
+
+                {values && (
+                  <div className="flex flex-col gap-6 p-8 sm:p-10 rounded-2xl bg-zinc-50/40 border border-red-500 shadow-xs justify-between">
+                    <div>
+                      <h2 className="text-3xl font-black text-zinc-950 tracking-tight flex items-center gap-3 mb-6">
+                        <span className="w-1.5 h-6 bg-red-600 rounded-full inline-block" />
+                        {values.title}
+                      </h2>
+                      <div className="flex flex-col gap-6">
+                        {values.content.split("\n\n").map((valText, valIdx) => {
+                          const parts = valText.split(":");
+                          const titlePart = parts[0]?.trim();
+                          const descPart = parts.slice(1).join(":")?.trim();
+                          return (
+                            <div key={valIdx} className="flex gap-4 items-start">
+                              <div className="mt-1 p-2 bg-white rounded-xl border border-red-500 shadow-sm flex-shrink-0">
+                                {icons[valIdx % icons.length]}
+                              </div>
+                              <div>
+                                <p className="font-bold text-zinc-900">{titlePart}</p>
+                                {descPart && <p className="text-sm text-zinc-600 mt-1 leading-relaxed">{descPart}</p>}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Management Desk - Full Width Row */}
+              {management && (
+                <div className="flex flex-col md:flex-row gap-8 items-center md:items-stretch bg-zinc-50/40 border border-red-500 rounded-2xl p-8 sm:p-10 shadow-xs">
+                  <div className="w-full md:w-[25%] max-w-[320px] flex-shrink-0 overflow-hidden rounded-xl border border-zinc-200 shadow-sm bg-white">
+                    <img
+                      src="https://www.mbaazar.in/wp-content/uploads/2021/01/Sanjay-Saraf-1.jpg"
+                      alt="Mr. Sanjay Saraf - CMD & Founder"
+                      className="w-full h-full object-cover aspect-[3/4]"
+                    />
+                  </div>
+                  <div className="flex-1 flex flex-col justify-center gap-6">
+                    <h2 className="text-3xl font-black text-zinc-950 tracking-tight flex items-center gap-3">
+                      <span className="w-1.5 h-6 bg-red-600 rounded-full inline-block" />
+                      {management.title}
+                    </h2>
+                    <p className="text-zinc-600 leading-relaxed whitespace-pre-line text-sm sm:text-base">
+                      {management.content}
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })()}
+
+
+
       </div>
     </section>
   );

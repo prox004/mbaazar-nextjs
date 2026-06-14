@@ -28,7 +28,10 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const [apiReady, setApiReady] = useState(false);
+  const [isSectionInView, setIsSectionInView] = useState(false);
+  const [activeVideoReady, setActiveVideoReady] = useState(false);
   const originalCountRef = useRef(0);
+  const sectionRef = useRef<HTMLDivElement>(null);
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
@@ -39,6 +42,30 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
   });
 
   const playerRef = useRef<any>(null);
+
+  // Intersection Observer for viewport detection
+  useEffect(() => {
+    if (loading) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsSectionInView(entry.isIntersecting);
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, [loading]);
 
   // Detect Mobile Viewport
   useEffect(() => {
@@ -110,7 +137,19 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
 
   // YouTube Player Instance creation on active slide change
   useEffect(() => {
-    if (loading || reels.length === 0 || !apiReady) return;
+    // Reset video ready state when slide or view state changes
+    setActiveVideoReady(false);
+
+    if (loading || reels.length === 0 || !apiReady || !isSectionInView) {
+      // Destroy active player if section is not in view
+      if (playerRef.current) {
+        try {
+          playerRef.current.destroy();
+        } catch (e) { }
+        playerRef.current = null;
+      }
+      return;
+    }
 
     const activeCode = reels[selectedIndex]?.shortcode;
     if (!activeCode) return;
@@ -144,6 +183,9 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
         },
         events: {
           onStateChange: (event: any) => {
+            if (event.data === 1) {
+              setActiveVideoReady(true);
+            }
             // YT.PlayerState.ENDED is 0
             if (event.data === 0 && emblaApi && autoGotoNextSlide) {
               emblaApi.scrollNext();
@@ -153,6 +195,7 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
             // Unmute and auto play with full audio on ready
             event.target.unMute();
             event.target.playVideo();
+            setActiveVideoReady(true);
           },
         },
       });
@@ -167,7 +210,7 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
         playerRef.current = null;
       }
     };
-  }, [selectedIndex, emblaApi, loading, reels, apiReady, autoGotoNextSlide]);
+  }, [selectedIndex, emblaApi, loading, reels, apiReady, autoGotoNextSlide, isSectionInView]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -269,7 +312,7 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
   }
 
   return (
-    <section className="px-10 mb-10 bg-white text-black w-full overflow-hidden">
+    <section ref={sectionRef} className="px-10 mb-10 bg-white text-black w-full overflow-hidden">
       <div className="w-full px-4 sm:px-6 lg:px-12">
         {/* Header Section */}
         <div className="text-center mb-12 space-y-3">
@@ -337,10 +380,30 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
                         {/* Active iframe video player or thumbnail fallback */}
                         {isActive ? (
                           <div className="w-full h-full relative overflow-hidden z-20">
-                            <div
-                              id={`yt-player-${code}`}
-                              className="w-full h-full border-0 absolute inset-0 scale-[1] origin-center"
-                            />
+                            {/* Wrapper div managed by React */}
+                            <div className={`w-full h-full transition-opacity duration-500 ${
+                              activeVideoReady ? "opacity-100" : "opacity-0"
+                            }`}>
+                              <div
+                                id={`yt-player-${code}`}
+                                className="w-full h-full border-0 absolute inset-0 scale-[1] origin-center"
+                              />
+                            </div>
+                            {!activeVideoReady && (
+                              <div className="absolute inset-0 z-10 flex items-center justify-center bg-zinc-950 pointer-events-none">
+                                <img
+                                  src={`https://img.youtube.com/vi/${code}/hqdefault.jpg`}
+                                  alt=""
+                                  className="absolute inset-0 w-full h-full object-cover opacity-60"
+                                />
+                                <div className="relative z-20 flex flex-col items-center gap-3">
+                                  <div className="w-8 h-8 rounded-full border-2 border-red-600 border-t-transparent animate-spin" />
+                                  <span className="text-[10px] text-zinc-300 font-bold uppercase tracking-wider">
+                                    Loading Video
+                                  </span>
+                                </div>
+                              </div>
+                            )}
                           </div>
                         ) : (
                           // eslint-disable-next-line @next/next/no-img-element

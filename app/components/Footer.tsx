@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { MapPin, Phone, Mail, Send, Check } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -25,7 +26,9 @@ export default function Footer() {
 
           {/* Brand Info Col (4 Columns) */}
           <div className="md:col-span-4 space-y-5">
-            <img src="/logo_white.png" alt="M Baazar Logo" className="h-10 w-auto object-contain" />
+            <Link href="/">
+              <img src="/logo_white.png" alt="M Baazar Logo" className="h-10 w-auto object-contain cursor-pointer" />
+            </Link>
             <p className="text-sm text-zinc-400 leading-relaxed font-normal max-w-sm">
               M Baazar is one of the fastest-growing retail chains, bringing you high-quality, trendy clothing, footwear, and accessories at accessible prices.
             </p>
@@ -84,10 +87,10 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-4">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider">Shop</h4>
             <ul className="space-y-2.5 text-sm font-medium text-zinc-400">
-              <li><a href="#" className="hover:text-red-500 transition-colors">Men's Wear</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">Women's Wear</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">Kids Section</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">New Arrivals</a></li>
+              <li><Link href="/shop?category=Men" className="hover:text-red-500 transition-colors">Men's Wear</Link></li>
+              <li><Link href="/shop?category=Women" className="hover:text-red-500 transition-colors">Women's Wear</Link></li>
+              <li><Link href="/shop?category=Kids" className="hover:text-red-500 transition-colors">Kids Section</Link></li>
+              <li><Link href="/shop" className="hover:text-red-500 transition-colors">New Arrivals</Link></li>
             </ul>
           </div>
 
@@ -95,16 +98,16 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-4">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider">Support</h4>
             <ul className="space-y-2.5 text-sm font-medium text-zinc-400">
-              <li><a href="#" className="hover:text-red-500 transition-colors">Contact Support</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">Outlets Locator</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">FAQs & Help</a></li>
-              <li><a href="#" className="hover:text-red-500 transition-colors">Careers</a></li>
+              <li><Link href="/contact" className="hover:text-red-500 transition-colors">Contact Support</Link></li>
+              <li><Link href="/#outlets" className="hover:text-red-500 transition-colors">Outlets Locator</Link></li>
+              <li><Link href="/contact" className="hover:text-red-500 transition-colors">FAQs & Help</Link></li>
+              <li><Link href="/careers" className="hover:text-red-500 transition-colors">Careers</Link></li>
             </ul>
           </div>
 
           {/* Newsletter Subscription (4 Columns) */}
           <div className="md:col-span-4 space-y-4">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider font-semibold">Join Our Newsletter</h4>
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider font-semibold font-semibold">Join Our Newsletter</h4>
             <p className="text-xs text-zinc-400 leading-relaxed font-normal">
               Subscribe to get notified about our latest outlets openings, sales, and exclusive fashion releases.
             </p>
@@ -146,11 +149,11 @@ export default function Footer() {
 
           {/* Payment Badges / Legal */}
           <div className="flex justify-center md:justify-end items-center gap-6">
-            <a href="#" className="hover:text-red-500 transition-colors">Privacy Policy</a>
+            <Link href="/privacy" className="hover:text-red-500 transition-colors">Privacy Policy</Link>
             <span className="text-zinc-800">|</span>
-            <a href="#" className="hover:text-red-500 transition-colors">Terms of Service</a>
+            <Link href="/terms" className="hover:text-red-500 transition-colors">Terms of Service</Link>
             <span className="text-zinc-800">|</span>
-            <a href="#" className="hover:text-red-500 transition-colors">Sitemap</a>
+            <Link href="/sitemap.xml" className="hover:text-red-500 transition-colors">Sitemap</Link>
           </div>
 
         </div>

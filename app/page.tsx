@@ -3,8 +3,8 @@ import Categories from "./components/Categories";
 import NewArrivals from "./components/NewArrivals";
 import AboutUs from "./components/AboutUs";
 import ReelsShowcase from "./components/ReelsShowcase";
+import BlogShowcase from "./components/BlogShowcase";
 import StoreLocator from "./components/StoreLocator";
-import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 
 export default function Home() {
@@ -28,8 +28,8 @@ export default function Home() {
       {/* Store Locator Section */}
       <StoreLocator />
 
-      {/* Footer Section */}
-      <Footer />
+      {/* Blog Showcase Section */}
+      <BlogShowcase />
 
       {/* Floating Back to Top Widget */}
       <BackToTop />

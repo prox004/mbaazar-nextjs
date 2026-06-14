@@ -18,28 +18,28 @@ export default function Categories() {
       title: "Menswear",
       imgSrc: "images/collections/mens.jpg",
       alt: "Menswear",
-      href: "shop-collection-sub.html",
+      href: "/shop?category=men",
     },
     {
       id: "womens",
       title: "Womenswear",
       imgSrc: "images/collections/womens.jpg",
       alt: "Womenswear",
-      href: "shop-collection-sub.html",
+      href: "/shop?category=women",
     },
     {
       id: "kidswear",
       title: "Kidswear",
       imgSrc: "images/collections/kids.jpg",
       alt: "Kidswear",
-      href: "shop-collection-sub.html",
+      href: "/shop?category=kids",
     },
     {
       id: "accessories",
       title: "Accessories",
       imgSrc: "images/collections/accessories.jpg",
       alt: "Accessories",
-      href: "shop-collection-sub.html",
+      href: "/shop?category=accessories",
     },
   ];
 
