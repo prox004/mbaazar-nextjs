@@ -89,7 +89,7 @@ export default function BlogShowcase() {
                   key={post.id}
                   className="embla__slide flex-none w-full sm:w-[50%] lg:w-[33.33%] min-w-0"
                 >
-                  <article className="group h-full flex flex-col bg-white border border-zinc-200/60 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-red-200 transition-all duration-300">
+                  <article className="group h-full flex flex-col bg-white border-2 border-red-500/60 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-red-200 transition-all duration-300">
 
                     {/* Featured Image */}
                     <Link

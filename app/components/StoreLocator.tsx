@@ -422,7 +422,7 @@ export default function StoreLocator() {
   }, [mobileView]);
 
   return (
-    <section id="outlets" className="py-16 sm:py-24 bg-white text-zinc-950 w-full overflow-hidden border-t border-zinc-100">
+    <section id="outlets" className="py-16 sm:py-24 bg-white text-zinc-950 w-full overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
@@ -497,7 +497,7 @@ export default function StoreLocator() {
         </div>
 
         {/* Mobile View Toggle Tabs */}
-        <div className="flex md:hidden border border-zinc-100 rounded-2xl overflow-hidden mb-6 bg-zinc-50 p-1 shadow-inner">
+        <div className="flex md:hidden border border-red-500 rounded-2xl overflow-hidden mb-6 bg-zinc-50 p-1 shadow-inner">
           <button
             onClick={() => setMobileView("list")}
             className={`flex-1 py-2.5 text-xs font-bold uppercase tracking-wider transition-all rounded-xl cursor-pointer ${mobileView === "list" ? "bg-white text-zinc-950 shadow-sm" : "text-zinc-500 hover:text-zinc-800"
@@ -525,7 +525,7 @@ export default function StoreLocator() {
               {loading ? (
                 // Skeletons
                 Array.from({ length: 3 }).map((_, idx) => (
-                  <div key={idx} className="bg-zinc-50 rounded-3xl p-5 border border-zinc-100 animate-pulse space-y-3">
+                  <div key={idx} className="bg-zinc-50 rounded-3xl p-5 border border-red-500 animate-pulse space-y-3">
                     <div className="h-5 bg-zinc-200 rounded w-2/3"></div>
                     <div className="h-4 bg-zinc-200 rounded w-5/6"></div>
                     <div className="h-4 bg-zinc-200 rounded w-1/2"></div>
@@ -533,7 +533,7 @@ export default function StoreLocator() {
                 ))
               ) : filteredStores.length === 0 ? (
                 // Empty State
-                <div className="h-full flex flex-col items-center justify-center text-center p-8 bg-zinc-50/50 border border-zinc-100 border-dashed rounded-3xl">
+                <div className="h-full flex flex-col items-center justify-center text-center p-8 bg-zinc-50/50 border border-red-500 border-dashed rounded-3xl">
                   <div className="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center text-zinc-400 mb-3">
                     <MapPin className="w-6 h-6" />
                   </div>
@@ -554,7 +554,7 @@ export default function StoreLocator() {
                       onClick={() => handleSelectStore(store)}
                       className={`group bg-white rounded-3xl p-5 border transition-all duration-300 shadow-sm cursor-pointer relative ${isSelected
                         ? "border-red-500 ring-1 ring-red-500 bg-red-50/10"
-                        : "border-zinc-100/80 hover:border-zinc-200/80 hover:shadow-md"
+                        : "border-red-500/80 hover:border-zinc-200/80 hover:shadow-md"
                         }`}
                     >
                       {/* State Badge & Proximity */}
@@ -605,7 +605,7 @@ export default function StoreLocator() {
                       </div>
 
                       {/* Card Action Buttons */}
-                      <div className="grid grid-cols-3 gap-2 mt-5 pt-4 border-t border-zinc-100">
+                      <div className="grid grid-cols-3 gap-2 mt-5 pt-4 border-t border-red-500">
                         <a
                           href={`https://www.google.com/maps/dir/?api=1&destination=${store.lat},${store.lng}`}
                           target="_blank"
@@ -652,7 +652,7 @@ export default function StoreLocator() {
 
           {/* Right Panel: Interactive Map (Visible on desktop, or mobile when Map View is active) */}
           <div
-            className={`col-span-1 md:col-span-8 h-[500px] md:h-[650px] rounded-3xl overflow-hidden border border-zinc-100 relative shadow-sm ${mobileView === "map" ? "block" : "hidden md:block"
+            className={`col-span-1 md:col-span-8 h-[500px] md:h-[650px] rounded-3xl overflow-hidden border border-red-500 relative shadow-sm ${mobileView === "map" ? "block" : "hidden md:block"
               }`}
           >
             <div ref={mapContainerRef} className="w-full h-full z-10" />
@@ -675,7 +675,7 @@ export default function StoreLocator() {
       {/* View Details Modal */}
       {modalStore && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-zinc-950/60 backdrop-blur-sm transition-all duration-300 animate-fadeIn">
-          <div className="relative w-full max-w-lg bg-white rounded-3xl shadow-xl overflow-hidden border border-zinc-100 p-6 space-y-6">
+          <div className="relative w-full max-w-lg bg-white rounded-3xl shadow-xl overflow-hidden border border-red-500 p-6 space-y-6">
 
             {/* Modal Close Button */}
             <button
@@ -710,7 +710,7 @@ export default function StoreLocator() {
             </div>
 
             {/* Contact details */}
-            <div className="grid grid-cols-2 gap-4 border-t border-b border-zinc-100 py-5">
+            <div className="grid grid-cols-2 gap-4 border-t border-b border-red-500 py-5">
               {modalStore.phone && (
                 <div className="flex gap-2.5 items-center">
                   <div className="w-8 h-8 rounded-full bg-zinc-50 flex items-center justify-center text-zinc-500">
