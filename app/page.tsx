@@ -1,11 +1,12 @@
 import Hero from "./components/Hero";
 import Categories from "./components/Categories";
 import NewArrivals from "./components/NewArrivals";
-import AboutUs from "./components/AboutUs";
+import PromotionalTicker from "./components/PromotionalTicker";
 import ReelsShowcase from "./components/ReelsShowcase";
 import BlogShowcase from "./components/BlogShowcase";
 import StoreLocator from "./components/StoreLocator";
 import BackToTop from "./components/BackToTop";
+import AboutUs from "./components/AboutUs";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
 
       {/* New Arrivals Section */}
       <NewArrivals />
+
+      {/* Scroll Velocity Promotional Tickers */}
+      <PromotionalTicker />
 
       {/* YouTube Shorts Showcase Section */}
       <ReelsShowcase />

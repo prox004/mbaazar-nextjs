@@ -95,7 +95,7 @@ const Preloader = memo(
             (_, index) => (
               <motion.div
                 key={index}
-                className="h-full w-[20vw] bg-[#f8f9fa]"
+                className="h-full w-[20vw] bg-red-600"
                 initial={{
                   height: "100%",
                 }}

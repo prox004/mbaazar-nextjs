@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart } from "lucide-react";
+import SplitText from "../../components/SplitText";
 
 interface Product {
   id: number;
@@ -58,13 +59,14 @@ export default function NewArrivals() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           {/* Left Side Header */}
           <div className="space-y-2">
-            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 leading-tight">
-              Browse New <span className="text-red-600 font-black">Arrivals</span>
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-950 leading-tight flex flex-wrap gap-x-2">
+              <SplitText text="Browse New" tag="span" />{" "}
+              <SplitText text="Arrivals" tag="span" className="text-red-600 font-black" />
             </h2>
           </div>
 
           {/* Right Side Switcher */}
-          <div className="flex flex-wrap gap-2 p-1 bg-zinc-100 rounded-full w-fit">
+          <div className="flex flex-wrap gap-2 p-1 border border-red-600 rounded-full w-fit">
             {CATEGORIES.map((category) => {
               const isActive = activeTab === category;
               return (
@@ -121,7 +123,7 @@ export default function NewArrivals() {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.95 }}
                     transition={{ duration: 0.35, ease: "easeInOut" }}
-                    className="group relative flex flex-col bg-white border border-zinc-200 rounded-lg overflow-hidden shadow-sm hover:shadow-[0_20px_50px_rgba(220,38,38,0.04)] hover:-translate-y-1.5 transition-all duration-500 ease-out h-full"
+                    className="group relative flex flex-col bg-white border-2 border-black rounded-lg overflow-hidden shadow-sm hover:shadow-[0_20px_50px_rgba(220,38,38,0.04)] hover:-translate-y-1.5 transition-all duration-500 ease-out h-full"
                   >
                     {/* Image Container */}
                     <div className="relative aspect-square overflow-hidden bg-zinc-50">
@@ -150,21 +152,21 @@ export default function NewArrivals() {
                     </div>
 
                     {/* Card Content */}
-                    <div className="p-4 sm:p-5 flex flex-col items-center text-center flex-grow justify-between space-y-3">
+                    <div className="p-4 sm:p-5 flex flex-col items-center text-center flex-grow justify-between space-y-3 bg-zinc-900">
                       <div className="space-y-1 flex flex-col items-center w-full">
                         {/* Category */}
-                        <span className="block text-[10px] sm:text-xs font-bold tracking-[0.2em] text-red-600 uppercase">
+                        <span className="block text-[10px] sm:text-xs font-bold tracking-[0.2em] text-red-500 uppercase">
                           {product.category}
                         </span>
 
                         {/* Product Name */}
-                        <h3 className="text-sm sm:text-base font-extrabold text-zinc-950 line-clamp-1 group-hover:text-red-600 transition-colors duration-300 w-full">
+                        <h3 className="text-sm sm:text-base font-extrabold text-white line-clamp-1 group-hover:text-red-400 transition-colors duration-300 w-full">
                           {product.name}
                         </h3>
                       </div>
 
                       {/* Items Sold */}
-                      <div className="text-[11px] sm:text-xs text-zinc-400 font-medium pt-2 w-full border-t border-zinc-50">
+                      <div className="text-[11px] sm:text-xs text-zinc-200 font-medium pt-2 w-full border-t border-zinc-800">
                         {product.items_sold.toLocaleString()} Items Sold
                       </div>
                     </div>

@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import reelsData from "@/public/data/reels.json";
+import SplitText from "../../components/SplitText";
 
 interface Reel {
   id: number;
@@ -286,7 +287,7 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
 
   if (loading) {
     return (
-      <section className="py-5 sm:py-24 bg-white text-black w-full overflow-hidden">
+      <section className="py-5 sm:py-24 bg-gradient-to-b from-red-50 to-white text-black w-full overflow-hidden">
         <div className="w-full px-4 sm:px-6 lg:px-12 text-center">
           <div className="max-w-xl mx-auto mb-10 space-y-2">
             <div className="h-8 bg-zinc-100 rounded-full w-2/3 mx-auto animate-pulse" />
@@ -311,12 +312,13 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
   }
 
   return (
-    <section ref={sectionRef} className="px-10 mb-10 bg-white text-black w-full overflow-hidden">
+    <section ref={sectionRef} className="px-10 mb-10 py-20 sm:py-24 bg-gradient-to-b from-red-100 to-white text-black w-full overflow-hidden">
       <div className="w-full px-4 sm:px-6 lg:px-12">
         {/* Header Section */}
-        <div className="text-center mb-12 space-y-3">
-          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-950">
-            From Our Stores <span className="text-red-600">To Your Feed</span>
+        <div className="text-center mb-12 mt-10 space-y-3">
+          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 flex justify-center gap-x-2 flex-wrap">
+            <SplitText text="From Our Stores" tag="span" />{" "}
+            <SplitText text="To Your Feed" tag="span" className="text-red-600" />
           </h2>
           <p className="text-sm sm:text-base text-zinc-500 max-w-lg mx-auto font-regular">
             Get styling tips, fashion lookbooks, and the latest trends directly from our social media.
@@ -380,9 +382,8 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
                         {isActive ? (
                           <div className="w-full h-full relative overflow-hidden z-20">
                             {/* Wrapper div managed by React */}
-                            <div className={`w-full h-full transition-opacity duration-500 ${
-                              activeVideoReady ? "opacity-100" : "opacity-0"
-                            }`}>
+                            <div className={`w-full h-full transition-opacity duration-500 ${activeVideoReady ? "opacity-100" : "opacity-0"
+                              }`}>
                               <div
                                 id={`yt-player-${code}`}
                                 className="w-full h-full border-0 absolute inset-0 scale-[1] origin-center"

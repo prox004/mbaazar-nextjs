@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import { Search, MapPin, Phone, Mail, Clock, ExternalLink, Navigation, Compass, X } from "lucide-react";
+import SplitText from "../../components/SplitText";
 
 interface Store {
   id: string;
@@ -426,8 +427,10 @@ export default function StoreLocator() {
 
         {/* Section Header */}
         <div className="text-center mb-10 mt-20 space-y-3">
-          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
-            Find a <span className="text-red-600">M Baazar</span> Near You
+          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight flex justify-center gap-x-2 flex-wrap">
+            <SplitText text="Find a" tag="span" />{" "}
+            <SplitText text="M Baazar" tag="span" className="text-red-600" />{" "}
+            <SplitText text="Near You" tag="span" />
           </h2>
           <p className="text-zinc-500 max-w-xl mx-auto text-sm sm:text-base font-normal">
             Discover and explore nearby M Baazar outlets to browse our latest premium fashion collections.

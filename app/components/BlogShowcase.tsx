@@ -5,6 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Calendar, User, BookOpen } from "lucide-react";
 import blogData from "@/public/data/blog.json";
+import SplitText from "../../components/SplitText";
 
 export default function BlogShowcase() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -42,8 +43,9 @@ export default function BlogShowcase() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-zinc-950">
-              Latest from the <span className="text-red-600">Blog</span>
+            <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-zinc-950 flex flex-wrap gap-x-2">
+              <SplitText text="Latest from the" tag="span" />{" "}
+              <SplitText text="Blog" tag="span" className="text-red-600" />
             </h2>
             <p className="text-zinc-500 text-sm sm:text-base mt-3 leading-relaxed">
               Explore style tips, global fashion trends, behind-the-scenes previews, and inspiration from our latest collections.
