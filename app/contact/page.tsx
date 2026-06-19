@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Link as LinkIcon } from "lucide-react";
 import StoreLocator from "../components/StoreLocator";
 
+//test
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
