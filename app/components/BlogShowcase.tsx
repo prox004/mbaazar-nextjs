@@ -126,11 +126,11 @@ export default function BlogShowcase() {
 
         {/* Embla Viewport */}
         <div className="embla overflow-hidden" ref={emblaRef}>
-          <div className="embla__container flex gap-6">
+          <div className="embla__container flex -ml-6">
             {cycledPosts.map((post) => (
               <div
                 key={post.uniqueId}
-                className="embla__slide flex-none w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] min-w-0"
+                className="embla__slide flex-none pl-6 w-full sm:w-1/2 lg:w-1/4 min-w-0"
               >
                 <Link href="/blog" className="group block h-full">
                   {/* Aspect ratio container matching target image (vertical aspect-[3/4]) */}
