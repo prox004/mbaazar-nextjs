@@ -59,7 +59,7 @@ export default function NewArrivals() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           {/* Left Side Header */}
           <div className="space-y-2">
-            <h2 className="font-medium tracking-tight text-zinc-950 font-montserrat" style={{ fontSize: "60px", letterSpacing: "-0.03em", lineHeight: "0.95" }}>
+            <h2 className="font-medium tracking-tight text-zinc-950 font-montserrat text-4xl sm:text-5xl md:text-[60px]" style={{ letterSpacing: "-0.03em", lineHeight: "0.95" }}>
               Browse New <span className="italic" style={{ fontFamily: "Georgia, serif", color: "rgb(185, 28, 28)" }}>Arrivals</span>
             </h2>
           </div>

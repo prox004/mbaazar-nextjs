@@ -95,8 +95,8 @@ export default function BlogShowcase() {
         {/* Section Header */}
         <div className="mb-12 items-center">
           <h2
-            className="font-medium tracking-tight text-zinc-950 font-montserrat mb-4 md:whitespace-nowrap"
-            style={{ fontSize: "60px", letterSpacing: "-0.03em", lineHeight: "0.95" }}
+            className="font-medium tracking-tight text-zinc-950 font-montserrat mb-4 md:whitespace-nowrap text-3xl sm:text-5xl md:text-[60px]"
+            style={{ letterSpacing: "-0.03em", lineHeight: "0.95" }}
           >
             Latest from the <span className="italic" style={{ fontFamily: "Georgia, serif", color: "rgb(185, 28, 28)" }}>editorial blog.</span>
           </h2>

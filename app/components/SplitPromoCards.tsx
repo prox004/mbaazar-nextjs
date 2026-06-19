@@ -121,7 +121,7 @@ export default function SplitPromoCards() {
         <div className="relative w-full z-20">
           <h1
             ref={headerRef}
-            className="font-montserrat text-center text-5xl mt-20 font-medium leading-[1.2] will-change-[transform,opacity]"
+            className="font-montserrat text-center text-3xl sm:text-5xl mt-10 sm:mt-20 font-medium leading-[1.2] will-change-[transform,opacity]"
           >
             Exclusive Discounts <span className="italic text-red-600">at M Baazar</span>
           </h1>
@@ -139,7 +139,7 @@ export default function SplitPromoCards() {
           >
             {/* FRONT */}
             <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden rounded-inherit z-10 [transform:rotateY(0deg)]">
-              <img src="/imgs/1.jpg" alt="M Baazar Gold Card" className="w-full h-full object-cover block transition-transform duration-700 group-hover:scale-105" />
+              <img src="/imgs/1.jpg" alt="M Baazar Gold Card" className="w-full h-full object-cover block transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
 
@@ -164,7 +164,7 @@ export default function SplitPromoCards() {
               />
 
               {/* Logo Area */}
-              <div className="relative z-10 flex justify-between items-start p-7">
+              <div className="relative z-10 flex justify-between items-start p-5 md:p-7">
                 <div>
                   <p className="text-[10px] tracking-[0.35em] font-black uppercase text-[#7a5600]">
                     Premium Member
@@ -177,31 +177,31 @@ export default function SplitPromoCards() {
               </div>
 
               {/* Center Content */}
-              <div className="relative z-10 flex flex-col items-center justify-center h-[58%] px-8">
+              <div className="relative z-10 flex flex-col items-center justify-center h-[58%] px-4 md:px-8">
 
-                <h2 className="text-[2rem] leading-none font-black tracking-tight text-[#7b5200]">
+                <h2 className="text-2xl md:text-[2rem] leading-none font-black tracking-tight text-[#7b5200]">
                   GOLD
                 </h2>
 
-                <h3 className="mt-1 text-3xl font-serif italic text-center font-medium text-[#4f3500]">
+                <h3 className="mt-1 text-2xl md:text-3xl font-serif italic text-center font-medium text-[#4f3500]">
                   Membership Card
                 </h3>
 
-                <div className="w-20 h-[2px] bg-[#8d6a0a]/30 rounded-full my-5" />
+                <div className="w-20 h-[2px] bg-[#8d6a0a]/30 rounded-full my-3 md:my-5" />
 
-                <p className="uppercase text-xs tracking-[0.3em] font-black text-[#7a5600]">
+                <p className="uppercase text-[10px] md:text-xs tracking-[0.3em] font-black text-[#7a5600]">
                   2X Reward Points
                 </p>
 
-                <p className="mt-2 text-[11px] text-center text-[#5f4709] max-w-[220px]">
+                <p className="mt-2 text-[10px] md:text-[11px] text-center text-[#5f4709] max-w-[220px]">
                   Priority access, member-only offers, early sale previews and premium shopping rewards.
                 </p>
               </div>
 
               {/* Footer */}
-              <div className="absolute bottom-0 left-0 right-0 z-10 px-7 pb-6">
+              <div className="absolute bottom-0 left-0 right-0 z-10 px-5 md:px-7 pb-4 md:pb-6">
 
-                <div className="flex justify-between items-end border-t border-[#8f6b0f]/20 pt-4">
+                <div className="flex justify-between items-end border-t border-[#8f6b0f]/20 pt-3 md:pt-4">
 
                   <div>
                     <p className="text-[8px] tracking-[0.25em] font-bold text-[#8f6b0f] uppercase">
@@ -232,12 +232,12 @@ export default function SplitPromoCards() {
           >
             {/* FRONT */}
             <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden rounded-inherit z-10 [transform:rotateY(0deg)]">
-              <img src="/imgs/2.jpg" alt="Mega Sale" className="w-full h-full object-cover block transition-transform duration-700 group-hover:scale-105" />
+              <img src="/imgs/2.jpg" alt="Mega Sale" className="w-full h-full object-cover block transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
 
             {/* BACK - Luxury Red / Bold Promo Theme */}
-            <div className="absolute inset-0 w-full h-full min-[1000px]:h-full min-h-[180px] mt-4 min-[1000px]:mt-0 [backface-visibility:visible] min-[1000px]:[backface-visibility:hidden] min-[1000px]:[-webkit-backface-visibility:hidden] overflow-hidden rounded-[20px] min-[1000px]:rounded-inherit [transform:none] min-[1000px]:[transform:rotateY(180deg)] flex flex-col justify-between p-7 bg-gradient-to-br from-[#990d07] via-[#bd1911] to-[#e12a21] text-white border border-red-400/20 shadow-[inset_0_0_40px_rgba(0,0,0,0.3)]">
+            <div className="absolute inset-0 w-full h-full min-[1000px]:h-full min-h-[180px] mt-4 min-[1000px]:mt-0 [backface-visibility:visible] min-[1000px]:[backface-visibility:hidden] min-[1000px]:[-webkit-backface-visibility:hidden] overflow-hidden rounded-[20px] min-[1000px]:rounded-inherit [transform:none] min-[1000px]:[transform:rotateY(180deg)] flex flex-col justify-between p-5 md:p-7 bg-gradient-to-br from-[#990d07] via-[#bd1911] to-[#e12a21] text-white border border-red-400/20 shadow-[inset_0_0_40px_rgba(0,0,0,0.3)]">
               {/* Header Details */}
               <div className="flex justify-between items-start w-full">
                 <div className="flex flex-col gap-1">
@@ -251,21 +251,21 @@ export default function SplitPromoCards() {
 
               {/* Core Content */}
               <div className="my-auto flex flex-col items-center text-center px-2">
-                <p className="text-[11px] uppercase tracking-[0.3em] font-sans font-bold text-red-200/90 mb-1">THE ANNUAL</p>
-                <p className="text-4xl font-black tracking-tighter font-sans uppercase text-white drop-shadow-md">
+                <p className="text-[10px] md:text-[11px] uppercase tracking-[0.3em] font-sans font-bold text-red-200/90 mb-1">THE ANNUAL</p>
+                <p className="text-3xl md:text-4xl font-black tracking-tighter font-sans uppercase text-white drop-shadow-md">
                   Mega Sale
                 </p>
-                <div className="w-8 h-[1px] bg-white/40 my-3" />
-                <div className="bg-black/15 backdrop-blur-sm border border-white/10 px-4 py-2 rounded-xl">
-                  <p className="text-base font-black tracking-wide text-white font-sans">
+                <div className="w-8 h-[1px] bg-white/40 my-2 md:my-3" />
+                <div className="bg-black/15 backdrop-blur-sm border border-white/10 px-3 md:px-4 py-1.5 md:py-2 rounded-xl">
+                  <p className="text-sm md:text-base font-black tracking-wide text-white font-sans">
                     UPTO 50% OFF
                   </p>
-                  <p className="text-[9px] font-semibold text-red-200 uppercase tracking-wider mt-0.5">On New Arrivals</p>
+                  <p className="text-[8px] md:text-[9px] font-semibold text-red-200 uppercase tracking-wider mt-0.5">On New Arrivals</p>
                 </div>
               </div>
 
               {/* Footer / Authentic Details */}
-              <div className="flex justify-between items-end w-full pt-4 border-t border-white/10">
+              <div className="flex justify-between items-end w-full pt-3 md:pt-4 border-t border-white/10">
                 <div className="flex flex-col">
                   <span className="text-[7px] font-bold tracking-widest uppercase text-red-300">ACCESS CODE</span>
                   <span className="text-[10px] font-mono font-bold tracking-wider text-white">MB-MEGA50</span>
@@ -285,12 +285,12 @@ export default function SplitPromoCards() {
           >
             {/* FRONT */}
             <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden rounded-inherit z-10 [transform:rotateY(0deg)]">
-              <img src="/imgs/3.jpg" alt="Voucher Offer" className="w-full h-full object-cover block transition-transform duration-700 group-hover:scale-105" />
+              <img src="/imgs/3.jpg" alt="Voucher Offer" className="w-full h-full object-cover block transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
 
             {/* BACK - Matte Dark / Emerald Luxury Accent Theme */}
-            <div className="absolute inset-0 w-full h-full min-[1000px]:h-full min-h-[180px] mt-4 min-[1000px]:mt-0 [backface-visibility:visible] min-[1000px]:[backface-visibility:hidden] min-[1000px]:[-webkit-backface-visibility:hidden] overflow-hidden rounded-[20px] min-[1000px]:rounded-inherit [transform:none] min-[1000px]:[transform:rotateY(180deg)] flex flex-col justify-between p-7 bg-gradient-to-br from-[#1e2022] via-[#121314] to-[#090a0a] text-white border border-emerald-500/20 shadow-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent">
+            <div className="absolute inset-0 w-full h-full min-[1000px]:h-full min-h-[180px] mt-4 min-[1000px]:mt-0 [backface-visibility:visible] min-[1000px]:[backface-visibility:hidden] min-[1000px]:[-webkit-backface-visibility:hidden] overflow-hidden rounded-[20px] min-[1000px]:rounded-inherit [transform:none] min-[1000px]:[transform:rotateY(180deg)] flex flex-col justify-between p-5 md:p-7 bg-gradient-to-br from-[#1e2022] via-[#121314] to-[#090a0a] text-white border border-emerald-500/20 shadow-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent">
               {/* Header Details */}
               <div className="flex justify-between items-start w-full">
                 <div className="flex flex-col gap-1">
@@ -304,18 +304,18 @@ export default function SplitPromoCards() {
 
               {/* Core Content */}
               <div className="my-auto flex flex-col items-center text-center px-2">
-                <p className="text-xs font-semibold uppercase tracking-widest text-emerald-400 font-sans mb-1">VALUED COUPON</p>
-                <p className="text-4xl font-medium tracking-tight font-serif italic text-zinc-100">
+                <p className="text-[10px] md:text-xs font-semibold uppercase tracking-widest text-emerald-400 font-sans mb-1">VALUED COUPON</p>
+                <p className="text-3xl md:text-4xl font-medium tracking-tight font-serif italic text-zinc-100">
                   Voucher Offer
                 </p>
-                <div className="w-12 h-[2px] bg-emerald-500/30 my-4 rounded-full" />
-                <p className="text-sm font-bold text-zinc-200 font-sans tracking-wide">
-                  SHOP FOR <span className="text-white font-extrabold">₹1500</span> GET <span className="text-emerald-400 font-extrabold text-base bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/20">₹500</span>
+                <div className="w-12 h-[2px] bg-emerald-500/30 my-2 md:my-4 rounded-full" />
+                <p className="text-xs md:text-sm font-bold text-zinc-200 font-sans tracking-wide">
+                  SHOP FOR <span className="text-white font-extrabold">₹1500</span> GET <span className="text-emerald-400 font-extrabold text-[10px] md:text-base bg-emerald-500/10 px-1 md:px-1.5 py-0.5 rounded border border-emerald-500/20">₹500</span>
                 </p>
               </div>
 
               {/* Footer / Authentic Details */}
-              <div className="flex justify-between items-end w-full pt-4 border-t border-zinc-800">
+              <div className="flex justify-between items-end w-full pt-3 md:pt-4 border-t border-zinc-800">
                 <div className="flex flex-col">
                   <span className="text-[7px] font-bold tracking-widest uppercase text-zinc-500">SECURITY CODE</span>
                   <span className="text-[10px] font-mono font-bold text-zinc-300">WLC-500-CRED</span>

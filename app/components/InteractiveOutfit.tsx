@@ -168,7 +168,7 @@ export default function InteractiveOutfit() {
           <div className="space-y-4">
             <h2 className="text-4xl sm:text-5xl font-medium font-montserrat text-zinc-950 leading-tight">
               Style Like<br />
-              <span className="text-8xl" style={{ fontFamily: "Georgia, serif", fontWeight: 600, color: "rgb(185, 28, 28)" }}>A Celebrity</span>
+              <span className="text-5xl sm:text-7xl md:text-8xl" style={{ fontFamily: "Georgia, serif", fontWeight: 600, color: "rgb(185, 28, 28)" }}>A Celebrity</span>
             </h2>
             <p className="text-zinc-600 text-sm max-w-md leading-relaxed">
               Explore our coordinated denim and chinos collection. Select a category below to cycle the showcase, or tap the pins directly on the models to inspect individual items.

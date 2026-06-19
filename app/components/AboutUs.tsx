@@ -84,9 +84,9 @@ export default function AboutUs() {
 
           {/* Left Column (50%): Sticky Pinned Brand Message */}
           <div className="flex flex-col justify-center space-y-6 lg:sticky lg:top-[28vh] h-fit">
-            <h2 className="font-medium tracking-tight text-white flex flex-col items-start" style={{ fontSize: "80px", letterSpacing: "-0.03em", lineHeight: "1.1" }}>
+            <h2 className="font-medium tracking-tight text-white flex flex-col items-start text-4xl sm:text-6xl md:text-[80px]" style={{ letterSpacing: "-0.03em", lineHeight: "1.1" }}>
               <span>Redefining</span>
-              <span className="italic" style={{ fontSize: "110px", fontFamily: "Georgia, serif", color: "rgba(255, 42, 42, 1)" }}>Fast Fashion</span>
+              <span className="italic text-5xl sm:text-8xl md:text-[110px]" style={{ fontFamily: "Georgia, serif", color: "rgba(255, 42, 42, 1)" }}>Fast Fashion</span>
             </h2>
             <p className="text-[14px] font-inter text-zinc-300 leading-relaxed font-light max-w-2xl">
               A beloved name in Indian fashion, M Baazar has been a constant companion shaping the shopping sensibility of millions across the nation. Over the years, it has built a strong bond with customers by offering a wide range of products that cater to everyday needs as well as special occasions. From trendy clothing and accessories to toys and home essentials, M Baazar has established itself as a trusted one-stop shopping destination for families across India.
@@ -124,7 +124,7 @@ export default function AboutUs() {
   "
                 >
                   {/* Massive Number */}
-                  <div className="absolute right-6 top-4 text-[180px] leading-none font-black text-white/[0.04] pointer-events-none">
+                  <div className="absolute right-6 top-4 text-7xl sm:text-9xl md:text-[180px] leading-none font-black text-white/[0.04] pointer-events-none">
                     {feature.number}
                   </div>
 
@@ -157,7 +157,9 @@ export default function AboutUs() {
                   <div className="relative z-10">
                     <h3
                       className="
-        text-[100px]
+        text-6xl
+        sm:text-8xl
+        md:text-[100px]
         font-bold
         text-white
       "

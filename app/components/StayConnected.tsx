@@ -144,13 +144,12 @@ export default function StayConnected() {
           className="relative z-10 text-center mt-20 mb-12 md:mb-14 max-w-4xl"
         >
           <h2
-            className="text-[#fafaf8] font-medium tracking-[-0.04em]"
-            style={{ fontSize: "60px", lineHeight: "80px" }}
+            className="text-[#fafaf8] font-medium tracking-[-0.04em] text-4xl sm:text-5xl md:text-[60px] leading-tight md:leading-[80px]"
           >
             Stay Connected<br />
             <span
-              className="italic text-red-600"
-              style={{ fontSize: "100px", fontFamily: "Georgia, 'Times New Roman', serif" }}
+              className="italic text-red-600 text-5xl sm:text-8xl md:text-[100px]"
+              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
             >
               With M Baazar
             </span>

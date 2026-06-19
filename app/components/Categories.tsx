@@ -50,7 +50,7 @@ export default function Categories() {
       <div className="w-full px-4 sm:px-6 lg:px-12">
         {/* Centered Header Section */}
         <div className="mb-14 text-center">
-          <h2 className="font-medium tracking-tight text-zinc-950 font-montserrat text-center" style={{ fontSize: "72px", letterSpacing: "-0.03em", lineHeight: "0.95" }}>
+          <h2 className="font-medium tracking-tight text-zinc-950 font-montserrat text-center text-4xl sm:text-6xl md:text-[72px]" style={{ letterSpacing: "-0.03em", lineHeight: "0.95" }}>
             Browse by <span className="italic" style={{ fontFamily: "Georgia, serif", color: "rgb(185, 28, 28)" }}>Category</span>
           </h2>
         </div>

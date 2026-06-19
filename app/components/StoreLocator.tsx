@@ -427,7 +427,7 @@ export default function StoreLocator() {
 
         {/* Section Header */}
         <div className="text-center mb-10 mt-1 0 space-y-3">
-          <h2 className="font-medium tracking-tight text-zinc-950 font-montserrat text-center mb-10" style={{ fontSize: "80px", letterSpacing: "-0.03em", lineHeight: "0.95" }}>
+          <h2 className="font-medium tracking-tight text-zinc-950 font-montserrat text-center mb-10 text-4xl sm:text-6xl md:text-[80px]" style={{ letterSpacing: "-0.03em", lineHeight: "0.95" }}>
             Find a store <span className="italic" style={{ fontFamily: "Georgia, serif", color: "rgb(185, 28, 28)" }}>Near You.</span>
           </h2>
           <p className="text-zinc-500 max-w-xl mx-auto text-sm sm:text-base font-normal">

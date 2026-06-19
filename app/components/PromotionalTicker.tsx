@@ -9,7 +9,7 @@ export default function PromotionalTicker() {
       <ScrollVelocity
         texts={["New Summer Styles - "]}
         velocity={50}
-        className="text-black text-6xl sm:text-6xl font-bold py-5"
+        className="text-black text-3xl sm:text-5xl md:text-6xl font-bold py-3 md:py-5"
         numCopies={10}
         damping={50}
         stiffness={400}
@@ -17,7 +17,7 @@ export default function PromotionalTicker() {
       <ScrollVelocity
         texts={["M Baazar - "]}
         velocity={-50}
-        className="text-white text-6xl sm:text-6xl font-bold py-5 bg-red-700"
+        className="text-white text-3xl sm:text-5xl md:text-6xl font-bold py-3 md:py-5 bg-red-700"
         numCopies={10}
         damping={50}
         stiffness={400}

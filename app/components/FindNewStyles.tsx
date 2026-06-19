@@ -121,8 +121,8 @@ export default function FindNewStyles() {
         {/* Centered Editorial Section Header */}
         <div className="text-center mb-8 px-4 flex-shrink-0">
           <h2
-            className="font-medium tracking-tight text-zinc-950 font-montserrat text-center"
-            style={{ fontSize: "65px", letterSpacing: "-0.03em", lineHeight: "0.95" }}
+            className="font-medium tracking-tight text-zinc-950 font-montserrat text-center text-4xl sm:text-5xl md:text-[65px]"
+            style={{ letterSpacing: "-0.03em", lineHeight: "0.95" }}
           >
             Find New <span className="italic text-red-600" style={{ fontFamily: "Georgia, serif" }}>Trending Styles</span>
           </h2>

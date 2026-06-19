@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 
 export default function MobileBlocker() {
+  return null;
+
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {

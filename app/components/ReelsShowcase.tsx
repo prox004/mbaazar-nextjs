@@ -316,7 +316,7 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
       <div className="w-full px-4 sm:px-6 lg:px-12">
         {/* Header Section */}
         <div className="text-center mb-12 mt-10 space-y-3">
-          <h2 className="font-medium tracking-tight text-zinc-950 font-montserrat text-center" style={{ fontSize: "72px", letterSpacing: "-0.03em", lineHeight: "0.95" }}>
+          <h2 className="font-medium tracking-tight text-zinc-950 font-montserrat text-center text-4xl sm:text-6xl md:text-[72px]" style={{ letterSpacing: "-0.03em", lineHeight: "0.95" }}>
             From our stores <span className="italic" style={{ fontFamily: "Georgia, serif", color: "rgb(185, 28, 28)" }}>to your feed.</span>
           </h2>
           <p className="text-sm sm:text-base text-zinc-500 max-w-lg mx-auto font-regular">
