@@ -422,15 +422,13 @@ export default function StoreLocator() {
   }, [mobileView]);
 
   return (
-    <section id="outlets" className="py-16 sm:py-24 bg-white text-zinc-950 w-full overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="outlets" className="py-16 sm:py-24 bg-[#FAF6F0] text-zinc-950 w-full overflow-hidden">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-12">
 
         {/* Section Header */}
-        <div className="text-center mb-10 mt-20 space-y-3">
-          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight flex justify-center gap-x-2 flex-wrap">
-            <SplitText text="Find a" tag="span" />{" "}
-            <SplitText text="M Baazar" tag="span" className="text-red-600" />{" "}
-            <SplitText text="Near You" tag="span" />
+        <div className="text-center mb-10 mt-1 0 space-y-3">
+          <h2 className="font-medium tracking-tight text-zinc-950 font-montserrat text-center mb-10" style={{ fontSize: "80px", letterSpacing: "-0.03em", lineHeight: "0.95" }}>
+            Find a store <span className="italic" style={{ fontFamily: "Georgia, serif", color: "rgb(185, 28, 28)" }}>Near You.</span>
           </h2>
           <p className="text-zinc-500 max-w-xl mx-auto text-sm sm:text-base font-normal">
             Discover and explore nearby M Baazar outlets to browse our latest premium fashion collections.
@@ -451,7 +449,7 @@ export default function StoreLocator() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search store, city, or locality..."
-                className="w-full pl-11 pr-4 py-3 bg-white border border-zinc-200/80 rounded-2xl text-sm focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-all font-medium"
+                className="w-full pl-11 pr-4 py-3 bg-white border border-zinc-200/80 rounded-2xl text-sm focus:outline-none focus:border-red-700 focus:ring-1 focus:ring-red-700 transition-all font-medium"
               />
             </div>
 
@@ -460,7 +458,7 @@ export default function StoreLocator() {
               <select
                 value={selectedState}
                 onChange={(e) => setSelectedState(e.target.value)}
-                className="w-full px-4 py-3 bg-white border border-zinc-200/80 rounded-2xl text-sm focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-all font-medium appearance-none"
+                className="w-full px-4 py-3 bg-white border border-zinc-200/80 rounded-2xl text-sm focus:outline-none focus:border-red-700 focus:ring-1 focus:ring-red-700 transition-all font-medium appearance-none"
               >
                 <option value="">All States</option>
                 {availableStates.map((state) => (
@@ -478,7 +476,7 @@ export default function StoreLocator() {
             <button
               onClick={geolocateUser}
               disabled={calculatingLocation}
-              className="col-span-1 md:col-span-3 flex items-center justify-center gap-2.5 px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-zinc-900 transition-all duration-300 font-bold text-xs uppercase tracking-wider shadow-sm cursor-pointer disabled:opacity-60"
+              className="col-span-1 md:col-span-3 flex items-center justify-center gap-2.5 px-4 py-3 bg-red-700 text-white rounded-lg hover:bg-zinc-900 transition-all duration-300 font-bold text-xs uppercase tracking-wider shadow-sm cursor-pointer disabled:opacity-60"
             >
               <Compass className={`w-4 h-4 ${calculatingLocation ? "animate-spin" : ""}`} />
               {calculatingLocation ? "Locating..." : "Stores Near Me"}
@@ -487,7 +485,7 @@ export default function StoreLocator() {
 
           {/* Badge indicator */}
           <div className="flex items-center gap-2 mt-4 text-xs font-semibold text-zinc-500">
-            <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-red-50 text-red-600 font-bold">
+            <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-red-50 text-red-700 font-bold">
               {filteredStores.length} {filteredStores.length === 1 ? "Store" : "Stores"} Found
             </span>
             {sortByDistance && (
@@ -497,7 +495,7 @@ export default function StoreLocator() {
         </div>
 
         {/* Mobile View Toggle Tabs */}
-        <div className="flex md:hidden border border-red-500 rounded-2xl overflow-hidden mb-6 bg-zinc-50 p-1 shadow-inner">
+        <div className="flex md:hidden border border-red-700 rounded-2xl overflow-hidden mb-6 bg-zinc-50 p-1 shadow-inner">
           <button
             onClick={() => setMobileView("list")}
             className={`flex-1 py-2.5 text-xs font-bold uppercase tracking-wider transition-all rounded-xl cursor-pointer ${mobileView === "list" ? "bg-white text-zinc-950 shadow-sm" : "text-zinc-500 hover:text-zinc-800"
@@ -525,7 +523,7 @@ export default function StoreLocator() {
               {loading ? (
                 // Skeletons
                 Array.from({ length: 3 }).map((_, idx) => (
-                  <div key={idx} className="bg-zinc-50 rounded-3xl p-5 border border-red-500 animate-pulse space-y-3">
+                  <div key={idx} className="bg-zinc-50 rounded-3xl p-5 border border-red-700 animate-pulse space-y-3">
                     <div className="h-5 bg-zinc-200 rounded w-2/3"></div>
                     <div className="h-4 bg-zinc-200 rounded w-5/6"></div>
                     <div className="h-4 bg-zinc-200 rounded w-1/2"></div>
@@ -533,7 +531,7 @@ export default function StoreLocator() {
                 ))
               ) : filteredStores.length === 0 ? (
                 // Empty State
-                <div className="h-full flex flex-col items-center justify-center text-center p-8 bg-zinc-50/50 border border-red-500 border-dashed rounded-3xl">
+                <div className="h-full flex flex-col items-center justify-center text-center p-8 bg-zinc-50/50 border border-red-700 border-dashed rounded-3xl">
                   <div className="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center text-zinc-400 mb-3">
                     <MapPin className="w-6 h-6" />
                   </div>
@@ -552,9 +550,9 @@ export default function StoreLocator() {
                       key={store.id}
                       id={`store-card-${store.id}`}
                       onClick={() => handleSelectStore(store)}
-                      className={`group bg-white rounded-3xl p-5 border transition-all duration-300 shadow-sm cursor-pointer relative ${isSelected
-                        ? "border-red-500 ring-1 ring-red-500 bg-red-50/10"
-                        : "border-red-500/80 hover:border-zinc-200/80 hover:shadow-md"
+                      className={`group bg-[#FFFFFF75] rounded-3xl p-5 border transition-all duration-300 cursor-pointer relative ${isSelected
+                        ? "border-red-700 ring-2 ring-red-700/30 shadow-md -translate-y-0.5"
+                        : "border-red-200 shadow-sm hover:border-red-700/50 hover:shadow-md hover:-translate-y-0.5"
                         }`}
                     >
                       {/* State Badge & Proximity */}
@@ -565,7 +563,7 @@ export default function StoreLocator() {
 
                         <div className="flex items-center gap-1.5">
                           {store.distance !== undefined && (
-                            <span className="text-[10px] font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded-full">
+                            <span className="text-[10px] font-bold text-red-700 bg-red-50 px-2 py-0.5 rounded-full">
                               {store.distance.toFixed(1)} km away
                             </span>
                           )}
@@ -579,7 +577,7 @@ export default function StoreLocator() {
                       </div>
 
                       {/* Store Name */}
-                      <h3 className="text-base font-extrabold text-red-600 group-hover:text-red-600 transition-colors leading-tight mb-2">
+                      <h3 className="text-base font-extrabold text-red-700 group-hover:text-red-700 transition-colors leading-tight mb-2">
                         {store.title}
                       </h3>
 
@@ -605,13 +603,13 @@ export default function StoreLocator() {
                       </div>
 
                       {/* Card Action Buttons */}
-                      <div className="grid grid-cols-3 gap-2 mt-5 pt-4 border-t border-red-500">
+                      <div className="grid grid-cols-3 gap-2 mt-5 pt-4 border-t border-red-700">
                         <a
                           href={`https://www.google.com/maps/dir/?api=1&destination=${store.lat},${store.lng}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={(e) => e.stopPropagation()}
-                          className="flex items-center justify-center gap-1 py-2 bg-zinc-50 rounded-xl hover:bg-red-50 hover:text-red-600 transition-all text-[11px] font-bold text-zinc-700 text-center"
+                          className="flex items-center justify-center gap-1 py-2 bg-zinc-50 rounded-xl hover:bg-red-50 hover:text-red-700 transition-all text-[11px] font-bold text-zinc-700 text-center"
                         >
                           <Navigation className="w-3 h-3" />
                           <span>Route</span>
@@ -652,7 +650,7 @@ export default function StoreLocator() {
 
           {/* Right Panel: Interactive Map (Visible on desktop, or mobile when Map View is active) */}
           <div
-            className={`col-span-1 md:col-span-8 h-[500px] md:h-[650px] rounded-3xl overflow-hidden border border-red-500 relative shadow-sm ${mobileView === "map" ? "block" : "hidden md:block"
+            className={`col-span-1 md:col-span-8 h-[500px] md:h-[650px] rounded-3xl overflow-hidden border border-red-700 relative shadow-sm ${mobileView === "map" ? "block" : "hidden md:block"
               }`}
           >
             <div ref={mapContainerRef} className="w-full h-full z-10" />
@@ -661,7 +659,7 @@ export default function StoreLocator() {
             {loading && (
               <div className="absolute inset-0 bg-zinc-50/90 z-20 flex items-center justify-center">
                 <div className="text-center space-y-2">
-                  <div className="w-10 h-10 border-4 border-red-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
+                  <div className="w-10 h-10 border-4 border-red-700 border-t-transparent rounded-full animate-spin mx-auto"></div>
                   <p className="text-zinc-500 text-xs font-semibold">Loading Map...</p>
                 </div>
               </div>
@@ -675,7 +673,7 @@ export default function StoreLocator() {
       {/* View Details Modal */}
       {modalStore && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-zinc-950/60 backdrop-blur-sm transition-all duration-300 animate-fadeIn">
-          <div className="relative w-full max-w-lg bg-white rounded-3xl shadow-xl overflow-hidden border border-red-500 p-6 space-y-6">
+          <div className="relative w-full max-w-lg bg-white rounded-3xl shadow-xl overflow-hidden border border-red-700 p-6 space-y-6">
 
             {/* Modal Close Button */}
             <button
@@ -697,7 +695,7 @@ export default function StoreLocator() {
 
             {/* Address */}
             <div className="flex gap-3 items-start">
-              <MapPin className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+              <MapPin className="w-5 h-5 text-red-700 shrink-0 mt-0.5" />
               <div>
                 <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1">Address</h4>
                 <p className="text-sm text-zinc-700 font-medium leading-relaxed">
@@ -710,7 +708,7 @@ export default function StoreLocator() {
             </div>
 
             {/* Contact details */}
-            <div className="grid grid-cols-2 gap-4 border-t border-b border-red-500 py-5">
+            <div className="grid grid-cols-2 gap-4 border-t border-b border-red-700 py-5">
               {modalStore.phone && (
                 <div className="flex gap-2.5 items-center">
                   <div className="w-8 h-8 rounded-full bg-zinc-50 flex items-center justify-center text-zinc-500">
@@ -752,7 +750,7 @@ export default function StoreLocator() {
                         return Object.entries(parsed).map(([day, hrs]: any) => {
                           const isToday = new Date().getDay() === ["sun", "mon", "tue", "wed", "thu", "fri", "sat"].indexOf(day);
                           return (
-                            <div key={day} className={`flex justify-between py-0.5 ${isToday ? "font-bold text-red-600" : ""}`}>
+                            <div key={day} className={`flex justify-between py-0.5 ${isToday ? "font-bold text-red-700" : ""}`}>
                               <span className="capitalize">{day}</span>
                               <span>{hrs[0]}</span>
                             </div>
@@ -775,7 +773,7 @@ export default function StoreLocator() {
                 href={`https://www.google.com/maps/dir/?api=1&destination=${modalStore.lat},${modalStore.lng}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-3 bg-red-600 hover:bg-red-700 text-white rounded-2xl transition-all duration-300 font-bold text-xs uppercase tracking-wider shadow-sm text-center"
+                className="flex items-center justify-center gap-2 w-full py-3 bg-red-700 hover:bg-red-700 text-white rounded-2xl transition-all duration-300 font-bold text-xs uppercase tracking-wider shadow-sm text-center"
               >
                 <Navigation className="w-4 h-4" />
                 <span>Get Directions on Google Maps</span>

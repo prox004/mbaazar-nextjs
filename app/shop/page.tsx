@@ -113,11 +113,11 @@ function ShopContent() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-black pt-8">
       <div className="flex-1 w-full px-6 md:px-16 py-8">
-        
+
         {/* Page Title & Breadcrumbs */}
         <div className="text-center mb-12 space-y-3">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-950">
-            {selectedCategory === "All" ? "M Baazar" : selectedCategory} <span className="text-red-600">Collection</span>
+            {selectedCategory === "All" ? "M Baazar" : selectedCategory} <span className="text-red-700">Collection</span>
           </h1>
           <p className="text-zinc-500 text-sm max-w-xl mx-auto">
             Discover the latest trends in our curated {selectedCategory.toLowerCase()} fashion line.
@@ -129,7 +129,7 @@ function ShopContent() {
           {/* Left: Filter Toggle Button */}
           <button
             onClick={() => setIsFilterOpen(true)}
-            className="flex items-center gap-2 px-5 py-2.5 bg-zinc-900 text-white rounded-full text-sm font-semibold hover:bg-red-600 transition-colors duration-300 shadow-sm cursor-pointer"
+            className="flex items-center gap-2 px-5 py-2.5 bg-zinc-900 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition-colors duration-300 shadow-sm cursor-pointer"
           >
             <SlidersHorizontal className="w-4 h-4" />
             Filter Categories
@@ -137,7 +137,7 @@ function ShopContent() {
 
           {/* Center: Current active category and count */}
           <div className="text-sm font-medium text-zinc-500 hidden sm:block">
-            Showing <span className="text-zinc-950 font-bold">{sortedProducts.length}</span> products in <span className="text-red-600 font-bold">{selectedCategory}</span>
+            Showing <span className="text-zinc-950 font-bold">{sortedProducts.length}</span> products in <span className="text-red-700 font-bold">{selectedCategory}</span>
           </div>
 
           {/* Right: Sort Selection */}
@@ -147,7 +147,7 @@ function ShopContent() {
               <select
                 value={selectedSort}
                 onChange={(e) => setSelectedSort(e.target.value)}
-                className="appearance-none bg-zinc-50 border border-zinc-200 text-zinc-950 text-sm font-semibold rounded-full px-5 py-2.5 pr-10 focus:outline-none focus:border-red-600 transition-colors cursor-pointer"
+                className="appearance-none bg-zinc-50 border border-zinc-200 text-zinc-950 text-sm font-semibold rounded-full px-5 py-2.5 pr-10 focus:outline-none focus:border-red-700 transition-colors cursor-pointer"
               >
                 {SORT_OPTIONS.map((opt) => (
                   <option key={opt.value} value={opt.value}>
@@ -184,11 +184,11 @@ function ShopContent() {
                 <div>
                   <div className="flex items-center justify-between pb-6 border-b border-zinc-100">
                     <span className="text-xl font-bold tracking-tight text-zinc-950 flex items-center gap-2">
-                      <SlidersHorizontal className="w-5 h-5 text-red-600" /> Filter Options
+                      <SlidersHorizontal className="w-5 h-5 text-red-700" /> Filter Options
                     </span>
                     <button
                       onClick={() => setIsFilterOpen(false)}
-                      className="p-1 hover:text-red-600 transition-colors"
+                      className="p-1 hover:text-red-700 transition-colors"
                     >
                       <X className="w-6 h-6" />
                     </button>
@@ -203,14 +203,13 @@ function ShopContent() {
                           <button
                             key={cat}
                             onClick={() => handleCategoryChange(cat)}
-                            className={`flex items-center justify-between w-full px-5 py-3.5 rounded-xl text-left font-semibold text-sm transition-all duration-300 ${
-                              isCurrent
-                                ? "bg-red-50 text-red-600 border border-red-200/50"
+                            className={`flex items-center justify-between w-full px-5 py-3.5 rounded-xl text-left font-semibold text-sm transition-all duration-300 ${isCurrent
+                                ? "bg-red-50 text-red-700 border border-red-200/50"
                                 : "bg-zinc-50 text-zinc-700 hover:bg-zinc-100 border border-transparent"
-                            }`}
+                              }`}
                           >
                             <span>{cat}</span>
-                            {isCurrent && <span className="w-2 h-2 rounded-full bg-red-600" />}
+                            {isCurrent && <span className="w-2 h-2 rounded-full bg-red-700" />}
                           </button>
                         );
                       })}
@@ -221,7 +220,7 @@ function ShopContent() {
                 <div className="pt-6 border-t border-zinc-150">
                   <button
                     onClick={() => handleCategoryChange("All")}
-                    className="w-full py-4 bg-zinc-900 text-white rounded-xl text-sm font-bold hover:bg-red-600 transition-colors duration-300"
+                    className="w-full py-4 bg-zinc-900 text-white rounded-xl text-sm font-bold hover:bg-red-700 transition-colors duration-300"
                   >
                     Reset Filters
                   </button>
@@ -248,7 +247,7 @@ function ShopContent() {
             <p className="text-zinc-400 font-medium">No products found in this category.</p>
             <button
               onClick={() => handleCategoryChange("All")}
-              className="px-6 py-2.5 bg-zinc-900 text-white rounded-full text-xs font-bold hover:bg-red-600 transition-colors"
+              className="px-6 py-2.5 bg-zinc-900 text-white rounded-full text-xs font-bold hover:bg-red-700 transition-colors"
             >
               Show All Products
             </button>
@@ -288,11 +287,11 @@ function ShopContent() {
                           e.stopPropagation();
                           toggleWishlist(product.id);
                         }}
-                        className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md border border-zinc-100/50 flex items-center justify-center text-zinc-600 hover:text-red-600 hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm z-10 cursor-pointer"
+                        className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md border border-zinc-100/50 flex items-center justify-center text-zinc-600 hover:text-red-700 hover:bg-white hover:scale-110 active:scale-95 transition-all duration-300 shadow-sm z-10 cursor-pointer"
                         aria-label="Add to wishlist"
                       >
                         <Heart
-                          className={`w-4 h-4 transition-colors duration-300 ${isWished ? "fill-red-600 text-red-600" : "text-zinc-600"
+                          className={`w-4 h-4 transition-colors duration-300 ${isWished ? "fill-red-700 text-red-700" : "text-zinc-600"
                             }`}
                         />
                       </button>
@@ -302,12 +301,12 @@ function ShopContent() {
                     <div className="p-4 sm:p-5 flex flex-col items-center text-center flex-grow justify-between space-y-3">
                       <div className="space-y-1 flex flex-col items-center w-full">
                         {/* Category */}
-                        <span className="block text-[10px] sm:text-xs font-bold tracking-[0.2em] text-red-600 uppercase">
+                        <span className="block text-[10px] sm:text-xs font-bold tracking-[0.2em] text-red-700 uppercase">
                           {product.category}
                         </span>
 
                         {/* Product Name */}
-                        <h3 className="text-sm sm:text-base font-extrabold text-zinc-950 line-clamp-1 group-hover:text-red-600 transition-colors duration-300 w-full">
+                        <h3 className="text-sm sm:text-base font-extrabold text-zinc-950 line-clamp-1 group-hover:text-red-700 transition-colors duration-300 w-full">
                           {product.name}
                         </h3>
                       </div>
@@ -349,7 +348,7 @@ function ShopContent() {
                   {/* Close button */}
                   <button
                     onClick={() => setSelectedProduct(null)}
-                    className="absolute top-5 right-5 z-10 bg-white/90 backdrop-blur-md p-2 rounded-full border border-zinc-200 text-zinc-700 hover:text-red-600 shadow-sm transition-all cursor-pointer hover:scale-110 active:scale-95"
+                    className="absolute top-5 right-5 z-10 bg-white/90 backdrop-blur-md p-2 rounded-full border border-zinc-200 text-zinc-700 hover:text-red-700 shadow-sm transition-all cursor-pointer hover:scale-110 active:scale-95"
                   >
                     <X className="w-5 h-5" />
                   </button>
@@ -367,10 +366,10 @@ function ShopContent() {
                   {/* Right Side: Product Information */}
                   <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-between space-y-8">
                     <div className="space-y-6">
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 text-red-600 text-xs font-bold tracking-wide uppercase">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 text-red-700 text-xs font-bold tracking-wide uppercase">
                         {selectedProduct.category}
                       </span>
-                      
+
                       <h2 className="text-2xl md:text-3xl font-black text-zinc-950 leading-tight">
                         {selectedProduct.name}
                       </h2>
@@ -400,7 +399,7 @@ function ShopContent() {
 
                       <button
                         onClick={() => setSelectedProduct(null)}
-                        className="w-full py-4 bg-red-600 text-white rounded-2xl text-sm font-bold hover:bg-zinc-950 transition-colors duration-300 cursor-pointer shadow-lg shadow-red-600/10 hover:shadow-zinc-950/10"
+                        className="w-full py-4 bg-red-700 text-white rounded-2xl text-sm font-bold hover:bg-zinc-950 transition-colors duration-300 cursor-pointer shadow-lg shadow-red-700/10 hover:shadow-zinc-950/10"
                       >
                         Close Product Details
                       </button>
@@ -424,7 +423,7 @@ export default function ShopPage() {
   return (
     <Suspense fallback={
       <div className="min-h-screen bg-white flex items-center justify-center">
-        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-red-600" />
+        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-red-700" />
       </div>
     }>
       <ShopContent />

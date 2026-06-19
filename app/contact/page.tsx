@@ -42,7 +42,7 @@ export default function ContactPage() {
 
         {/* Header Section */}
         <div className="mb-16 flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
-          <span className="text-[11px] uppercase tracking-[0.35em] font-semibold text-red-600">
+          <span className="text-[11px] uppercase tracking-[0.35em] font-semibold text-red-700">
             Get In Touch
           </span>
           <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-zinc-950 leading-tight">
@@ -61,14 +61,14 @@ export default function ContactPage() {
             <div className="bg-zinc-50/40 border border-zinc-150 rounded-2xl p-8 sm:p-10 shadow-xs flex-1 flex flex-col justify-between gap-8">
               <div>
                 <h2 className="text-2xl font-black text-zinc-950 tracking-tight flex items-center gap-3 mb-6">
-                  <span className="w-1.5 h-6 bg-red-600 rounded-full inline-block" />
+                  <span className="w-1.5 h-6 bg-red-700 rounded-full inline-block" />
                   Corporate Office
                 </h2>
-                <h3 className="text-lg font-bold text-red-600 mb-6">Metro Retail Pvt. Ltd.</h3>
+                <h3 className="text-lg font-bold text-red-700 mb-6">Metro Retail Pvt. Ltd.</h3>
 
                 <ul className="flex flex-col gap-6 text-sm sm:text-base">
                   <li className="flex gap-4 items-start">
-                    <div className="p-2 bg-white rounded-xl border border-red-500 shadow-sm flex-shrink-0 text-red-600">
+                    <div className="p-2 bg-white rounded-xl border border-red-700 shadow-sm flex-shrink-0 text-red-700">
                       <MapPin className="w-5 h-5" />
                     </div>
                     <div>
@@ -80,36 +80,36 @@ export default function ContactPage() {
                   </li>
 
                   <li className="flex gap-4 items-start">
-                    <div className="p-2 bg-white rounded-xl border border-red-500 shadow-sm flex-shrink-0 text-red-600">
+                    <div className="p-2 bg-white rounded-xl border border-red-700 shadow-sm flex-shrink-0 text-red-700">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="font-bold text-zinc-900">Phone</p>
-                      <a href="tel:9830640004" className="text-zinc-600 hover:text-red-600 mt-1 leading-relaxed block transition-colors">
+                      <a href="tel:9830640004" className="text-zinc-600 hover:text-red-700 mt-1 leading-relaxed block transition-colors">
                         +91 9830640004
                       </a>
                     </div>
                   </li>
 
                   <li className="flex gap-4 items-start">
-                    <div className="p-2 bg-white rounded-xl border border-red-500 shadow-sm flex-shrink-0 text-red-600">
+                    <div className="p-2 bg-white rounded-xl border border-red-700 shadow-sm flex-shrink-0 text-red-700">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="font-bold text-zinc-900">Email</p>
-                      <a href="mailto:customercare@mbaazar.in" className="text-zinc-600 hover:text-red-600 mt-1 leading-relaxed block transition-colors">
+                      <a href="mailto:customercare@mbaazar.in" className="text-zinc-600 hover:text-red-700 mt-1 leading-relaxed block transition-colors">
                         customercare@mbaazar.in
                       </a>
                     </div>
                   </li>
 
                   <li className="flex gap-4 items-start">
-                    <div className="p-2 bg-white rounded-xl border border-red-500 shadow-sm flex-shrink-0 text-red-600">
+                    <div className="p-2 bg-white rounded-xl border border-red-700 shadow-sm flex-shrink-0 text-red-700">
                       <LinkIcon className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="font-bold text-zinc-900">Website</p>
-                      <a href="https://www.mbaazar.in" target="_blank" rel="noopener noreferrer" className="text-zinc-600 hover:text-red-600 mt-1 leading-relaxed block transition-colors">
+                      <a href="https://www.mbaazar.in" target="_blank" rel="noopener noreferrer" className="text-zinc-600 hover:text-red-700 mt-1 leading-relaxed block transition-colors">
                         www.mbaazar.in
                       </a>
                     </div>
@@ -133,13 +133,13 @@ export default function ContactPage() {
           <div className="lg:col-span-7 flex flex-col justify-between bg-zinc-50/40 border border-zinc-150 rounded-2xl p-8 sm:p-10 shadow-xs">
             <div>
               <h2 className="text-2xl font-black text-zinc-950 tracking-tight flex items-center gap-3 mb-8">
-                <span className="w-1.5 h-6 bg-red-600 rounded-full inline-block" />
+                <span className="w-1.5 h-6 bg-red-700 rounded-full inline-block" />
                 Drop us a line
               </h2>
 
               {submitted ? (
                 <div className="h-full flex flex-col justify-center items-center gap-4 text-center py-16">
-                  <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 text-xl font-bold">
+                  <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-700 text-xl font-bold">
                     ✓
                   </div>
                   <h3 className="text-2xl font-bold text-zinc-900">Message Sent!</h3>
@@ -148,7 +148,7 @@ export default function ContactPage() {
                   </p>
                   <Button
                     onClick={() => setSubmitted(false)}
-                    className="mt-4 bg-red-600 hover:bg-red-700 text-white rounded-xl px-6 py-2"
+                    className="mt-4 bg-red-700 hover:bg-red-700 text-white rounded-xl px-6 py-2"
                   >
                     Send Another Message
                   </Button>
@@ -164,7 +164,7 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder="Your Full Name"
-                      className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                      className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                     />
                   </div>
 
@@ -177,7 +177,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="name@example.com"
-                      className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                      className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                     />
                   </div>
 
@@ -190,7 +190,7 @@ export default function ContactPage() {
                       value={formData.phone}
                       onChange={handleInputChange}
                       placeholder="Contact Number"
-                      className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                      className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                     />
                   </div>
 
@@ -202,7 +202,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleInputChange}
                       placeholder="Write your message here..."
-                      className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500 resize-none"
+                      className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700 resize-none"
                     />
                   </div>
 
@@ -213,7 +213,7 @@ export default function ContactPage() {
                       required
                       checked={formData.consent}
                       onChange={handleCheckboxChange}
-                      className="mt-1 text-red-600 focus:ring-red-500 rounded border-zinc-300"
+                      className="mt-1 text-red-700 focus:ring-red-700 rounded border-zinc-300"
                     />
                     <label htmlFor="consent" className="text-xs text-zinc-600 leading-relaxed cursor-pointer select-none">
                       I hereby authorize M Baazar to send notifications on SMS, Calls, RCS.
@@ -222,7 +222,7 @@ export default function ContactPage() {
 
                   <Button
                     type="submit"
-                    className="mt-4 self-start bg-red-600 hover:bg-red-700 text-white rounded-xl px-10 py-3 font-semibold tracking-wide"
+                    className="mt-4 self-start bg-red-700 hover:bg-red-700 text-white rounded-xl px-10 py-3 font-semibold tracking-wide"
                   >
                     Submit Form
                   </Button>

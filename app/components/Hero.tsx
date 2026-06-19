@@ -94,46 +94,41 @@ export default function Hero({ showText = false }: HeroProps) {
     if (isAnimating) return;
     setIsAnimating(true);
     setIsTransitioning(true);
-    setCurrentIndex((prev) => prev + 1);
 
-    // Safety fallback to release animation lock even if onTransitionEnd does not fire (e.g. background tab)
-    const timer = setTimeout(() => {
+    const nextIndex = currentIndex + 1;
+    setCurrentIndex(nextIndex);
+
+    // Precise timeout for infinite loop transition
+    setTimeout(() => {
+      if (nextIndex === 5) {
+        setIsTransitioning(false);
+        setCurrentIndex(2);
+      }
       setIsAnimating(false);
-    }, TRANSITION_DURATION + 200);
+    }, TRANSITION_DURATION);
   };
 
   const handlePrev = () => {
     if (isAnimating) return;
     setIsAnimating(true);
     setIsTransitioning(true);
-    setCurrentIndex((prev) => prev - 1);
 
-    // Safety fallback to release animation lock
-    const timer = setTimeout(() => {
+    const prevIndex = currentIndex - 1;
+    setCurrentIndex(prevIndex);
+
+    // Precise timeout for infinite loop transition
+    setTimeout(() => {
+      if (prevIndex === 1) {
+        setIsTransitioning(false);
+        setCurrentIndex(4);
+      }
       setIsAnimating(false);
-    }, TRANSITION_DURATION + 200);
-  };
-
-  // Instantly jump to virtual counterpart when completing transitions at bounds
-  const handleTransitionEnd = (e: React.TransitionEvent) => {
-    // Only handle transition end of the track container itself, ignore bubbling events from children
-    if (e.target !== e.currentTarget) return;
-
-    if (currentIndex === 1) {
-      setIsTransitioning(false);
-      setCurrentIndex(4);
-    } else if (currentIndex === 5) {
-      setIsTransitioning(false);
-      setCurrentIndex(2);
-    } else {
-      setIsAnimating(false);
-    }
+    }, TRANSITION_DURATION);
   };
 
   // Turn transitions back on after jumping
   useEffect(() => {
     if (!isTransitioning) {
-      // Force repaint, then re-enable transition and release animation lock
       const timer = setTimeout(() => {
         setIsTransitioning(true);
         setIsAnimating(false);
@@ -240,7 +235,6 @@ export default function Hero({ showText = false }: HeroProps) {
             transform: `translateX(${finalTranslate}%)`,
             transition: isTransitioning && !isDragging ? `transform ${TRANSITION_DURATION}ms ease-out` : "none",
           }}
-          onTransitionEnd={handleTransitionEnd}
         >
           {slides.map((slide, idx) => {
             const isActive = idx === currentIndex;
@@ -281,7 +275,7 @@ export default function Hero({ showText = false }: HeroProps) {
 
                   {/* Soft Red Overlay for Inactive Slides */}
                   <div
-                    className={`absolute inset-0 bg-red-600/80 pointer-events-none ${isActive ? "opacity-0" : "opacity-100"}`}
+                    className={`absolute inset-0 bg-red-700/80 pointer-events-none ${isActive ? "opacity-0" : "opacity-100"}`}
                     style={{
                       transition: isTransitioning && !isDragging ? `opacity ${TRANSITION_DURATION}ms ease-out` : "none",
                     }}
@@ -305,7 +299,7 @@ export default function Hero({ showText = false }: HeroProps) {
                         <div className="pt-2 sm:pt-4">
                           <Link
                             href={slide.ctaLink}
-                            className="inline-block px-5 py-2.5 sm:px-8 sm:py-3.5 bg-white text-black font-semibold text-xs tracking-wider uppercase hover:bg-red-600 hover:text-white transition-colors duration-300 rounded-sm"
+                            className="inline-block px-5 py-2.5 sm:px-8 sm:py-3.5 bg-white text-black font-semibold text-xs tracking-wider uppercase hover:bg-red-700 hover:text-white transition-colors duration-300 rounded-sm"
                           >
                             {slide.ctaText}
                           </Link>
@@ -323,7 +317,7 @@ export default function Hero({ showText = false }: HeroProps) {
         {/* Desktop Arrow Navigation (Smaller premium circular design) */}
         <button
           onClick={(e) => { e.stopPropagation(); handlePrev(); }}
-          className="hidden md:flex absolute left-8 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/95 shadow-md border border-zinc-100 text-black hover:bg-red-600 hover:text-white items-center justify-center transition-all duration-300 z-10"
+          className="hidden md:flex absolute left-8 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/95 shadow-md border border-zinc-100 text-black hover:bg-red-700 hover:text-white items-center justify-center transition-all duration-300 z-10"
           aria-label="Previous Slide"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -333,7 +327,7 @@ export default function Hero({ showText = false }: HeroProps) {
 
         <button
           onClick={(e) => { e.stopPropagation(); handleNext(); }}
-          className="hidden md:flex absolute right-8 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/95 shadow-md border border-zinc-100 text-black hover:bg-red-600 hover:text-white items-center justify-center transition-all duration-300 z-10"
+          className="hidden md:flex absolute right-8 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/95 shadow-md border border-zinc-100 text-black hover:bg-red-700 hover:text-white items-center justify-center transition-all duration-300 z-10"
           aria-label="Next Slide"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -379,7 +373,7 @@ export default function Hero({ showText = false }: HeroProps) {
 
           {/* Active Gooey Fluid dot */}
           <div
-            className="absolute w-2.5 h-2.5 bg-red-600 rounded-full transition-all duration-500 ease-out pointer-events-none"
+            className="absolute w-2.5 h-2.5 bg-red-700 rounded-full transition-all duration-500 ease-out pointer-events-none"
             style={{
               left: `${7 + activeIndicatorIndex * 20}px`,
             }}

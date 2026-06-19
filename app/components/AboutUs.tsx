@@ -68,11 +68,15 @@ export default function AboutUs() {
     <section
       ref={containerRef}
       id="about"
-      className="relative py-20 px-10 sm:py-28 text-white w-full min-h-[120vh] bg-fixed bg-cover bg-center"
-      style={{ backgroundImage: `url("/images/store.webp")` }}
+      className="relative py-20 px-10 sm:py-28 text-white w-full min-h-[120vh]"
     >
+      {/* Grayscale Background Image */}
+      <div
+        className="absolute inset-0 bg-fixed bg-cover bg-center grayscale pointer-events-none z-0"
+        style={{ backgroundImage: `url("/images/store.webp")` }}
+      />
       {/* Black Overlay */}
-      <div className="absolute inset-0 bg-black/80 backdrop-blur-[2px] z-0 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/90 backdrop-blur-[2px] z-0 pointer-events-none" />
 
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-12">
         {/* 50-50 Desktop Split Grid */}
@@ -80,11 +84,11 @@ export default function AboutUs() {
 
           {/* Left Column (50%): Sticky Pinned Brand Message */}
           <div className="flex flex-col justify-center space-y-6 lg:sticky lg:top-[28vh] h-fit">
-            <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight flex flex-col items-start gap-y-2">
-              <SplitText text="Redefining" tag="span" textAlign="left" />
-              <SplitText text="Fast Fashion" tag="span" className="text-red-600 text-4xl sm:text-8xl whitespace-nowrap" textAlign="left" />
+            <h2 className="font-medium tracking-tight text-white flex flex-col items-start" style={{ fontSize: "80px", letterSpacing: "-0.03em", lineHeight: "1.1" }}>
+              <span>Redefining</span>
+              <span className="italic" style={{ fontSize: "110px", fontFamily: "Georgia, serif", color: "rgba(255, 42, 42, 1)" }}>Fast Fashion</span>
             </h2>
-            <p className="text-sm sm:text-base text-zinc-100 leading-relaxed font-normal max-w-2xl">
+            <p className="text-[14px] font-inter text-zinc-300 leading-relaxed font-light max-w-2xl">
               A beloved name in Indian fashion, M Baazar has been a constant companion shaping the shopping sensibility of millions across the nation. Over the years, it has built a strong bond with customers by offering a wide range of products that cater to everyday needs as well as special occasions. From trendy clothing and accessories to toys and home essentials, M Baazar has established itself as a trusted one-stop shopping destination for families across India.
             </p>
           </div>
@@ -95,7 +99,7 @@ export default function AboutUs() {
               const targetScale = Math.max(0.88, 1 - (features.length - i - 1) * 0.04);
 
               // Pure Red Card Styling
-              const cardShade = "bg-red-600 border border-red-700 shadow-xl";
+              const cardShade = "bg-red-700 border border-red-700 shadow-xl";
 
               return (
                 <StickyCard_001
@@ -104,38 +108,78 @@ export default function AboutUs() {
                   progress={scrollYProgress}
                   range={[i * 0.2, 1]}
                   targetScale={targetScale}
-                  className={`h-[320px] w-full max-w-[520px] ${cardShade}
-  group relative overflow-hidden
-  flex flex-col justify-between
-  p-8 sm:p-10`}
+                  className="
+    h-[360px]
+    w-full
+    max-w-[560px]
+    relative
+    overflow-hidden
+    border border-red-300
+    bg-gradient-to-br
+    from-red-500/[0.08]
+    via-red-500/[0.04]
+    to-red-500/0
+    backdrop-blur-3xl
+    p-10
+  "
                 >
+                  {/* Massive Number */}
+                  <div className="absolute right-6 top-4 text-[180px] leading-none font-black text-white/[0.04] pointer-events-none">
+                    {feature.number}
+                  </div>
 
-                  {/* Top Label */}
-                  <div className="relative z-10">
-                    <span className="text-[11px] uppercase tracking-[0.35em] font-semibold text-white/80">
+                  {/* Gradient Glow */}
+                  <div
+                    className="
+      absolute
+      -right-24
+      -top-24
+      h-64
+      w-64
+      rounded-full
+      bg-red-500/10
+      blur-3xl
+    "
+                  />
+
+                  {/* Header */}
+                  <div className="relative z-10 flex items-center justify-between">
+                    <span className="text-[11px] uppercase tracking-[0.35em] text-white/50">
                       {feature.label}
                     </span>
+
+                    <div className="text-red-500">
+                      {feature.icon}
+                    </div>
                   </div>
 
                   {/* Main Content */}
-                  <div className="relative z-10 space-y-6">
-                    <div className="flex items-center gap-4">
-                      <div className="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center text-white group-hover:bg-white group-hover:text-red-600 transition-all duration-300">
-                        {feature.icon}
-                      </div>
+                  <div className="relative z-10">
+                    <h3
+                      className="
+        text-[100px]
+        font-bold
+        text-white
+      "
+                    >
+                      {feature.title}
+                    </h3>
 
-                      <h3 className="text-5xl font-black tracking-tight text-white">
-                        {feature.title}
-                      </h3>
-                    </div>
+                    <div className="mt-3 w-16 h-px bg-gradient-to-r from-red-500 to-transparent" />
 
-                    <p className="max-w-[280px] text-sm leading-7 text-white/95">
+                    <p
+                      className="
+        mt-8
+        max-w-sm
+        text-white/70
+        leading-8
+        text-[15px]
+      "
+                    >
                       {feature.description}
                     </p>
                   </div>
 
-                  {/* Accent Line */}
-                  <div className="relative z-10 w-16 h-[2px] bg-white" />
                 </StickyCard_001>
               );
             })}

@@ -22,8 +22,8 @@ export default function MobileBlocker() {
         navigator.maxTouchPoints > 0 ||
         (navigator as any).msMaxTouchPoints > 0;
 
-      // If it has a small screen, mobile user agent, or is a touch-based device with a restricted viewport
-      if (isSmallScreen || isMobileUA || (isTouchDevice && window.innerWidth < 1366)) {
+      // If it has a small screen or mobile user agent
+      if (isSmallScreen || isMobileUA) {
         setIsMobile(true);
         // Prevent scrolling on the body when blocker is active
         document.body.style.overflow = "hidden";
@@ -55,7 +55,7 @@ export default function MobileBlocker() {
         />
 
         {/* Divider Line */}
-        <div className="w-16 h-1 bg-red-600 rounded-full" />
+        <div className="w-16 h-1 bg-red-700 rounded-full" />
 
         {/* Warning Text */}
         <div className="space-y-4">

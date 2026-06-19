@@ -145,11 +145,11 @@ export default async function BlogPostPage({ params }: PageProps) {
       <div className="max-w-6xl mx-auto px-6 w-full py-8 flex-1">
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center space-x-2 text-xs text-zinc-400 font-medium mb-8 overflow-x-auto whitespace-nowrap py-1">
-          <Link href="/" className="hover:text-red-600 transition-colors">
+          <Link href="/" className="hover:text-red-700 transition-colors">
             Home
           </Link>
           <ChevronRight className="w-3.5 h-3.5 shrink-0" />
-          <Link href="/blog" className="hover:text-red-600 transition-colors">
+          <Link href="/blog" className="hover:text-red-700 transition-colors">
             Blog
           </Link>
           <ChevronRight className="w-3.5 h-3.5 shrink-0" />
@@ -157,7 +157,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             <>
               <Link
                 href={`/blog?category=${category.slug}`}
-                className="hover:text-red-600 transition-colors"
+                className="hover:text-red-700 transition-colors"
               >
                 {category.title}
               </Link>
@@ -172,7 +172,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         {/* Back Link */}
         <Link
           href="/blog"
-          className="inline-flex items-center gap-2 text-xs font-semibold text-zinc-500 hover:text-red-600 mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-xs font-semibold text-zinc-500 hover:text-red-700 mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to all stories
@@ -185,7 +185,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             {/* Article Header */}
             <header className="space-y-6 mb-10">
               {category && (
-                <span className="inline-block bg-red-50 text-red-600 text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full">
+                <span className="inline-block bg-red-50 text-red-700 text-[10px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full">
                   {category.title}
                 </span>
               )}
@@ -257,7 +257,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           <aside className="lg:col-span-4 lg:sticky lg:top-24 space-y-8">
             <div className="border border-zinc-100 rounded-3xl p-6 bg-zinc-50/50">
               <h3 className="text-sm font-black uppercase tracking-wider text-zinc-900 mb-6 pb-3 border-b border-zinc-100">
-                Recent <span className="text-red-600">Stories</span>
+                Recent <span className="text-red-700">Stories</span>
               </h3>
               <div className="space-y-6">
                 {allPosts
@@ -284,10 +284,10 @@ export default async function BlogPostPage({ params }: PageProps) {
                           />
                         </Link>
                         <div className="space-y-1 min-w-0">
-                          <span className="text-[9px] font-bold uppercase tracking-wider text-red-600 block">
+                          <span className="text-[9px] font-bold uppercase tracking-wider text-red-700 block">
                             {recentPost.category?.title || "Fashion"}
                           </span>
-                          <h4 className="text-xs font-bold text-zinc-900 group-hover:text-red-600 transition-colors line-clamp-2 leading-snug">
+                          <h4 className="text-xs font-bold text-zinc-900 group-hover:text-red-700 transition-colors line-clamp-2 leading-snug">
                             <Link href={`/blog/${recentPost.slug}`}>{recentPost.title}</Link>
                           </h4>
                           <span className="text-[10px] text-zinc-400 block font-medium">
@@ -306,7 +306,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         {relatedPosts.length > 0 && (
           <section className="py-12 border-t border-zinc-100 mt-12">
             <h2 className="text-2xl font-black uppercase tracking-tight text-zinc-950 mb-8">
-              Related <span className="text-red-600">Stories</span>
+              Related <span className="text-red-700">Stories</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map((relPost: any) => {
@@ -336,10 +336,10 @@ export default async function BlogPostPage({ params }: PageProps) {
                     </Link>
                     <div className="p-4 flex-1 flex flex-col justify-between space-y-3">
                       <div>
-                        <span className="text-[9px] font-bold uppercase tracking-wider text-red-600 block mb-1">
+                        <span className="text-[9px] font-bold uppercase tracking-wider text-red-700 block mb-1">
                           {relPost.category?.title || "Fashion"}
                         </span>
-                        <h3 className="text-sm font-bold text-zinc-900 group-hover:text-red-600 transition-colors line-clamp-2 leading-snug">
+                        <h3 className="text-sm font-bold text-zinc-900 group-hover:text-red-700 transition-colors line-clamp-2 leading-snug">
                           <Link href={`/blog/${relPost.slug}`}>{relPost.title}</Link>
                         </h3>
                       </div>

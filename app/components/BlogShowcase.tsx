@@ -1,11 +1,61 @@
 "use client";
-
 import React, { useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Calendar, User, BookOpen } from "lucide-react";
-import blogData from "@/public/data/blog.json";
-import SplitText from "../../components/SplitText";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+
+interface DummyPost {
+  id: number;
+  title: string;
+  image: string;
+  category: string;
+  readTime: string;
+  slug: string;
+}
+
+const DUMMY_POSTS: DummyPost[] = [
+  {
+    id: 1,
+    title: "Top Saree Trends Every Woman Should Know in 2026",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&q=80&w=800",
+    category: "SAREE TRENDS",
+    readTime: "5 MIN",
+    slug: "top-saree-trends-2026",
+  },
+  {
+    id: 2,
+    title: "How To Choose The Perfect Outfit For Durga Puja",
+    image: "https://i.pinimg.com/564x/96/84/99/9684998a5dbf6c29eb604f4726187aa1.jpg",
+    category: "FESTIVE FASHION",
+    readTime: "6 MIN",
+    slug: "perfect-outfit-for-durga-puja",
+  },
+  {
+    id: 3,
+    title: "Wedding Season Essentials: Ethnic Styles That Never Fail",
+    image: "https://thumbs.dreamstime.com/b/portrait-very-beautiful-young-indian-bride-luxurious-bridal-costume-makeup-heavy-jewellery-studio-lighting-206370642.jpg",
+    category: "WEDDING STYLE",
+    readTime: "7 MIN",
+    slug: "wedding-season-ethnic-styles",
+  },
+  {
+    id: 4,
+    title: "Kurti Styling Guide: From Office Wear To Festive Looks",
+    image: "https://m.media-amazon.com/images/I/81nX7XsVmeL._AC_UY1100_.jpg",
+    category: "STYLE GUIDE",
+    readTime: "5 MIN",
+    slug: "kurti-styling-guide",
+  },
+  {
+    id: 5,
+    title: "The Ultimate Guide To Building An Ethnic Wardrobe",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh72n-YV9chGBSdPx0Dfp_vA2GnHYdYjexnYkTV52xtvKkF5zh_K2mrGI&s=10",
+    category: "FASHION GUIDE",
+    readTime: "8 MIN",
+    slug: "ultimate-ethnic-wardrobe-guide",
+  },
+];
+
 
 export default function BlogShowcase() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -22,7 +72,7 @@ export default function BlogShowcase() {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
-  // Autoplay functionality using setInterval
+  // Autoplay functionality
   useEffect(() => {
     if (!emblaApi) return;
 
@@ -33,124 +83,96 @@ export default function BlogShowcase() {
     return () => clearInterval(autoplay);
   }, [emblaApi]);
 
-  // Filter published posts
-  const publishedPosts = blogData.filter((post: any) => post.status === "published");
+  // Triple posts array internally so that loop: true has enough slides to loop continuously
+  const cycledPosts = [...DUMMY_POSTS, ...DUMMY_POSTS, ...DUMMY_POSTS].map((post, idx) => ({
+    ...post,
+    uniqueId: `${post.id}-${idx}`,
+  }));
 
   return (
-    <section className="py-20 overflow-hidden w-full">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
+    <section className="py-20 overflow-hidden w-full bg-[#FFFFFF]">
+      <div className="container max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-12">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
-          <div className="max-w-2xl">
-            <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-zinc-950 flex flex-wrap gap-x-2">
-              <SplitText text="Latest from the" tag="span" />{" "}
-              <SplitText text="Blog" tag="span" className="text-red-600" />
-            </h2>
-            <p className="text-zinc-500 text-sm sm:text-base mt-3 leading-relaxed">
+        <div className="mb-12 items-center">
+          <h2
+            className="font-medium tracking-tight text-zinc-950 font-montserrat mb-4 md:whitespace-nowrap"
+            style={{ fontSize: "60px", letterSpacing: "-0.03em", lineHeight: "0.95" }}
+          >
+            Latest from the <span className="italic" style={{ fontFamily: "Georgia, serif", color: "rgb(185, 28, 28)" }}>editorial blog.</span>
+          </h2>
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <p className="text-zinc-500 text-sm sm:text-base leading-relaxed max-w-2xl">
               Explore style tips, global fashion trends, behind-the-scenes previews, and inspiration from our latest collections.
             </p>
-          </div>
-
-          {/* Carousel Buttons */}
-          <div className="flex items-center gap-3">
-            <button
-              onClick={scrollPrev}
-              className="p-3 rounded-full border border-zinc-200 bg-white text-zinc-700 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300 shadow-sm"
-              aria-label="Previous slide"
-            >
-              <ArrowLeft className="w-5 h-5" />
-            </button>
-            <button
-              onClick={scrollNext}
-              className="p-3 rounded-full border border-zinc-200 bg-white text-zinc-700 hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300 shadow-sm"
-              aria-label="Next slide"
-            >
-              <ArrowRight className="w-5 h-5" />
-            </button>
+            {/* Carousel Buttons */}
+            <div className="flex items-center gap-3">
+              <button
+                onClick={scrollPrev}
+                className="p-3 rounded-full border border-zinc-200 bg-[#FFFFFF] text-zinc-700 hover:bg-red-700 hover:text-white hover:border-red-700 transition-all duration-300 shadow-sm cursor-pointer"
+                aria-label="Previous slide"
+              >
+                <ArrowLeft className="w-5 h-5" />
+              </button>
+              <button
+                onClick={scrollNext}
+                className="p-3 rounded-full border border-zinc-200 bg-[#FFFFFF] text-zinc-700 hover:bg-red-700 hover:text-white hover:border-red-700 transition-all duration-300 shadow-sm cursor-pointer"
+                aria-label="Next slide"
+              >
+                <ArrowRight className="w-5 h-5" />
+              </button>
+            </div>
           </div>
         </div>
 
         {/* Embla Viewport */}
         <div className="embla overflow-hidden" ref={emblaRef}>
           <div className="embla__container flex gap-6">
-            {publishedPosts.map((post: any) => {
-              const dateString = new Date(post.publishedDate).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "short",
-                day: "numeric",
-              });
+            {cycledPosts.map((post) => (
+              <div
+                key={post.uniqueId}
+                className="embla__slide flex-none w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] min-w-0"
+              >
+                <Link href="/blog" className="group block h-full">
+                  {/* Aspect ratio container matching target image (vertical aspect-[3/4]) */}
+                  <div className="relative aspect-[3/4] rounded-[24px] overflow-hidden bg-zinc-100 shadow-sm transition-all duration-500 group-hover:shadow-md">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
 
-              const categoryTitle = post.category?.title || "Fashion";
-              const authorName = post.author?.name || "Editorial Staff";
-
-              return (
-                <div
-                  key={post.id}
-                  className="embla__slide flex-none w-full sm:w-[50%] lg:w-[33.33%] min-w-0"
-                >
-                  <article className="group h-full flex flex-col bg-white border-2 border-red-500/60 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-red-200 transition-all duration-300">
-
-                    {/* Featured Image */}
-                    <Link
-                      href={`/blog/${post.slug}`}
-                      className="relative aspect-[16/10] block overflow-hidden bg-zinc-100"
-                    >
-                      <img
-                        src={post.featuredImage || "/media/placeholder.jpg"}
-                        alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500"
-                        loading="lazy"
-                      />
-                      <span className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm text-[10px] font-bold uppercase tracking-wider text-red-600 px-3 py-1 rounded-full shadow-sm">
-                        {categoryTitle}
-                      </span>
-                    </Link>
-
-                    {/* Content */}
-                    <div className="p-6 flex-1 flex flex-col justify-between gap-6">
-                      <div className="space-y-3">
-                        {/* Title */}
-                        <h3 className="text-xl font-bold leading-snug text-zinc-950 group-hover:text-red-600 transition-colors line-clamp-2">
-                          <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-                        </h3>
-
-                        {/* Excerpt */}
-                        <p className="text-sm text-zinc-500 leading-relaxed line-clamp-3">
-                          {post.excerpt.replace(/Continue reading.*/g, "").trim()}
-                        </p>
-                      </div>
-
-                      {/* Footer Metadata */}
-                      <div className="flex items-center justify-between pt-4 border-t border-zinc-100 text-[11px] text-zinc-400 font-medium">
-                        <div className="flex items-center gap-1.5">
-                          <User className="w-3.5 h-3.5 text-zinc-400" />
-                          <span>{authorName}</span>
-                        </div>
-                        <div className="flex items-center gap-1.5">
-                          <Calendar className="w-3.5 h-3.5 text-zinc-400" />
-                          <span>{dateString}</span>
-                        </div>
-                      </div>
+                    {/* White badge overlay at top-right */}
+                    <div className="absolute top-4 right-4 bg-white text-zinc-950 text-[10px] font-extrabold tracking-widest uppercase px-3.5 py-1.5 rounded-full shadow-sm">
+                      {post.category} • {post.readTime}
                     </div>
-                  </article>
-                </div>
-              );
-            })}
+                  </div>
+
+                  {/* Clean Borderless Typography Below Image */}
+                  <div className="mt-4">
+                    <h3 className="text-zinc-950 font-medium font-poppins text-lg leading-snug group-hover:text-red-700 transition-colors">
+                      {post.title}
+                    </h3>
+                    <div className="text-zinc-400 font-bold uppercase tracking-wider text-[11px] flex items-center gap-1 mt-2.5 transition-colors group-hover:text-red-700">
+                      Read Story <span className="text-xs">↗</span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* View All Button */}
-        <div className="mt-12 text-center">
+        <div className="mt-16 text-center">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-red-600 hover:text-red-700 transition-colors uppercase tracking-wider"
+            className="inline-flex items-center gap-2 text-sm font-bold text-red-700 hover:text-red-700 transition-colors uppercase tracking-wider"
           >
             View All Editorial Posts
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
-
       </div>
     </section>
   );

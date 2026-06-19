@@ -316,9 +316,8 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
       <div className="w-full px-4 sm:px-6 lg:px-12">
         {/* Header Section */}
         <div className="text-center mb-12 mt-10 space-y-3">
-          <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 flex justify-center gap-x-2 flex-wrap">
-            <SplitText text="From Our Stores" tag="span" />{" "}
-            <SplitText text="To Your Feed" tag="span" className="text-red-600" />
+          <h2 className="font-medium tracking-tight text-zinc-950 font-montserrat text-center" style={{ fontSize: "72px", letterSpacing: "-0.03em", lineHeight: "0.95" }}>
+            From our stores <span className="italic" style={{ fontFamily: "Georgia, serif", color: "rgb(185, 28, 28)" }}>to your feed.</span>
           </h2>
           <p className="text-sm sm:text-base text-zinc-500 max-w-lg mx-auto font-regular">
             Get styling tips, fashion lookbooks, and the latest trends directly from our social media.
@@ -330,7 +329,7 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
           {/* Navigation Arrows */}
           <button
             onClick={() => emblaApi?.scrollPrev()}
-            className="absolute left-0 md:left-4 z-40 w-11 h-11 rounded-full bg-white/95 border border-zinc-100 flex items-center justify-center text-zinc-800 hover:text-red-600 hover:scale-105 active:scale-95 transition-all duration-300 shadow-md cursor-pointer"
+            className="absolute left-0 md:left-4 z-40 w-11 h-11 rounded-full bg-white/95 border border-zinc-100 flex items-center justify-center text-zinc-800 hover:text-red-700 hover:scale-105 active:scale-95 transition-all duration-300 shadow-md cursor-pointer"
             aria-label="Previous Reel"
           >
             <ChevronLeft className="w-5 h-5" />
@@ -338,7 +337,7 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
 
           <button
             onClick={() => emblaApi?.scrollNext()}
-            className="absolute right-0 md:right-4 z-40 w-11 h-11 rounded-full bg-white/95 border border-zinc-100 flex items-center justify-center text-zinc-800 hover:text-red-600 hover:scale-105 active:scale-95 transition-all duration-300 shadow-md cursor-pointer"
+            className="absolute right-0 md:right-4 z-40 w-11 h-11 rounded-full bg-white/95 border border-zinc-100 flex items-center justify-center text-zinc-800 hover:text-red-700 hover:scale-105 active:scale-95 transition-all duration-300 shadow-md cursor-pointer"
             aria-label="Next Reel"
           >
             <ChevronRight className="w-5 h-5" />
@@ -397,7 +396,7 @@ export default function ReelsShowcase({ autoGotoNextSlide = true }: ReelsShowcas
                                   className="absolute inset-0 w-full h-full object-cover opacity-60"
                                 />
                                 <div className="relative z-20 flex flex-col items-center gap-3">
-                                  <div className="w-8 h-8 rounded-full border-2 border-red-600 border-t-transparent animate-spin" />
+                                  <div className="w-8 h-8 rounded-full border-2 border-red-700 border-t-transparent animate-spin" />
                                   <span className="text-[10px] text-zinc-300 font-bold uppercase tracking-wider">
                                     Loading Video
                                   </span>

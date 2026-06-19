@@ -17,7 +17,7 @@ export default function PromotionalTicker() {
       <ScrollVelocity
         texts={["M Baazar - "]}
         velocity={-50}
-        className="text-white text-6xl sm:text-6xl font-bold py-5 bg-red-600"
+        className="text-white text-6xl sm:text-6xl font-bold py-5 bg-red-700"
         numCopies={10}
         damping={50}
         stiffness={400}

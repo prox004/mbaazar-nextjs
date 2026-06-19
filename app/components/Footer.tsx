@@ -18,7 +18,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-zinc-950 text-zinc-300 border-t border-zinc-900 pt-16 pb-8">
+    <footer className="bg-zinc-950 text-zinc-300 border-zinc-900 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Top Grid Area */}
@@ -29,7 +29,7 @@ export default function Footer() {
             <Link href="/">
               <img src="/logo_white.png" alt="M Baazar Logo" className="h-10 w-auto object-contain cursor-pointer" />
             </Link>
-            <p className="text-sm text-zinc-400 leading-relaxed font-normal max-w-sm">
+            <p className="text-sm text-zinc-400 mt-5 leading-relaxed font-normal max-w-sm">
               M Baazar is one of the fastest-growing retail chains, bringing you high-quality, trendy clothing, footwear, and accessories at accessible prices.
             </p>
 
@@ -39,7 +39,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-zinc-900 hover:bg-red-600 hover:text-white flex items-center justify-center transition-all duration-300 text-zinc-400"
+                className="w-9 h-9 rounded-full bg-zinc-900 hover:bg-red-700 hover:text-white flex items-center justify-center transition-all duration-300 text-zinc-400"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -50,7 +50,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-zinc-900 hover:bg-red-600 hover:text-white flex items-center justify-center transition-all duration-300 text-zinc-400"
+                className="w-9 h-9 rounded-full bg-zinc-900 hover:bg-red-700 hover:text-white flex items-center justify-center transition-all duration-300 text-zinc-400"
                 aria-label="Instagram"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -62,7 +62,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-zinc-900 hover:bg-red-600 hover:text-white flex items-center justify-center transition-all duration-300 text-zinc-400"
+                className="w-9 h-9 rounded-full bg-zinc-900 hover:bg-red-700 hover:text-white flex items-center justify-center transition-all duration-300 text-zinc-400"
                 aria-label="Twitter"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -73,7 +73,7 @@ export default function Footer() {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full bg-zinc-900 hover:bg-red-600 hover:text-white flex items-center justify-center transition-all duration-300 text-zinc-400"
+                className="w-9 h-9 rounded-full bg-zinc-900 hover:bg-red-700 hover:text-white flex items-center justify-center transition-all duration-300 text-zinc-400"
                 aria-label="Youtube"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -87,10 +87,10 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-4">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider">Shop</h4>
             <ul className="space-y-2.5 text-sm font-medium text-zinc-400">
-              <li><Link href="/shop?category=Men" className="hover:text-red-500 transition-colors">Men's Wear</Link></li>
-              <li><Link href="/shop?category=Women" className="hover:text-red-500 transition-colors">Women's Wear</Link></li>
-              <li><Link href="/shop?category=Kids" className="hover:text-red-500 transition-colors">Kids Section</Link></li>
-              <li><Link href="/shop" className="hover:text-red-500 transition-colors">New Arrivals</Link></li>
+              <li><Link href="/shop?category=Men" className="hover:text-red-700 transition-colors">Men's Wear</Link></li>
+              <li><Link href="/shop?category=Women" className="hover:text-red-700 transition-colors">Women's Wear</Link></li>
+              <li><Link href="/shop?category=Kids" className="hover:text-red-700 transition-colors">Kids Section</Link></li>
+              <li><Link href="/shop" className="hover:text-red-700 transition-colors">New Arrivals</Link></li>
             </ul>
           </div>
 
@@ -98,10 +98,10 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-4">
             <h4 className="text-sm font-bold text-white uppercase tracking-wider">Support</h4>
             <ul className="space-y-2.5 text-sm font-medium text-zinc-400">
-              <li><Link href="/contact" className="hover:text-red-500 transition-colors">Contact Support</Link></li>
-              <li><Link href="/#outlets" className="hover:text-red-500 transition-colors">Outlets Locator</Link></li>
-              <li><Link href="/contact" className="hover:text-red-500 transition-colors">FAQs & Help</Link></li>
-              <li><Link href="/careers" className="hover:text-red-500 transition-colors">Careers</Link></li>
+              <li><Link href="/contact" className="hover:text-red-700 transition-colors">Contact Support</Link></li>
+              <li><Link href="/#outlets" className="hover:text-red-700 transition-colors">Outlets Locator</Link></li>
+              <li><Link href="/contact" className="hover:text-red-700 transition-colors">FAQs & Help</Link></li>
+              <li><Link href="/careers" className="hover:text-red-700 transition-colors">Careers</Link></li>
             </ul>
           </div>
 
@@ -119,11 +119,11 @@ export default function Footer() {
                 required
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address..."
-                className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl py-3 pl-4 pr-12 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-red-600 transition-colors font-medium"
+                className="w-full bg-zinc-900/50 border border-zinc-800 rounded-xl py-3 pl-4 pr-12 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-red-700 transition-colors font-medium"
               />
               <button
                 type="submit"
-                className="absolute right-1.5 top-1.5 bottom-1.5 px-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors cursor-pointer flex items-center justify-center"
+                className="absolute right-1.5 top-1.5 bottom-1.5 px-3 bg-red-700 text-white rounded-lg hover:bg-red-700 transition-colors cursor-pointer flex items-center justify-center"
                 aria-label="Subscribe"
               >
                 {subscribed ? <Check className="w-4 h-4" /> : <Send className="w-4 h-4" />}
@@ -149,11 +149,11 @@ export default function Footer() {
 
           {/* Payment Badges / Legal */}
           <div className="flex justify-center md:justify-end items-center gap-6">
-            <Link href="/privacy" className="hover:text-red-500 transition-colors">Privacy Policy</Link>
+            <Link href="/privacy" className="hover:text-red-700 transition-colors">Privacy Policy</Link>
             <span className="text-zinc-800">|</span>
-            <Link href="/terms" className="hover:text-red-500 transition-colors">Terms of Service</Link>
+            <Link href="/terms" className="hover:text-red-700 transition-colors">Terms of Service</Link>
             <span className="text-zinc-800">|</span>
-            <Link href="/sitemap.xml" className="hover:text-red-500 transition-colors">Sitemap</Link>
+            <Link href="/sitemap.xml" className="hover:text-red-700 transition-colors">Sitemap</Link>
           </div>
 
         </div>

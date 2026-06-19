@@ -10,7 +10,7 @@ export default function TermsPage() {
     <section className="py-20 sm:py-28 bg-white text-zinc-900 w-full">
       <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12 flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
-          <span className="text-[11px] uppercase tracking-[0.35em] font-semibold text-red-600">
+          <span className="text-[11px] uppercase tracking-[0.35em] font-semibold text-red-700">
             Legal
           </span>
           <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-zinc-950 leading-tight">

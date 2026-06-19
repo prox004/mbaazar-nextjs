@@ -96,7 +96,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
       {/* Editorial Header Banner */}
       <section className="py-12 border-b border-zinc-100 bg-zinc-50/50">
         <div className="max-w-5xl mx-auto px-6 text-center space-y-4">
-          <span className="text-xs font-bold tracking-widest text-red-600 uppercase">
+          <span className="text-xs font-bold tracking-widest text-red-700 uppercase">
             M Baazar Editorial
           </span>
           <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-zinc-950 uppercase">
@@ -154,7 +154,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                         loading="lazy"
                       />
-                      <span className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm text-[10px] font-bold uppercase tracking-wider text-red-600 px-3 py-1 rounded-full shadow-sm">
+                      <span className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm text-[10px] font-bold uppercase tracking-wider text-red-700 px-3 py-1 rounded-full shadow-sm">
                         {categoryTitle}
                       </span>
                     </Link>
@@ -163,7 +163,7 @@ export default async function BlogPage({ searchParams }: PageProps) {
                     <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                       <div className="space-y-2.5">
                         {/* Title */}
-                        <h2 className="text-xl font-bold leading-tight text-zinc-950 group-hover:text-red-600 transition-colors">
+                        <h2 className="text-xl font-bold leading-tight text-zinc-950 group-hover:text-red-700 transition-colors">
                           <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                         </h2>
 

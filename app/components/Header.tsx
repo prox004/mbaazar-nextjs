@@ -74,7 +74,7 @@ export default function Header() {
   const duplicatedTickerPhrases = [...tickerPhrases, ...tickerPhrases, ...tickerPhrases, ...tickerPhrases];
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-50 w-full bg-red-600 border-b border-red-700">
+    <header className="sticky top-0 left-0 right-0 z-50 w-full bg-red-700 border-b border-red-700">
       {/* Announcement Ticker */}
       <div
         className={`bg-black text-white px-4 text-xs tracking-wider font-regular overflow-hidden transition-all duration-300 ease-in-out flex items-center ${isTickerVisible ? "h-8 py-2 opacity-100" : "h-0 py-0 opacity-0 pointer-events-none"
@@ -90,7 +90,7 @@ export default function Header() {
       </div>
 
       {/* Main Navigation Bar */}
-      <nav className="bg-red-600 text-white h-20 px-6 md:px-12 flex items-center justify-between">
+      <nav className="bg-red-700 text-white h-20 px-6 md:px-12 flex items-center justify-between">
 
         {/* Desktop Left Navigation */}
         <div className="hidden md:flex items-center gap-8 w-1/3">
@@ -118,7 +118,7 @@ export default function Header() {
                         <Link
                           key={cat}
                           href={`/shop?category=${paramVal}`}
-                          className="block px-4 py-2.5 text-xs tracking-wide text-zinc-700 hover:bg-zinc-50 hover:text-red-600 transition-colors"
+                          className="block px-4 py-2.5 text-xs tracking-wide text-zinc-700 hover:bg-zinc-50 hover:text-red-700 transition-colors"
                         >
                           {cat}
                         </Link>
@@ -214,7 +214,7 @@ export default function Header() {
             <span className="text-xl font-black tracking-tight font-sans text-black">M Baazar</span>
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="p-1 text-black hover:text-red-600 transition-colors"
+              className="p-1 text-black hover:text-red-700 transition-colors"
               aria-label="Close menu"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -230,7 +230,7 @@ export default function Header() {
               <Link
                 href="/shop"
                 onClick={() => setIsMenuOpen(false)}
-                className="block text-xs font-bold tracking-wide text-zinc-400 hover:text-red-600 transition-colors mb-2"
+                className="block text-xs font-bold tracking-wide text-zinc-400 hover:text-red-700 transition-colors mb-2"
               >
                 Products
               </Link>
@@ -248,7 +248,7 @@ export default function Header() {
                       key={cat}
                       href={`/shop?category=${paramVal}`}
                       onClick={() => setIsMenuOpen(false)}
-                      className="block text-base font-semibold tracking-wide text-zinc-800 hover:text-red-600 transition-colors"
+                      className="block text-base font-semibold tracking-wide text-zinc-800 hover:text-red-700 transition-colors"
                     >
                       {cat}
                     </Link>
@@ -264,7 +264,7 @@ export default function Header() {
                   key={item.name}
                   href={item.href || "#"}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block text-base font-bold tracking-wide text-zinc-900 hover:text-red-600 transition-colors"
+                  className="block text-base font-bold tracking-wide text-zinc-900 hover:text-red-700 transition-colors"
                 >
                   {item.name}
                 </Link>
@@ -274,7 +274,7 @@ export default function Header() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block text-base font-bold tracking-wide text-zinc-900 hover:text-red-600 transition-colors"
+                  className="block text-base font-bold tracking-wide text-zinc-900 hover:text-red-700 transition-colors"
                 >
                   {item.name}
                 </Link>
@@ -305,7 +305,7 @@ export default function Header() {
             <span className="text-base font-bold tracking-wide text-zinc-400">Share This Page</span>
             <button
               onClick={() => setIsShareOpen(false)}
-              className="p-1 text-black hover:text-red-600 transition-colors"
+              className="p-1 text-black hover:text-red-700 transition-colors"
               aria-label="Close share panel"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -318,7 +318,7 @@ export default function Header() {
           <div className="mt-8 space-y-4">
             <button
               onClick={() => handleShare("facebook")}
-              className="w-full flex items-center justify-between p-4 border border-zinc-100 rounded-lg hover:border-red-600 hover:bg-zinc-50 transition-all text-black"
+              className="w-full flex items-center justify-between p-4 border border-zinc-100 rounded-lg hover:border-red-700 hover:bg-zinc-50 transition-all text-black"
             >
               <span className="text-base font-semibold tracking-wide">Facebook</span>
               <svg className="w-5 h-5 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24">
@@ -328,7 +328,7 @@ export default function Header() {
 
             <button
               onClick={() => handleShare("instagram")}
-              className="w-full flex items-center justify-between p-4 border border-zinc-100 rounded-lg hover:border-red-600 hover:bg-zinc-50 transition-all text-black"
+              className="w-full flex items-center justify-between p-4 border border-zinc-100 rounded-lg hover:border-red-700 hover:bg-zinc-50 transition-all text-black"
             >
               <span className="text-base font-semibold tracking-wide">Instagram</span>
               <svg className="w-5 h-5 text-[#E4405F]" fill="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -339,7 +339,7 @@ export default function Header() {
 
             <button
               onClick={() => handleShare("youtube")}
-              className="w-full flex items-center justify-between p-4 border border-zinc-100 rounded-lg hover:border-red-600 hover:bg-zinc-50 transition-all text-black"
+              className="w-full flex items-center justify-between p-4 border border-zinc-100 rounded-lg hover:border-red-700 hover:bg-zinc-50 transition-all text-black"
             >
               <span className="text-base font-semibold tracking-wide">YouTube</span>
               <svg className="w-5 h-5 text-[#FF0000]" fill="currentColor" viewBox="0 0 24 24">
@@ -349,7 +349,7 @@ export default function Header() {
 
             <button
               onClick={() => handleShare("linkedin")}
-              className="w-full flex items-center justify-between p-4 border border-zinc-100 rounded-lg hover:border-red-600 hover:bg-zinc-50 transition-all text-black"
+              className="w-full flex items-center justify-between p-4 border border-zinc-100 rounded-lg hover:border-red-700 hover:bg-zinc-50 transition-all text-black"
             >
               <span className="text-base font-semibold tracking-wide">LinkedIn</span>
               <svg className="w-5 h-5 text-[#0A66C2]" fill="currentColor" viewBox="0 0 24 24">
@@ -359,7 +359,7 @@ export default function Header() {
 
             <button
               onClick={() => handleShare("twitter")}
-              className="w-full flex items-center justify-between p-4 border border-zinc-100 rounded-lg hover:border-red-600 hover:bg-zinc-50 transition-all text-black"
+              className="w-full flex items-center justify-between p-4 border border-zinc-100 rounded-lg hover:border-red-700 hover:bg-zinc-50 transition-all text-black"
             >
               <span className="text-base font-semibold tracking-wide">X / Twitter</span>
               <svg className="w-5 h-5 text-current" fill="currentColor" viewBox="0 0 24 24">

@@ -77,10 +77,10 @@ export default function CareersPage() {
   return (
     <section className="py-16 sm:py-24 bg-white text-zinc-900 w-full overflow-hidden">
       <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header Section */}
         <div className="mb-12 flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
-          <span className="text-[11px] uppercase tracking-[0.35em] font-semibold text-red-600">
+          <span className="text-[11px] uppercase tracking-[0.35em] font-semibold text-red-700">
             Join Our Team
           </span>
           <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-zinc-950 leading-tight">
@@ -88,7 +88,7 @@ export default function CareersPage() {
           </h1>
           <p className="text-zinc-600 leading-relaxed font-normal text-sm sm:text-base">
             Looking to join Team M Baazar? Please do share your information by filling-up the form below or send us an email at{" "}
-            <a href="mailto:hr@mbaazar.in" className="text-red-600 hover:underline font-semibold">
+            <a href="mailto:hr@mbaazar.in" className="text-red-700 hover:underline font-semibold">
               hr@mbaazar.in
             </a>{" "}
             with your updated resume and we will surely get back to you if we are interested!
@@ -97,7 +97,7 @@ export default function CareersPage() {
 
         {submitted ? (
           <div className="max-w-2xl mx-auto bg-red-50/60 border border-red-200 rounded-2xl p-8 text-center flex flex-col items-center gap-4 shadow-sm">
-            <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 text-xl font-bold">
+            <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-700 text-xl font-bold">
               ✓
             </div>
             <h2 className="text-2xl font-bold text-zinc-900">Application Submitted!</h2>
@@ -106,7 +106,7 @@ export default function CareersPage() {
             </p>
             <Button
               onClick={() => setSubmitted(false)}
-              className="mt-4 bg-red-600 hover:bg-red-700 text-white rounded-xl px-6 py-2"
+              className="mt-4 bg-red-700 hover:bg-red-700 text-white rounded-xl px-6 py-2"
             >
               Submit Another Application
             </Button>
@@ -119,7 +119,7 @@ export default function CareersPage() {
             {/* Personal Info Group */}
             <div>
               <h3 className="text-lg font-bold text-zinc-900 mb-6 flex items-center gap-2">
-                <span className="w-1 h-4 bg-red-600 rounded-full inline-block" />
+                <span className="w-1 h-4 bg-red-700 rounded-full inline-block" />
                 Personal Details
               </h3>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -132,7 +132,7 @@ export default function CareersPage() {
                     value={formData.firstName}
                     onChange={handleInputChange}
                     placeholder="Enter your first name"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -144,7 +144,7 @@ export default function CareersPage() {
                     value={formData.lastName}
                     onChange={handleInputChange}
                     placeholder="Enter your last name"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -157,7 +157,7 @@ export default function CareersPage() {
                         value="Male"
                         checked={formData.gender === "Male"}
                         onChange={handleInputChange}
-                        className="text-red-600 focus:ring-red-500"
+                        className="text-red-700 focus:ring-red-700"
                       />
                       Male
                     </label>
@@ -168,7 +168,7 @@ export default function CareersPage() {
                         value="Female"
                         checked={formData.gender === "Female"}
                         onChange={handleInputChange}
-                        className="text-red-600 focus:ring-red-500"
+                        className="text-red-700 focus:ring-red-700"
                       />
                       Female
                     </label>
@@ -180,7 +180,7 @@ export default function CareersPage() {
             {/* Qualifications & Position Group */}
             <div className="border-t border-zinc-100 pt-8">
               <h3 className="text-lg font-bold text-zinc-900 mb-6 flex items-center gap-2">
-                <span className="w-1 h-4 bg-red-600 rounded-full inline-block" />
+                <span className="w-1 h-4 bg-red-700 rounded-full inline-block" />
                 Professional Info
               </h3>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -191,7 +191,7 @@ export default function CareersPage() {
                     required
                     value={formData.qualification}
                     onChange={handleInputChange}
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none bg-white focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none bg-white focus:border-red-700"
                   >
                     <option value="">--Select Qualification--</option>
                     {qualifications.map((q) => (
@@ -211,7 +211,7 @@ export default function CareersPage() {
                     onChange={handleInputChange}
                     placeholder="e.g. 2"
                     min="0"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -221,7 +221,7 @@ export default function CareersPage() {
                     required
                     value={formData.position}
                     onChange={handleInputChange}
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none bg-white focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none bg-white focus:border-red-700"
                   >
                     <option value="">--Select Position--</option>
                     {positions.map((p) => (
@@ -239,7 +239,7 @@ export default function CareersPage() {
                     value={formData.preferredLocations}
                     onChange={handleInputChange}
                     placeholder="Preferred cities"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -250,7 +250,7 @@ export default function CareersPage() {
                     value={formData.lastCompany}
                     onChange={handleInputChange}
                     placeholder="Enter company name"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -261,7 +261,7 @@ export default function CareersPage() {
                     value={formData.lastDesignation}
                     onChange={handleInputChange}
                     placeholder="Enter last role title"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -272,7 +272,7 @@ export default function CareersPage() {
                     value={formData.lastSalary}
                     onChange={handleInputChange}
                     placeholder="Salary package details"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -283,7 +283,7 @@ export default function CareersPage() {
                     value={formData.reasonForLeaving}
                     onChange={handleInputChange}
                     placeholder="Reason for change"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -294,7 +294,7 @@ export default function CareersPage() {
                     value={formData.lastPostedCity}
                     onChange={handleInputChange}
                     placeholder="City you worked in"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
               </div>
@@ -303,7 +303,7 @@ export default function CareersPage() {
             {/* Contacts & Attachments Group */}
             <div className="border-t border-zinc-100 pt-8">
               <h3 className="text-lg font-bold text-zinc-900 mb-6 flex items-center gap-2">
-                <span className="w-1 h-4 bg-red-600 rounded-full inline-block" />
+                <span className="w-1 h-4 bg-red-700 rounded-full inline-block" />
                 Contact & Verification
               </h3>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -315,7 +315,7 @@ export default function CareersPage() {
                     value={formData.homeTown}
                     onChange={handleInputChange}
                     placeholder="Your hometown address"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -327,7 +327,7 @@ export default function CareersPage() {
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder="name@example.com"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -339,7 +339,7 @@ export default function CareersPage() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     placeholder="Contact number"
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -350,7 +350,7 @@ export default function CareersPage() {
                     required
                     value={formData.dob}
                     onChange={handleInputChange}
-                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-500"
+                    className="w-full rounded-xl border border-zinc-200 px-4 py-2.5 text-sm outline-none focus:border-red-700"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -379,7 +379,7 @@ export default function CareersPage() {
 
             <Button
               type="submit"
-              className="mt-6 self-start bg-red-600 hover:bg-red-700 text-white rounded-xl px-10 py-3 font-semibold tracking-wide"
+              className="mt-6 self-start bg-red-700 hover:bg-red-700 text-white rounded-xl px-10 py-3 font-semibold tracking-wide"
             >
               Apply Now
             </Button>

@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'InstrumentS';
+    src: url(/fonts/InstrumentSerif-Italic.ttf);
+}
+
+:root {
+    --bg: #0f0f0f;
+    --fg: #fff;
+    --card-1: #b2b2b2;
+    --card-2: #ce2017;
+    --card-3: #2f2f2f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'InstrumentS', sans-serif;
+    background-color: var(--bg);
+    color: var(--fg);
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    padding: 2rem;
+    background-color: var(--bg);
+    color: var(--fg);
+}
+
+.intro,
+.outro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h1,
+.outro h1 {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 🧭 Sticky Section Layout Fix */
+.sticky {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 4rem; */
+    height: 100svh;
+}
+
+/* 🧠 Header properly centered */
+.sticky-header {
+    position: relative;
+    width: 100%;
+}
+
+.sticky-header h1 {
+    position: relative;
+    text-align: center;
+    will-change: transform, opacity;
+    transform: translateY(40px);
+    opacity: 0;
+}
+
+/* 🎴 Card Container */
+.card-container {
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    perspective: 1000px;
+    transform: translateY(40px);
+    will-change: width, gap;
+    overflow: visible;
+    gap: 0;
+}
+
+/* 🃏 Cards */
+.card {
+    position: relative;
+    flex: 1;
+    aspect-ratio: 5 / 7;
+    transform-style: preserve-3d;
+    transform-origin: top;
+    border-radius: 20px;
+    transition: transform 0.6s ease;
+}
+
+#card-1 {
+    border-radius: 20px 0 0 20px;
+}
+
+#card-2 {
+    border-radius: 0;
+}
+
+#card-3 {
+    border-radius: 0 20px 20px 0;
+}
+
+.card-front,
+.card-back {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+/* 🧍 Card Back Side */
+.card-back {
+    display: none; /*change to flex in js flip animation*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotateY(180deg);
+    padding: 2rem;
+}
+
+.card-back span {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    opacity: 0.4;
+}
+
+#card-1 .card-back {
+    background-color: var(--card-1);
+    color: var(--bg);
+}
+
+#card-2 .card-back {
+    background-color: var(--card-2);
+    color: var(--bg);
+}
+
+#card-3 .card-back {
+    background-color: var(--card-3);
+    color: var(--bg);
+}
+
+/* 📱 Responsive (mobile & tablet) */
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .intro h1,
+    .outro h1 {
+        width: 100%;
+    }
+
+    .sticky {
+        height: max-content;
+        padding: 4rem 2rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .sticky-header {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .sticky-header h1 {
+        opacity: 1;
+        transform: none;
+    }
+
+    .card-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 20px !important;
+    }
+
+    #card-1,
+    #card-2,
+    #card-3,
+    .card-back {
+        transform: none;
+    }
+}
